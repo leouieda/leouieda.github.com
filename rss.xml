@@ -1,0 +1,3145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xml:base="https://www.leouieda.com" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Leonardo Uieda</title>
+<link>https://www.leouieda.com</link>
+<description>G e o p h y s i c i s t ,   p r o g r a m m e r ,   t e a c h e r</description>
+<atom:link href="https://www.leouieda.com/rss.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+        <title>Advancing research software in the UK through an SSI fellowship</title>
+        <link>https://www.leouieda.com/blog/ssi-fellowship.html</link>
+        <guid>https://www.leouieda.com/blog/ssi-fellowship.html</guid>
+        <pubDate>Thu, 23 Jan 2020 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+
+            <p></p>
+
+            
+
+
+            <p><strong>I have been selected as part of the 2020 cohort of Fellows of the <a href="https://www.software.ac.uk/">Software
+Sustainability Institute</a>!</strong></p>
+<p>The Institute cultivates world-class research with software. It's based at the
+universities of Edinburgh, Manchester, Southampton, and Oxford in the UK.
+<a href="https://www.software.ac.uk/about">Their motto</a> says it all:</p>
+<p><img alt="Better Software, Better Research" src="/images/better-software-better-research.png" /></p>
+<p>The SSI has a yearly <a href="https://www.software.ac.uk/programmes-and-events/fellowship-programme">fellowship program</a>
+to fund the organization of communities around scientific software (creating of
+local user groups, workshops, hackathons, etc).
+Even more importantly, they organize several events to get current and past
+fellows in the same place doing awesome stuff.
+I'm really looking forward to this year's
+<a href="https://www.software.ac.uk/cw20">Collaborations Workshop</a> (registration is
+open to all, not just fellows).
+I applied at the end of last year and was selected to join the
+<a href="https://software.ac.uk/blog/2020-01-10-announcing-2020-software-sustainability-institute-fellows">2020 cohort of fellows</a>
+along with some truly amazing people.</p>
+<p>My plan for the fellowship is to run some <a href="https://software-carpentry.org/">Software
+Carpentry</a> workshops in Liverpool and to
+develop lesson material for transitioning from coder to open-source software
+maintainer (based on <a href="/teaching/agu2018.html" title="Best practices for modern open-source research codes (AGU)">our AGU workshops</a>). These workshops
+will be a good way to connect with the local Python user groups. I'm also
+hoping to connect with other geoscientists interested in software around the UK
+and Europe at <a href="https://www.egu2020.eu/">EGU 2020</a>.</p>
+<p>The application for the fellowship was the most fun I've ever had applying to
+something (no tedious cover letters). We had to make a 5 minute video about
+ourselves and our plans. The SSI even provided
+<a href="https://software.ac.uk/fellowship-programme/2019/application-video-guide">a guide for recording a screencast</a>
+which was really useful.
+This was my first stab at making a screencast and it turns out to be a lot less
+painful than I expected (apart from hearing my own recorded voice). I put <a href="https://youtu.be/fT4QRbdv274">my
+application video on YouTube</a> including captions
+based on my script for the video.</p>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe
+     width="560" height="315"
+     src="https://www.youtube-nocookie.com/embed/fT4QRbdv274"
+     frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+
+<p>YouTube made this really easy to do: the text is automatically synced with the
+video (the joys of <a href="https://www.tensorflow.org">tensorflow</a>, probably), so you
+don't have to add time stamps or anything. You can read the transcript and find
+more information at <a href="/research/ssi2020.html" title="Software Sustainability Institute Fellowship">the page for this fellowship in the Research section</a>.</p>
+<p><strong>Keep posted for more information on the fellowship activities and
+<a href="/contact/" title="Contact">reach out</a> if you want to get involved!</strong></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/ssi-fellowship.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/ssi-fellowship.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Two PhD studentships at the University of Liverpool</title>
+        <link>https://www.leouieda.com/blog/liverpool-phd-2020.html</link>
+        <guid>https://www.leouieda.com/blog/liverpool-phd-2020.html</guid>
+        <pubDate>Sun, 08 Dec 2019 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+
+            <p></p>
+
+            
+
+
+            <p>I have two open positions for funded studentships at the University of
+Liverpool.
+<strong>Applications are open until 10 January 2020</strong>.</p>
+<h2 id="project-descriptions">Project descriptions</h2>
+<blockquote>
+<p>Follow the links for more detailed versions.</p>
+</blockquote>
+<p><a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/bringingmachinelearningtechniquestogeophysicaldataprocessing.html"><strong>Bringing machine learning techniques to geophysical data processing</strong></a></p>
+<p>The goal of this project is to investigate the use of existing machine learning
+techniques to process gravity and magnetics data using the <a href="/papers/paper-polynomial-eqlayer-2013.html" title="Polynomial equivalent layer">Equivalent Layer
+Method</a>. The methods and software
+developed during this project can be applied to process large amounts of
+gravity and magnetics data, including airborne and satellite surveys, and
+produce data products that can enable further scientific investigations.
+Examples of such data products include global gravity gradient grids from GOCE
+satellite measurements, regional magnetic grids for the UK, gravity grids for
+the Moon and Mars, etc.</p>
+<p><a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/large-scalemappingofthethicknessofthecrustfromsatellitegravityandgra.html"><strong>Large-scale mapping of the thickness of the crust from satellite gravity and gravity gradient data</strong></a></p>
+<p>The goal of this project is to develop improved inversion methods to determine
+crustal thickness from gravity and gravity gradient data, in particular
+<a href="/papers/paper-moho-inversion-tesseroids-2016.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">Uieda and Barbosa (2017)</a>.
+Main objectives are: (1) account for density variation in the oceanic
+lithosphere due to temperature; (2) incorporate seismological estimates of
+crustal thickness in the inversion process; (3) estimate the density contrast
+across the crust-mantle interface in different domains; (4) joint inversion of
+gravity and gravity gradient data; (5) develop techniques to reduce the
+computational load of the inversion; (6) quantify uncertainty due to errors in
+regional crustal and sedimentary basin models. The inversion methods developed
+in this project can be applied to produce improved crustal thickness estimates
+for South America, Africa, Antarctica, the Moon, Mars, etc.</p>
+<h2 id="the-details">The details</h2>
+<p>The funding for these projects comes from the School of Environment Sciences.
+Applicants choose a project when applying and will be judged on their own merit
+(not the project/supervisor).
+There are only a small number of studentships available for the entire School,
+so competition for the studentships tends to be high.
+Sadly, applications are limited to UK and EU citizens.
+Candidates who are able to self-fund (e.g., through their employer) are
+encouraged to apply as well. In this case, there is no need to go through the
+normal competition.</p>
+<p>Both projects have a large computational component. Students will make code
+contributions to the different open-source Python software developed by the
+<a href="https://www.compgeolab.org/">Computer-Oriented Geoscience Lab</a>, mainly
+<a href="https://www.fatiando.org">Fatiando a Terra</a>.
+They will be trained to develop software in a collaborative environment using
+GitHub and use the current best practices in software engineering and
+reproducible research.</p>
+<p>Applicants are encouraged to read the
+<a href="https://www.compgeolab.org/manual/">lab manual</a> to familiarize themselves with
+the way we approach science, expectations, our code of conduct, etc.</p>
+<p><strong>If you're interested in applying (or know someone who might be), please
+<a href="/contact/" title="Contact">get in touch</a>!</strong></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/liverpool-phd-2020.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/liverpool-phd-2020.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Manage project dependencies with conda environments</title>
+        <link>https://www.leouieda.com/blog/conda-envs.html</link>
+        <guid>https://www.leouieda.com/blog/conda-envs.html</guid>
+        <pubDate>Wed, 26 Dec 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+
+            <p></p>
+
+            
+
+
+            <blockquote>
+<p><strong>TL;DR:</strong> Create a conda environment for each project, capture exact versions when
+possible, automate <a href="https://github.com/leouieda/dotfiles/blob/e95f6d951d8ddf6ffa303fdca38ebcf620dc5d6c/.bash/functions.sh#L72">activation and updating with a bash function</a>.</p>
+</blockquote>
+<p>I often work on several different projects involving software:
+<a href="/blog/introducing-verde.html" title="Introducing Verde">Python libraries</a>,
+<a href="/papers/paper-moho-inversion-tesseroids-2016.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">papers</a>,
+<a href="/talks/aogs2018.html" title="Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity">presentations</a>,
+<a href="/posters/agu2018.html" title="Coupled interpolation of three-component GPS velocities">posters</a>,
+<a href="https://github.com/leouieda/website">this website</a>,
+etc.
+Each project has different dependencies and there is a non-zero chance that these
+dependencies might be in conflict with each other.
+For example, I need Python 2.7 to work on a
+<a href="/papers/tesseroid-variable-density.html" title="Gravitational field calculation in spherical coordinates using variable densities in depth">tesseroid modeling paper</a> with a student,
+while my current work on <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">GMT/Python</a> and
+<a href="/posters/agu2018.html" title="Coupled interpolation of three-component GPS velocities">GPS interpolation</a> project are Python 3.5+ only.
+Clearly, I can't have everything under the same Python installation.
+That's where virtual environments come in.</p>
+<p>Virtual environments allow you to create multiple separate Python installations
+("environments").
+You can install different packages on each and switch between them easily.
+Currently, you can do this using Python's
+<a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> or using the
+<a href="https://conda.io/docs/">conda package manager</a>.
+I use conda for all my package management because I need non-Python packages and
+multiple Python versions.
+If you're new to conda, please go check out
+<a href="http://ericmjl.com/blog/2018/12/25/conda-hacks-for-data-science-efficiency/">Eric Ma's great tips for working with conda</a>.</p>
+<p>In this post, I'll share some more tips and a bash function I made for managing
+environments.</p>
+<h2 id="when-to-create-environments">When to create environments</h2>
+<p>First of all, I want to reiterate Eric's second hack:
+<strong>create one conda environment for each project</strong>.</p>
+<p>I have been doing this for a few years now and even included a default environment file
+in <a href="/blog/paper-template.html" title="A template for reproducible papers">my research group's paper template</a>.
+As soon as I start a new project repository, I'll create an <code>environment.yml</code> with the
+configuration I need:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># The name of the environment matching the repository name</span>
+<span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">same-as-repository</span>
+<span class="c1"># I prefer conda-forge packages for my projects</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<span class="c1"># Start with Python and include everything you need</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">python=3.7</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">numpy</span>
+<span class="nn">...</span>
+</pre></div>
+
+
+<p>With this file in the repository, you can create the new environment by running:</p>
+<div class="codehilite"><pre><span></span>conda env create
+</pre></div>
+
+
+<p>The advantage of always having the environment file is that I always know what each
+project needs. This is particularly useful when switching back and forth between a
+laptop and desktop or when returning to a project after a while.</p>
+<p>Now you can activate the environment using <code>source activate same-as-repository</code>
+to get access to a completely separate Python installation.
+When switching to a different project, always <code>source activate environment-name</code> and
+then run your code.</p>
+<p>See the
+<a href="https://conda.io/docs/user-guide/tasks/manage-environments.html">conda docs</a>
+for more information on environments.</p>
+<h2 id="be-as-specific-as-you-can">Be as specific as you can</h2>
+<p>When creating environments for papers, it's a good idea to capture the exact versions of
+every package so that you can rebuild the environment later on.
+Otherwise, there is the risk of dependencies updating and your code no longer running.
+You might not want to do this if you're still in the middle of the project and
+adding new dependencies.</p>
+<p>Once a paper is accepted, I'll usually export the environment with exact version numbers
+using:</p>
+<div class="codehilite"><pre><span></span>conda env <span class="nb">export</span> &gt; environment.yml
+</pre></div>
+
+
+<h2 id="automate-the-boring-parts">Automate the boring parts</h2>
+<p>I have a git repository for
+<a href="https://github.com/leouieda?tab=repositories">nearly everything I do</a> and most of them
+have an <code>environment.yml</code> file.
+With so many environments, it can be really hard to remember all their names and type
+out <code>conda activate paper-moho-inversion-tesseroids</code>.
+Instead of using really short names, let's automate the activation and some other useful
+commands with a bash function:</p>
+<div class="codehilite"><pre><span></span><span class="k">function</span> cenv<span class="o">()</span> <span class="o">{</span>
+
+<span class="c1"># Usage and help message</span>
+<span class="nb">read</span> -r -d <span class="s1">&#39;&#39;</span> CENV_HELP <span class="s">&lt;&lt;-&#39;EOF&#39;</span>
+<span class="s">Usage: cenv [COMMAND] [FILE]</span>
+
+<span class="s">Detect, activate, delete, and update conda environments.</span>
+<span class="s">FILE should be a conda .yml environment file.</span>
+<span class="s">If FILE is not given, assumes it is environment.yml.</span>
+<span class="s">Automatically finds the environment name from FILE.</span>
+
+<span class="s">Commands:</span>
+
+<span class="s">  None     Activates the environment</span>
+<span class="s">  rm       Delete the environment</span>
+<span class="s">  up       Update the environment</span>
+
+<span class="s">EOF</span>
+
+    <span class="nv">envfile</span><span class="o">=</span><span class="s2">&quot;environment.yml&quot;</span>
+
+    <span class="c1"># Parse the command line arguments</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="nv">$#</span> -gt <span class="m">2</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        errcho <span class="s2">&quot;Invalid argument(s): </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="k">return</span> <span class="m">1</span><span class="p">;</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="nv">$#</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">cmd</span><span class="o">=</span><span class="s2">&quot;activate&quot;</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;--help&quot;</span> <span class="o">]]</span> <span class="o">||</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;-h&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$CENV_HELP</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="k">return</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;rm&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">cmd</span><span class="o">=</span><span class="s2">&quot;delete&quot;</span>
+        <span class="k">if</span> <span class="o">[[</span> <span class="nv">$#</span> <span class="o">==</span> <span class="m">2</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nv">envfile</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
+        <span class="k">fi</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;up&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">cmd</span><span class="o">=</span><span class="s2">&quot;update&quot;</span>
+        <span class="k">if</span> <span class="o">[[</span> <span class="nv">$#</span> <span class="o">==</span> <span class="m">2</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nv">envfile</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
+        <span class="k">fi</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="nv">$#</span> <span class="o">==</span> <span class="m">1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">envfile</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+        <span class="nv">cmd</span><span class="o">=</span><span class="s2">&quot;activate&quot;</span>
+    <span class="k">else</span>
+        errcho <span class="s2">&quot;Invalid argument(s): </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="k">return</span> <span class="m">1</span><span class="p">;</span>
+    <span class="k">fi</span>
+
+    <span class="c1"># Check if the file exists</span>
+    <span class="k">if</span> <span class="o">[[</span> ! -e <span class="s2">&quot;</span><span class="nv">$envfile</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        errcho <span class="s2">&quot;Environment file not found:&quot;</span> <span class="nv">$envfile</span><span class="p">;</span>
+        <span class="k">return</span> <span class="m">1</span><span class="p">;</span>
+    <span class="k">fi</span>
+
+    <span class="c1"># Get the environment name from the yaml file</span>
+    <span class="nv">envname</span><span class="o">=</span><span class="k">$(</span>grep <span class="s2">&quot;name: *&quot;</span> <span class="nv">$envfile</span> <span class="p">|</span> sed -n -e <span class="s1">&#39;s/name: //p&#39;</span><span class="k">)</span>
+
+    <span class="c1"># Execute one of these actions: activate, update, delete</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="nv">$cmd</span> <span class="o">==</span> <span class="s2">&quot;activate&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">source</span> activate <span class="s2">&quot;</span><span class="nv">$envname</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="nv">$cmd</span> <span class="o">==</span> <span class="s2">&quot;update&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        errcho <span class="s2">&quot;Updating environment:&quot;</span> <span class="nv">$envname</span><span class="p">;</span>
+        <span class="nb">source</span> activate <span class="s2">&quot;</span><span class="nv">$envname</span><span class="s2">&quot;</span><span class="p">;</span>
+        conda env update -f <span class="s2">&quot;</span><span class="nv">$envfile</span><span class="s2">&quot;</span>
+    <span class="k">elif</span> <span class="o">[[</span> <span class="nv">$cmd</span> <span class="o">==</span> <span class="s2">&quot;delete&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        errcho <span class="s2">&quot;Removing environment:&quot;</span> <span class="nv">$envname</span><span class="p">;</span>
+        <span class="nb">source</span> deactivate<span class="p">;</span>
+        conda env remove --name <span class="s2">&quot;</span><span class="nv">$envname</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>Copy this code into your <code>~/.bashrc</code> file and restart your terminal.
+Now you can activate an environment using the <code>cenv</code> command:</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>base<span class="o">)</span> $ <span class="nb">cd</span> papers/my-long-project-name
+
+<span class="o">(</span>base<span class="o">)</span> $ ls -F
+code/ manuscrip/ data/ README.md LICENSE.txt environment.yml
+
+<span class="o">(</span>base<span class="o">)</span> $ head -n <span class="m">1</span> environment.yml
+name: my-long-project-env-name
+
+<span class="o">(</span>base<span class="o">)</span> $ cenv
+
+<span class="o">(</span>my-long-project-env-name<span class="o">)</span> $
+</pre></div>
+
+
+<p>With no arguments, <code>cenv</code> will find the <code>environment.yml</code>, extract the environment name,
+and activate it.
+You can also specify the file as an argument.
+I find this preferable to using <code>conda-auto-env</code>, as suggested in Eric's post, because
+conda is not the fastest program and I get frustrated by the slowdown in the <code>cd</code>
+command.</p>
+<p>If you add new dependencies to <code>environment.yml</code>, you can update the environment by
+running:</p>
+<div class="codehilite"><pre><span></span>$ cenv up
+</pre></div>
+
+
+<p>Or you can delete the environment using:</p>
+<div class="codehilite"><pre><span></span>$ cenv rm
+</pre></div>
+
+
+<p>With these commands, updating and activating environments is simple and quick to type so
+there is no excuse for not using them abundantly.</p>
+<p><strong>NOTE:</strong>
+If you're using <strong>Jupyter notebooks</strong>, the <code>cenv</code> function might not be that useful.
+In that case, I recommend installing the
+<a href="https://github.com/Anaconda-Platform/nb_conda"><code>nb_conda</code> package</a>.
+It allows you to specify which environment you want your notebook to run under when you
+create a new notebook or change the kernel.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>The main takeaways here are:</p>
+<ol>
+<li>Use a tool to manage your dependencies (whatever works for you)</li>
+<li>Automate the process so you won't be lazy</li>
+<li>Specify exact version numbers for long(er) term reproducibility</li>
+</ol>
+<p>I use conda because it suits my needs but similar features exits in other package
+managers.
+If you prefer <code>pip</code> with <a href="https://pipenv.readthedocs.io/en/latest/">pipenv</a>, by all
+means use them.</p>
+<p>The source code for the <code>cenv</code> function is in
+<a href="https://github.com/leouieda/dotfiles">my <code>dotfiles</code> repository</a> and is
+<a href="https://github.com/leouieda/dotfiles/blob/master/LICENSE">MIT licensed</a>.
+The exact version of the code shown here is
+<a href="https://github.com/leouieda/dotfiles/blob/e95f6d951d8ddf6ffa303fdca38ebcf620dc5d6c/.bash/functions.sh#L72">in <code>.bash/functions.sh</code> commit e95f6d9</a>.
+Additions and contributions are more than welcome!</p>
+<p><strong>What are your conda workflow/productivity hacks? Please share below in the comments or
+on twitter!</strong></p>
+<hr />
+<p><em>The thumbnail image for this post is derived from
+<a href="https://commons.wikimedia.org/wiki/File:Green_Anaconda_in_Trivandrum_Zoo.jpg">"Green Anaconda in Trivandrum Zoo" by Mithun.M.Das</a>
+and both are licensed CC-BY-SA.</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/conda-envs.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/conda-envs.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Introducing Verde</title>
+        <link>https://www.leouieda.com/blog/introducing-verde.html</link>
+        <guid>https://www.leouieda.com/blog/introducing-verde.html</guid>
+        <pubDate>Fri, 14 Sep 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+
+            <p></p>
+
+            
+
+
+            <p><strong>Verde is a Python library for processing spatial data (bathymetry, geophysics surveys,
+etc) and interpolating it on regular grids (i.e., gridding).</strong></p>
+<p>It implements <a href="https://en.wikipedia.org/wiki/Green%27s_function">Green's functions</a>
+based interpolation methods and other data processing routines.
+The type of gridding implemented in Verde is essentially fitting various linear models
+to spatial data and using them to predict new data on regular grids, which is what a lot
+of machine learning is all about.
+So Verde's <a href="http://www.fatiando.org/verde/v1.0.0/tutorials/overview.html#the-gridder-interface">gridder API</a>
+is inspired on <a href="http://scikit-learn.org/">scikit-learn</a>, the state-of-the-art for
+machine learning in Python.
+The Green's functions that make up the Jacobian matrix (aka sensitivity or feature
+matrix) of the linear models generally come from elastic deformation theory.
+For example, the bi-harmonic spline (<a href="https://doi.org/10.1029/GL014i002p00139">Sandwell, 1987</a>)
+implemented in <code>verde.Spline</code> comes from the deformation of a thin elastic plate.</p>
+<p>I submitted a <a href="/papers/verde.html" title="Verde: Processing and gridding spatial data using Green's functions">paper about Verde</a> to the
+<a href="https://joss.theoj.org/">Journal of Open Source Software (JOSS)</a> where it's currently
+awaiting review.
+This is my first time submitting to JOSS, though I have reviewed for it before.
+If you need academic credit for an open-source software project, I recommend giving JOSS
+a shot.
+Unlike many "geoscience computing" journals, you'll actually get great feedback on your
+code and project structure.</p>
+<h2 id="dig-in">Dig In</h2>
+<p>Verde comes with an <a href="http://www.fatiando.org/verde/v1.0.0/gallery/index.html">example gallery</a>,
+<a href="http://www.fatiando.org/verde/v1.0.0/tutorials/overview.html">tutorials</a>, and
+a range of <a href="http://www.fatiando.org/verde/v1.0.0/sample_data/index.html">sample datasets</a>
+to get you started (which are managed by <a href="/blog/introducing-pooch.html" title="Introducing Pooch">Pooch</a> under the
+hood).
+You can install it from <a href="https://pypi.org/project/verde/">PyPI</a> using <code>pip</code>:</p>
+<div class="codehilite"><pre><span></span>pip install verde
+</pre></div>
+
+
+<p>Conda packages will be available soon. We have a
+<a href="https://github.com/conda-forge/verde-feedstock">conda-forge feedstock</a> ready and are
+just waiting on issue
+<a href="https://github.com/conda-forge/staged-recipes/issues/6659">conda-forge/staged-recipes#6659</a>.</p>
+<p>The code is hosted on Github under the Fatiando a Terra organization:
+<a href="https://github.com/fatiando/verde">fatiando/verde</a>.</p>
+<p><a href="http://www.fatiando.org/verde/v1.0.0/gallery/index.html"><img alt="The Verde example gallery" src="/images/verde-gallery.png" /></a></p>
+<h2 id="example">Example</h2>
+<p>Here is an example code that interpolates our
+<a href="http://www.fatiando.org/verde/v1.0.0/sample_data/texas-wind.html">sample air temperature dataset</a>:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">pyproj</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">verde</span> <span class="k">as</span> <span class="nn">vd</span>
+</pre></div>
+
+
+<p>Verde is imported as <code>vd</code> in all our documentation. You can access all functions from
+directly from the <code>verde</code> base package namespace.</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Load the air temperature data from Texas</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">vd</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">fetch_texas_wind</span><span class="p">()</span>
+<span class="n">coordinates</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">longitude</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">latitude</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">region</span> <span class="o">=</span> <span class="n">vd</span><span class="o">.</span><span class="n">get_region</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
+
+<span class="c1"># Use a Mercator projection for our Cartesian gridder</span>
+<span class="n">projection</span> <span class="o">=</span> <span class="n">pyproj</span><span class="o">.</span><span class="n">Proj</span><span class="p">(</span><span class="n">proj</span><span class="o">=</span><span class="s2">&quot;merc&quot;</span><span class="p">,</span> <span class="n">lat_ts</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">latitude</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+
+<span class="c1"># The output grid spacing will 15 arc-minutes</span>
+<span class="n">spacing</span> <span class="o">=</span> <span class="mi">15</span> <span class="o">/</span> <span class="mi">60</span>
+</pre></div>
+
+
+<p>We can evaluate model performance by splitting the data into a training and testing set.
+We'll use the training set to grid the data and the testing set to validate our spline
+model.</p>
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">vd</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">projection</span><span class="p">(</span><span class="o">*</span><span class="n">coordinates</span><span class="p">),</span> <span class="n">data</span><span class="o">.</span><span class="n">air_temperature_c</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p>Now we can chain a blocked mean and spline using <code>verde.Chain</code> to create a data
+processing pipeline. The <code>Spline</code> can be regularized by setting the <code>damping</code> parameter.
+It's also a good idea to set the minimum distance to the average data spacing to avoid
+singularities in the spline.</p>
+<div class="codehilite"><pre><span></span><span class="n">chain</span> <span class="o">=</span> <span class="n">vd</span><span class="o">.</span><span class="n">Chain</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="n">vd</span><span class="o">.</span><span class="n">BlockReduce</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="n">spacing</span> <span class="o">*</span> <span class="mf">111e3</span><span class="p">)),</span>
+        <span class="p">(</span><span class="s2">&quot;spline&quot;</span><span class="p">,</span> <span class="n">vd</span><span class="o">.</span><span class="n">Spline</span><span class="p">(</span><span class="n">damping</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">,</span> <span class="n">mindist</span><span class="o">=</span><span class="mf">100e3</span><span class="p">)),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chain</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Chain(steps=[(&#39;mean&#39;, BlockReduce(adjust=&#39;spacing&#39;, center_coordinates=False,
+      reduction=&lt;function mean at 0x7f5df74048c8&gt;, region=None,
+      spacing=27750.0)), (&#39;spline&#39;, Spline(damping=1e-10, engine=&#39;auto&#39;, force_coords=None, mindist=100000.0))])
+</pre></div>
+
+
+<p>Fit the model on the training set like you would with scikit-learn. And calculate an R²
+score coefficient on the testing set. The best possible score (perfect prediction) is 1.
+This can tell us how good our spline is at predicting data that was not in the input
+dataset.</p>
+<div class="codehilite"><pre><span></span><span class="n">chain</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="o">*</span><span class="n">train</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="o">*</span><span class="n">test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Score: </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Score: 0.86
+</pre></div>
+
+
+<p>Now we can create a geographic grid of air temperature by providing the <code>projection</code>
+function to the <code>grid</code> method. The output of <code>grid</code> is an
+<a href="http://xarray.pydata.org/"><code>xarray.Dataset</code></a> that is ready to be plotted or saved to
+netCDF.</p>
+<div class="codehilite"><pre><span></span><span class="n">grid_full</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span>
+    <span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+    <span class="n">spacing</span><span class="o">=</span><span class="n">spacing</span><span class="p">,</span>
+    <span class="n">projection</span><span class="o">=</span><span class="n">projection</span><span class="p">,</span>
+    <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="s2">&quot;longitude&quot;</span><span class="p">],</span>
+    <span class="n">data_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;temperature&quot;</span><span class="p">],</span>
+<span class="p">)</span>
+
+<span class="c1"># Mask points that are too far away from the original data points.</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">vd</span><span class="o">.</span><span class="n">distance_mask</span><span class="p">(</span>
+    <span class="n">coordinates</span><span class="p">,</span> <span class="n">maxdist</span><span class="o">=</span><span class="mi">4</span> <span class="o">*</span> <span class="n">spacing</span> <span class="o">*</span> <span class="mf">111e3</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="n">grid_full</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">projection</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;xarray.Dataset&gt;
+Dimensions:      (latitude: 43, longitude: 51)
+Coordinates:
+  * longitude    (longitude) float64 -106.4 -106.1 -105.9 -105.6 -105.4 ...
+  * latitude     (latitude) float64 25.91 26.16 26.41 26.66 26.91 27.16 ...
+Data variables:
+    temperature  (latitude, longitude) float64 nan nan nan nan nan nan nan ...
+Attributes:
+    metadata:  Generated by Chain(steps=[(&#39;mean&#39;, BlockReduce(adjust=&#39;spacing...
+</pre></div>
+
+
+<p>And finally, plot the grid and the original data points.</p>
+<div class="codehilite"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">))</span>
+<span class="n">crs</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Mercator</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Gridded air temperature (R²=</span><span class="si">{:.2f}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">coordinates</span><span class="p">,</span> <span class="s2">&quot;.k&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Stations&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">crs</span><span class="p">)</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">temperature</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;plasma&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">crs</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s2">&quot;Air temperature (C)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="c1"># Use an utility function to add tick labels and land and ocean features to the map.</span>
+<span class="n">vd</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">setup_texas_wind_map</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="Output of the Verde gridding example" src="/images/verde-spline-example.png" /></p>
+<h2 id="getting-involved">Getting Involved</h2>
+<p>Verde is a part of <a href="/blog/future-of-fatiando.html" title="The future of Fatiando a Terra">my large-scale refactor of Fatiando a Terra</a>
+and there is lot's of room for improvement.
+The 1.0.0 release was focused on setting the look-and-feel of the library and getting
+the essential functionality in there.
+As it stands, Verde can already be used on moderately sized datasets, given that you
+have enough RAM.
+In fact, Verde is the engine behind my work on <a href="/talks/aogs2018.html" title="Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity">3-component GPS interpolation</a>.</p>
+<p>The code is <a href="https://github.com/fatiando/verde/blob/master/LICENSE.txt">BSD licensed</a>
+and we would love contributions of any form!
+You can browse the <a href="https://github.com/fatiando/verde/issues">open issues on the Github repository</a>
+to see if there is anything that you would like to work on.
+We welcome feature requests, bug reports, typo fixes, and examples.</p>
+<p>If you're new to open-source but want to give it a try, take a look at our
+<a href="https://github.com/fatiando/verde/blob/master/CONTRIBUTING.md">Contributing Guide</a>
+and the issues tagged with
+<a href="https://github.com/fatiando/verde/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">"good first issue"</a>.
+<strong>We commit to help you get started and work through your first contributions.</strong></p>
+<p><strong>If you give Verde a try, please let me know what you think. Any feedback would be
+greatly appreciated!</strong></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/introducing-verde.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/introducing-verde.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Websites for Earth Scientists on the academic job hunt</title>
+        <link>https://www.leouieda.com/blog/job-sites.html</link>
+        <guid>https://www.leouieda.com/blog/job-sites.html</guid>
+        <pubDate>Thu, 26 Jul 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/job-sites.png">
+
+            <p></p>
+
+            
+
+
+            <p>This is a list of the websites I use to search for academic jobs in the Earth Sciences
+(geophysics, geology, oceanography, meteorology, etc).
+They've been very useful to me
+(I found my <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">current position</a> through the CIG mailing list)
+and I hope that this post can help others who are looking to take the next step in their
+academic careers.</p>
+<p>These sites list everything from Masters and PhD scholarships to postdoc positions and
+tenure-track professorships.
+Note that they are biased toward the US, Canada, Oceania, and Europe.</p>
+<h2 id="mailing-lists">Mailing lists</h2>
+<p>Sign up for these and get email updates when new opportunities are posted (most are
+updated daily):</p>
+<ul>
+<li><a href="https://mailman.ucar.edu/mailman/listinfo/es_jobs_net">ES_JOBS_NET</a>: I get around
+  10 emails from this list a day. Lately, I'm seeing a lot of positions involving
+  climate change and the environment.</li>
+<li><a href="https://www.timeshighereducation.com/unijobs">Times Higher Education unijobs</a>: Has
+  very useful filters and posts job ads from many disciplines, not just Earth Science.</li>
+<li><a href="https://findajob.agu.org/jobs/">AGU Pathfinder</a>: Official job list of the American
+  Geophysical Union.</li>
+<li><a href="https://geodynamics.org/cig/about/mailing-lists/">Computational Infrastructure for Geodynamics</a>:
+  Most ads are related to computational geophysics or numerical modeling but not all.</li>
+<li><a href="https://www.lists.rdg.ac.uk/archives/met-jobs/">met-jobs</a>
+  Academic and some industry positions related to meterology and oceanography.</li>
+<li><a href="https://www.egu.eu/jobs/">EGU Jobs</a>: The official job board for the European Geosciences Union. 
+  Doesn't seem to have email updates but you can subscribe using <a href="https://en.wikipedia.org/wiki/RSS">RSS</a>.
+  Contributed by Pankaj K Mishra.</li>
+</ul>
+<h2 id="job-boards">Job boards</h2>
+<p>These sites don't offer email updates or feeds to which you can subscribe. You'll have
+to check them periodically. I leave them as pinned tabs on Firefox and look at them once
+every other day.</p>
+<ul>
+<li><a href="http://www.earthworks-jobs.com/index.shtml">EarthWorks</a>: This is the most
+  international of all sites listed here. I see things from Asia, Africa, and South
+  America, though not as often as Europe and the US.</li>
+<li><a href="http://www.geosociety.org/GSA/Publications/GSA_Today/Job_Board/GSA/GSAToday/Job_Board.aspx#pos">GSA Job Board</a>:
+  The official job board of the Geological Society of America.</li>
+</ul>
+<h2 id="non-english-language-jobs">Non-English language jobs</h2>
+<p>For the many scientists out there in the world 🌏 👋: </p>
+<ul>
+<li><a href="https://www.academics.de/">Academics.de</a> (German): Contributed by 
+  <a href="https://twitter.com/stefdonner/status/1022926220735008768">Stefanie Donner</a>.</li>
+<li><a href="https://jrecin.jst.go.jp/seek/SeekJorSearch?fn=1&amp;ln=1&amp;bg1=00003&amp;sm1=00005&amp;bgCode1=00003&amp;smCode1=00005">JREC-IN</a> (Japanese):
+  Academic jobs in Japan, not restricted to Earth Sciences. Contributed by
+  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6428482680828104704">Hakim Saibi</a>.</li>
+</ul>
+<p><strong>Did I miss any? Let me know and I'll add them to the post (or better yet,
+<a href="https://github.com/leouieda/website/edit/master/blog/job-sites.md">send a pull request</a>).</strong></p>
+<hr />
+<p><em>The picture of sandstone from the thumbnail image is by
+<a href="https://commons.wikimedia.org/wiki/File:Sandstone_surface.jpg">Kevin Walsh</a> and
+licensed <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY 2.0</a>.</em></p>
+<hr />
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/job-sites.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/job-sites.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Introducing Pooch</title>
+        <link>https://www.leouieda.com/blog/introducing-pooch.html</link>
+        <guid>https://www.leouieda.com/blog/introducing-pooch.html</guid>
+        <pubDate>Fri, 20 Jul 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-pooch.png">
+
+            <p></p>
+
+            
+
+
+            <blockquote>
+<p>A friend to fetch your sample data files.</p>
+</blockquote>
+<p><a href="https://github.com/fatiando/pooch">Pooch</a> is a Python package that manages downloading
+data files over HTTP and storing them in a local directory.
+It is meant to be used by other Python libraries that ship sample data files for use in
+documentation, workshops, demos, etc.</p>
+<p>For example, your package could define a <code>datasets.py</code> module that has functions to load
+sample data
+(<a href="http://scikit-learn.org/0.19/modules/classes.html#module-sklearn.datasets">like scikit-learn does</a>).
+If you want the data to live on the web (like in the Github repo) instead of shipping it
+with your package, Pooch can keep track of it and download it to the user's computer
+only when it's needed.</p>
+<p>This is what a <code>datasets.py</code> module would look like using Pooch:</p>
+<div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Module mypackage/datasets.py</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">pooch</span>
+
+<span class="c1"># Get the version string from your project. You have one of these, right?</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">__version__</span>
+
+
+<span class="c1"># Create a new friend to manage your sample data storage</span>
+<span class="n">GOODBOY</span> <span class="o">=</span> <span class="n">pooch</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="c1"># Folder where the data will be stored. For a sensible default, use the default</span>
+    <span class="c1"># cache folder for your OS.</span>
+    <span class="n">path</span><span class="o">=</span><span class="n">pooch</span><span class="o">.</span><span class="n">os_cache</span><span class="p">(</span><span class="s2">&quot;mypackage&quot;</span><span class="p">),</span>
+    <span class="c1"># Base URL of the remote data store. Will call .format on this string to insert</span>
+    <span class="c1"># the version (see below).</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://github.com/myproject/mypackage/raw/</span><span class="si">{version}</span><span class="s2">/data/&quot;</span><span class="p">,</span>
+    <span class="c1"># Pooches are versioned so that you can use multiple versions of a package</span>
+    <span class="c1"># simultaneously. Use PEP440 compliant version number. The version will be</span>
+    <span class="c1"># appended to the path.</span>
+    <span class="n">version</span><span class="o">=</span><span class="n">__version__</span><span class="p">,</span>
+    <span class="c1"># If a version as a &quot;+XX.XXXXX&quot; suffix, we&#39;ll assume that this is a dev version</span>
+    <span class="c1"># and replace the version with this string.</span>
+    <span class="n">version_dev</span><span class="o">=</span><span class="s2">&quot;master&quot;</span><span class="p">,</span>
+    <span class="c1"># An environment variable that overwrites the path.</span>
+    <span class="n">env</span><span class="o">=</span><span class="s2">&quot;MYPACKAGE_DATA_DIR&quot;</span><span class="p">,</span>
+    <span class="c1"># The cache file registry. A dictionary with all files managed by this pooch.</span>
+    <span class="c1"># Keys are the file names (relative to *base_url*) and values are their</span>
+    <span class="c1"># respective SHA256 hashes. Files will be downloaded automatically when needed</span>
+    <span class="c1"># (see fetch_gravity_data).</span>
+    <span class="n">registry</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;gravity-data.csv&quot;</span><span class="p">:</span> <span class="s2">&quot;89y10phsdwhs09whljwc09whcowsdhcwodcy0dcuhw&quot;</span><span class="p">}</span>
+<span class="p">)</span>
+<span class="c1"># You can also load the registry from a file. Each line contains a file name and</span>
+<span class="c1"># it&#39;s sha256 hash separated by a space. This makes it easier to manage large</span>
+<span class="c1"># numbers of data files. The registry file should be in the same directory as this</span>
+<span class="c1"># module.</span>
+<span class="n">GOODBOY</span><span class="o">.</span><span class="n">load_registry</span><span class="p">(</span><span class="s2">&quot;registry.txt&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Define functions that your users can call to get back some sample data in memory</span>
+<span class="k">def</span> <span class="nf">fetch_gravity_data</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Load some sample gravity data to use in your docs.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Fetch the path to a file in the local storae. If it&#39;s not there, we&#39;ll</span>
+    <span class="c1"># download it.</span>
+    <span class="n">fname</span> <span class="o">=</span> <span class="n">GOODBOY</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="s2">&quot;gravity-data.csv&quot;</span><span class="p">)</span>
+    <span class="c1"># Load it with numpy/pandas/etc</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="k">return</span> <span class="n">data</span>
+</pre></div>
+
+
+<h2 id="features">Features</h2>
+<ul>
+<li>Download a file only if it's still not in the local storage.</li>
+<li>Check the SHA256 hash to make sure the file is not corrupted or needs updating.</li>
+<li>If the hash is different from the registry, Pooch will download a new version of the
+  file.</li>
+<li>If the hash still doesn't match, Pooch will raise an exception warning of possible
+  data corruption.</li>
+</ul>
+<h2 id="about">About</h2>
+<p>I started coding up Pooch at the <a href="https://scipy2018.scipy.org/">Scipy2018</a> sprints last
+week.
+At one point, I realised that I was writing the same code to fetch sample data multiple
+times.
+I asked <a href="http://www.johnrleeman.com/">John Leeman</a> if such a package would be useful to
+<a href="https://github.com/Unidata/MetPy">MetPy</a>
+and, as it turns out, he was in the middle of
+<a href="https://github.com/Unidata/MetPy/pull/760">implementing the same thing</a>.
+So I decided to write this as a standalone package that we could all share.</p>
+<p>Pooch is the first package released as part of the
+<a href="/blog/future-of-fatiando.html" title="The future of Fatiando a Terra">breakup of the Fatiando a Terra project</a>.
+It will be used in most other packages in the new Fatiando ecosystem, like
+<a href="https://www.fatiando.org/verde/">Verde</a>.</p>
+<h2 id="taking-it-for-a-test-drive">Taking it for a test drive</h2>
+<p>Pooch is still a bit experimental but has complete test coverage and builds successfully
+on Linux, Mac, and Windows. I encourage you to give our first alpha release a try
+(v0.1a1):</p>
+<div class="codehilite"><pre><span></span>pip install pooch==0.1a1
+</pre></div>
+
+
+<p>The documentation at <a href="http://www.fatiando.org/pooch/">fatiando.org/pooch</a> has
+instructions for training your pooch to fetch data. There is also an API reference that
+lists all of the configuration options available.</p>
+<h2 id="getting-involved">Getting involved</h2>
+<p>The code is <a href="https://github.com/fatiando/pooch/blob/master/LICENSE.txt">BSD licensed</a>
+and we would love contributions of any form!
+Checkout the Github repository <a href="https://github.com/fatiando/pooch">fatiando/pooch</a> and
+please report any issues that you might encounter or features you would like to have.</p>
+<p>We have
+<a href="https://github.com/fatiando/pooch/blob/master/CONTRIBUTING.md">Contributing Guide</a> to
+help you get started and a
+<a href="https://github.com/fatiando/pooch/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
+to keep you safe.</p>
+<p><strong>Update (2018-08-10):</strong> Pooch now works on Python 2.7 (<a href="https://github.com/fatiando/pooch/pull/17">PR17</a>)
+but we'll only support it until mid 2019. </p>
+<hr />
+<p><em>Photo of Doc the dog used in the thumbnail image is by the United States Marine Corps
+and is in the
+<a href="https://commons.wikimedia.org/wiki/File:Fetch,_Fido_(8577564334).jpg">public domain</a>.</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/introducing-pooch.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/introducing-pooch.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>The future of Fatiando a Terra</title>
+        <link>https://www.leouieda.com/blog/future-of-fatiando.html</link>
+        <guid>https://www.leouieda.com/blog/future-of-fatiando.html</guid>
+        <pubDate>Sun, 25 Mar 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fatiando.png">
+
+            <p></p>
+
+            
+
+
+            <p>I started developing the <a href="http://www.fatiando.org">Fatiando a Terra</a> Python
+library in 2010.
+Since then, many other open-source Python libraries for geophysics have
+appeared, each with unique capabilities.
+In this post, I'll explore where I think Fatiando fits in this larger
+ecosystem and how we can better fill our niche.</p>
+<h2 id="what-is-fatiando-a-terra">What is Fatiando a Terra?</h2>
+<p><em>Fatiando</em> is a Python library for modeling and inversion in geophysics.
+It's composed of different <em>subpackages</em>:</p>
+<ul>
+<li><code>fatiando.gridder</code>: functions for dealing with spatial data. It's mostly used
+  to generate point scatters or coordinate arrays for regular grids. Both are
+  required as inputs for modeling or creating synthetic datasets.</li>
+<li><code>fatiando.mesher</code>: classes that represent geometric objects (polygons,
+  prisms, spheres, etc) and regular meshes. These
+  classes are used to define the geometry and physical properties of our
+  models. They are often the inputs for gravity and magnetic modeling
+  functions.</li>
+<li><code>fatiando.vis</code>: utilities for plotting data using matplotlib and 3D models
+  using Mayavi. Mostly deprecated but there is a lot of useful code for
+  displaying <code>fatiando.mesher</code> elements in Mayavi.</li>
+<li><code>fatiando.inversion</code>: classes for solving inverse problems. The idea is that
+  the user needs only to implement the forward problem (the forward function
+  and the Jacobian matrix) and the classes take care of the rest. Ideally, this
+  would form the basis for all inversions in Fatiando.</li>
+<li><code>fatiando.datasets</code>: functions for loading data from common file formats and
+  loading sample datasets packaged with Fatiando.</li>
+<li><code>fatiando.seismic</code>: functions and classes for modeling seismic data and some
+  basic inversions. Mostly toy problems.</li>
+<li><code>fatiando.geothermal</code>: geothermal modeling functions. Has a single module for
+  modeling how temperature perturbations at the surface propagate down into the
+  Earth.</li>
+<li><code>fatiando.gravmag</code>: functions for gravity and magnetic processing, modeling,
+  and inversion. By far the most developed package, though some components have
+  lagged behind.</li>
+</ul>
+<h2 id="fatiandos-niche">Fatiando's niche</h2>
+<p>We set out with the goal of modeling the whole Earth using all geophysical
+methods.
+Humble, right?
+Turns out this is extremely hard and way beyond what a couple of grad students
+can do in a couple of years.
+Back then, there were very few Python geophysical modeling libraries.
+A decade later, the ecosystem has expanded.
+The five currently on going projects of which I'm aware are (let me
+know in the comments if I missed any):</p>
+<ul>
+<li><a href="https://github.com/Patrick-Cole/pygmi">PyGMI</a>: GUI + library for 3D modeling
+  of gravity and magnetic data.</li>
+<li><a href="http://simpeg.xyz/">SimPEG</a>: Forward modeling and inversion library based on
+  the finite volume method.</li>
+<li><a href="https://www.pygimli.org/">pyGIMLi</a>: Forward modeling and inversion library
+  based on the finite element and finite volume methods.</li>
+<li><a href="https://github.com/agile-geoscience/bruges">Bruges</a>: Modeling and processing
+  for seismic and petrophysics.</li>
+<li><a href="https://pyrocko.org">Pyrocko</a>: A collection of tools and libraries, mostly
+  for seismology.</li>
+</ul>
+<p>The two projects that are most similar to us (SimPEG and pyGIMLi) implement
+flexible
+<a href="https://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equation</a>
+solvers that they use to run all forward modeling calculations.
+This makes a lot of sense because it gives them a unified framework to model
+most geophysical methods.
+It is the most sensible approach to build joint inversions of multiple
+geophysical datasets.
+However, there are some inverse problems that don't fit this paradigm, like
+<a href="/papers/paper-moho-inversion-tesseroids-2016.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">inverting Moho relief from gravity data</a>
+and some <a href="/papers/paper-planting-anomalous-densities-2012.html" title="Robust 3D gravity gradient inversion by planting anomalous densities">non-conventional inversion algorithms</a>
+(see the animation below).</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
+width="568" height="426" frameborder="0"></iframe>
+</div>
+
+<p>It's no coincidence that Fatiando mostly contains the tools needed to implement
+this type of inverse problem (i.e., analytical solutions for the gravity and
+magnetic fields of geometric objects).
+This is precisely the type of research that we do at the
+<a href="http://www.pinga-lab.org/">PINGA lab</a>.
+We also develop processing methods for gravity and magnetics.</p>
+<p>The niche I see for Fatiando is in gravity and magnetic methods, particularly
+using these analytical solutions.
+The processing functions are an important feature because there are hardly any
+open-source alternatives out there to commercial software like
+<a href="http://www.geosoft.com/">Oasis Montaj</a>
+and <a href="https://www.intrepid-geophysics.com/">Intrepid</a>.</p>
+<h2 id="the-current-state">The current state</h2>
+<p>Fatiando has grown over the years as I slowly learned how to develop and
+maintain an open-source Python project.
+As a result, the codebase is littered with the bad choices that I made along
+the way.
+The most urgent problems that need to be fixed are:</p>
+<ul>
+<li><strong>Python 3 support.</strong> It's no longer a huge sacrifice to make the switch
+  because all of our dependencies are supported. Actually, some of them <a href="https://python3statement.org/">don't
+  even support Python 2 anymore</a>. Support both
+  versions is a bit of a pain and it's not worth it. The <a href="https://conda.io/docs/using/envs.html">conda
+  environments</a> also make using multiple
+  versions of Python easy. We should just migrate to Python 3 only and be done
+  with it.</li>
+<li><strong>Test coverage is sparse and a lot of code is not maintained.</strong>
+  There is a lot of old code in Fatiando that was included before I learned how
+  to write good tests. As a result, they have little to no tests and are
+  largely unused. They might be broken right now and I would have no way of
+  knowing.
+  We should only include code that we are willing to use and maintain.</li>
+<li><strong>Too many "toy problems".</strong> Mostly in the seismic package. They are
+  useful for teaching and I don't think we need to delete all of it. But we
+  have to be careful how we advertise these features. They shouldn't be
+  packaged with well-tested and robust production code.</li>
+<li><strong>A single package.</strong> The meshing, inversion, and gridding code is not really
+  dependent on the rest of Fatiando. There is no reason why they can't be
+  standalone projects. This modularity might help lower the barrier for other
+  projects to use them. Installing can still be easy by using <code>fatiando</code> as a
+  metapackage (like Jupyter).</li>
+</ul>
+<h2 id="a-way-forward">A way forward</h2>
+<p>The best way forward for Fatiando that I can see, is to become an ecosystem of
+specialized tools and libraries, rather than a single Python package.
+Having things in separate libraries allows us to better indicate what is robust
+and professional and what is experimental or meant as a teaching tool.
+In particular, the meshing library has some overlap with
+<a href="https://github.com/simpeg/discretize">discretize</a> and we should be considering
+a merger of our projects.
+Separating what we have in a library will help us articulate the
+requirements of Fatiando so that we can see if a merger is beneficial.
+We can also include experimental libraries (like <code>fatiando.seismic.wavefd</code>) and
+CLI or GUI programs as independent projects.</p>
+<p>This is how I envision the Fatiando ecosystem in the future (I have already
+started working on some of these projects):</p>
+<ul>
+<li><code>fatiando</code>: A metapackage that can be used to install all the whole stack
+  (like the <code>jupyter</code> package).</li>
+<li><code>deeplook</code>: the inversion package. Should define a scikit-learn like
+  interface and provide all of the standard tools (regularization,
+  optimization, etc).</li>
+<li><code>geometric</code>: the geometric objects and meshes. Includes an optional way of
+  plotting them on Mayavi and matplotlib. The way physical properties are
+  handled needs to be redesigned and meshes need to support slicing and fancy
+  indexing.</li>
+<li><code>verde</code>: the gridding package. It will include some new Green's functions based
+  interpolation on which I've been working. Should also include the functions
+  for calculating derivatives that are currently in <code>fatiando.gravmag.transform</code>.</li>
+<li><code>harmonica</code>: the gravity and magnetic methods package. Will port over most of
+  the code from <code>fatiando.gravmag</code>.</li>
+<li><code>sismica</code>: a package for seismics and seismology. For now, will include some
+  of the toy examples from the <code>fatiando.seismic</code>.</li>
+<li><code>wavefd</code>: the experimental 2D FD wave propagation code (useful for teaching
+  but I don't trust it enough for research).</li>
+<li><code>moulder</code>: GUI for 2D gravity and magnetic modeling.</li>
+</ul>
+<p>All of these packages will be tied together in the
+<a href="https://github.com/fatiando/"><code>fatiando</code> Github organization</a>
+and the <a href="http://www.fatiando.org/">fatiando.org</a> website, which will include
+instructions for installing the entire stack.
+The website will also link to individual packages (as is done right now for the
+subpackages) and any other project in the <code>fatiando</code> umbrella.
+Members of the organization will be free to create new repositories and we'll
+provide a template for doing so.</p>
+<p>The requirements and goals for these new packages are:</p>
+<ul>
+<li>All code will be Python 3 only.</li>
+<li>All docstrings will use the numpy style.</li>
+<li>Each package will have it's own docs page with tutorials,
+  API reference, install instructions, changelog, and gallery. They will share
+  a common template and a simple theme.</li>
+<li>All repos will include a Code of Conduct and Contributing Guide.</li>
+<li>All main packages will have a comprehensive test suite. Anything not tested
+  or experimental will be moved to separate packages. Full test coverage (or as
+  much as possible) will be a requirement for merging a contribution.</li>
+</ul>
+<p>This is how I think we could implement this:</p>
+<ol>
+<li>Release Fatiando 0.6 with what we currently have in the <em>master</em> branch
+   along with a note that this will be the last release to support Python 2.7.</li>
+<li>Create a package template repository with the shared infrastructure
+   (<code>setup.py</code>, docs, continuous integration configuration, <code>Makefile</code>,
+   testing, etc).</li>
+<li>Start repositories for each of the packages listed above.</li>
+<li>Specify clear goals for each package and an example of how we want the
+   API to look.</li>
+<li>Focus on redesigning the inversion package first. This is the basis for many
+   other packages.</li>
+<li>Slowly copy over code from <code>fatiando/fatiando</code> while ensuring that
+   everything is tested and documented.</li>
+</ol>
+<h2 id="help">Help!</h2>
+<p>The goal of all these changes is to make <em>Fatiando</em> better for users and
+developers by making the code more robust and well documented.
+I'm curious to know what the Python geophysics community thinks about all of
+this.
+Do I have it all wrong?
+What should be done differently?
+And most importantly, <strong>would you like to help?</strong></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/future-of-fatiando.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/future-of-fatiando.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>A template for reproducible papers</title>
+        <link>https://www.leouieda.com/blog/paper-template.html</link>
+        <guid>https://www.leouieda.com/blog/paper-template.html</guid>
+        <pubDate>Thu, 15 Mar 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/paper-template.png">
+
+            <p></p>
+
+            
+
+
+            <p>At the <a href="http://www.pinga-lab.org/">PINGA lab</a>, we have been experimenting with
+ways to increase the reproducibility of our research by publishing the git
+repositories that accompany our papers.
+You can find them on our
+<a href="https://github.com/pinga-lab">Github organzation</a>.
+I've synthesized the experience of the last 4 years into a template in the
+<a href="https://github.com/pinga-lab/paper-template">pinga-lab/paper-template</a>
+repository.</p>
+<p><img alt="Screenshot of the paper-template Github repository." src="/images/paper-template-repository.png" /></p>
+<p>The template reflects the tools we've been using and the type of research that
+we do:</p>
+<ul>
+<li>Most papers are proposing a new methodology rather than the analysis of a
+  dataset.</li>
+<li>There is always an application to a dataset to show the method works. We
+  can't always publish the data but we include it in the repository whenever we
+  can.</li>
+<li>All papers include an implementation of the proposed method.</li>
+<li>Our code is usually written in Python and executed in Jupyter notebooks.</li>
+<li>The focus of the paper is usually on the methodology, not the code. As such,
+  the code is more of a proof-of-concept than a full blown application or
+  library.</li>
+<li>The paper itself is written in LaTeX with the source usually included in the
+  repository.</li>
+</ul>
+<p>This certainly won't fit everyone's needs but I hope that you can at least use
+a few bits and pieces for inspiration.
+Of course, the template code is open-source (BSD license) and you are free to
+reuse it however you like.
+The template includes a sample application to climate change data, complete
+with a Python package, automated tests, an analysis notebook, a notebook that
+generates the paper figure, raw data, and a LaTeX text.
+Everything, from compilation to building the final PDF, can be done with a
+single <code>make</code> command.</p>
+<p><img alt="Screenshot of running &quot;make&quot; in the paper-template with the final paper PDF and a Jupyter notebook." src="/images/paper-template-in-action.png" /></p>
+<p>We've been using different versions of this template for a few years and I've
+been tweaking it to address some of the difficulties we encountered along the
+way.</p>
+<ul>
+<li>Running experiments in Jupyter notebooks can get messy when people aren't
+  diligent about the execution order. It can be hard to remember to "Reset and
+  run all" before using the results.</li>
+<li>The execution was done manually so you had to remember and document in what
+  order the notebooks need to be run.</li>
+<li>Experimental parameters (e.g., number of data points, inversion parameters,
+  model configuration) were copied into the text manually. This sometimes led
+  to values getting out of sync between the notebooks and paper.</li>
+<li>We only had integration tests implemented in notebooks. More often than not,
+  the checks were visual and not automated. I think a big reason for this is
+  the lack of experience in writing tests within the group and setting up all
+  of the testing infrastructure (mainly how to use pytest and what kind of test
+  to perform).</li>
+</ul>
+<p>The <a href="https://github.com/pinga-lab/paper-template/pull/5">latest update</a>
+addresses all of these pain points.
+The main features of the new template are:</p>
+<ul>
+<li>Uses <code>Makefile</code>s to automate the workflow. You can build and test the
+  software, generate results and figures, and compile the PDF with a single
+  <code>make</code> command.</li>
+<li>A <code>Makefile</code> for building the manuscript PDF with extra rules for
+  running <a href="https://github.com/amperser/proselint">proselint</a>, counting words,
+  and opening the PDF.</li>
+<li>A starter <a href="https://conda.io/docs/user-guide/tasks/manage-environments.html">conda
+  environment</a>
+  for managing dependencies and making sure everyone gets the same version of
+  the dependencies.</li>
+<li>Boilerplate instructions for downloading the code and reproducing the
+  results.</li>
+<li>A <code>Makefile</code> for building the Python package, testing it with
+  <a href="https://docs.pytest.org">pytest</a>, running static code
+  checks (<a href="http://flake8.pycqa.org">flake8</a> and
+  <a href="https://www.pylint.org/">pylint</a>), and generating results and figures from
+  the notebooks.</li>
+<li>The code <code>Makefile</code> can run the notebooks using <code>jupyter nbconvert</code> to
+  guarantee that the notebooks are executed in sequential order (top to
+  bottom). I would love to use <a href="https://github.com/jhamrick/nbflow">nbflow</a> but
+  the <a href="http://scons.org/">SCons</a> requirement puts me off a bit. <code>make</code> works
+  fine and the basic syntax is easier to understand.</li>
+<li>An example of using code to write experimental parameters in a <code>.tex</code> file.
+  The file defines new variables that are used in the main text. This
+  guarantees that the values cited in the text are the ones that you actually
+  used to produce the results.</li>
+</ul>
+<p>This last feature is my favorite. For example, the notebook
+<code>code/notebooks/estimate-hawaii-trend.ipynb</code> has the following code:</p>
+<div class="codehilite"><pre><span></span><span class="n">tex</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="si">% G</span><span class="s2">enerated by code/notebooks/estimate-hawaii-trend.ipynb</span>
+<span class="s2">\newcommand{{\HawaiiLinearCoef}}{{</span><span class="si">{linear:.3f}</span><span class="s2"> C}}</span>
+<span class="s2">\newcommand{{\HawaiiAngularCoef}}{{</span><span class="si">{angular:.3f}</span><span class="s2"> C/year}}</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">linear</span><span class="o">=</span><span class="n">trend</span><span class="o">.</span><span class="n">linear_coef</span><span class="p">,</span> <span class="n">angular</span><span class="o">=</span><span class="n">trend</span><span class="o">.</span><span class="n">angular_coef</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../manuscript/hawaii_trend.tex&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">tex</span><span class="p">)</span>
+</pre></div>
+
+
+<p>It defines the LaTeX commands <code>\HawaiiLinearCoef</code> and <code>\HawaiiAngularCoef</code> that
+can be used in the paper to insert the values estimated by the Python code.
+The commands are saved to a <code>.tex</code> file that can be included in the main
+<code>manuscript.tex</code>.
+Since this file is generated by the code, the values are guaranteed to be
+up-to-date.</p>
+<p>If you want to use the template to start a new project:</p>
+<ol>
+<li>
+<p>Create a new git repository:</p>
+<div class="codehilite"><pre><span></span>mkdir mypaper
+cd mypaper
+git init
+</pre></div>
+
+
+</li>
+<li>
+<p>Pull in the template code:</p>
+<div class="codehilite"><pre><span></span>git pull https://github.com/pinga-lab/paper-template.git master
+</pre></div>
+
+
+</li>
+<li>
+<p>Create a new repository on Github.</p>
+</li>
+<li>
+<p>Push the template code to Github:</p>
+<div class="codehilite"><pre><span></span>git remote add origin https://github.com/USER/REPOSITORY.git
+git push -u origin master
+</pre></div>
+
+
+</li>
+<li>
+<p>Follow the instruction in the <code>README.md</code>.</p>
+</li>
+</ol>
+<p>Alternatively, you can use the "Import repository" option on Github.</p>
+<p><img alt="Screenshot of the Github page for importing code from an existing repository." src="/images/paper-template-import-repository.png" /></p>
+<p>I hope that this template will be useful to people outside of our lab.
+There is definitely still room for improvement and I'm looking forward to
+trying it out on my next project.</p>
+<p><em>What other features would you like to see in the template?</em>
+Let me know in the comments (or better yet, <a href="https://github.com/pinga-lab/paper-template">submit a pull
+request</a>).
+I'd love to know about your experiences and workflows for computational papers.</p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/paper-template.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/paper-template.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Podcasts in my playlist (2018 edition)</title>
+        <link>https://www.leouieda.com/blog/podcasts-2018.html</link>
+        <guid>https://www.leouieda.com/blog/podcasts-2018.html</guid>
+        <pubDate>Fri, 09 Mar 2018 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/podcasts-2018.png">
+
+            <p></p>
+
+            
+
+
+            <p>Last year, I posted my <a href="/blog/podcasts-2016.html" title="Podcasts in my playlist">podcast playlist</a> in response to
+<a href="http://www.johnrleeman.com/2017/01/03/podcasts-im-listening-to/">a similar post by John Leeman</a>
+(of Don't Panic Geocast fame).
+In a recent episode
+(maybe <a href="http://www.dontpanicgeocast.com/?p=611">episode 158</a>),
+John asked listeners for an updated list of recommendations.
+Here are mine.</p>
+<p>I'll start with the new additions since last year, then the ones that stayed
+with me throughout 2017, and finally the ones that I'm looking to get started
+this year.</p>
+<p><strong>New additions:</strong></p>
+<ul>
+<li><a href="https://gastropod.com/">Gastropod</a>: A podcast that "looks at food through
+  the lens of science and history". In each episode, the hosts dive deep into
+  the science behind a type of food/process/ingredient and how it became what
+  it is today. One of my
+  <a href="https://gastropod.com/meet-koji-your-new-favorite-fungus/">favorite episodes</a>
+  is about koji, the fungus behind sake, miso, shoyu, and more.</li>
+<li><a href="https://www.unmade.fm/">The Unmade Podcast</a>: A podcast about insane ideas
+  for new podcasts. Very meta and silly but a fun way to pass the time and get
+  a few laughs.</li>
+<li><a href="https://www.wemartians.com/">We Martians</a>: A podcast all about the science
+  and exploration of Mars. Just listened to a few episodes but I'm enjoying it
+  so far.</li>
+</ul>
+<p><strong>The survivors:</strong></p>
+<ul>
+<li><a href="https://undersampledrad.io/">Undersampled Radio</a>: Geeky and fun interviews,
+  mostly about geo/science/technology.</li>
+<li><a href="http://www.dontpanicgeocast.com/">Don't Panic Geocast</a>: All things
+  geoscience (sometimes with very interesting guests).</li>
+<li><a href="http://www.hellointernet.fm/">Hello Internet</a>: A light conversation between
+  two friends who make science videos on YouTube with a surprisingly common
+  discussion of flags.</li>
+<li><a href="http://www.imaginaryworldspodcast.org/">Imaginary Worlds</a>: "A show about how
+  we create them and why we suspend our disbelief". Still one of my favorites.</li>
+<li><a href="http://www.npr.org/podcasts/510307/invisibilia">Invisibilia</a>: A series about
+  the forces that shape our lives. Also one of my favorites.</li>
+<li><a href="https://talkpython.fm/">Talk Python To Me</a>: The title pretty much says it
+  all.</li>
+<li><a href="http://www.radiolab.org/">Radiolab</a>: Interesting stories about all sorts of
+  topics. Very high quality production.</li>
+</ul>
+<p><strong>The ones I haven't tried yet:</strong></p>
+<ul>
+<li><a href="https://www.fieldworkdiaries.com/">Fieldwork Diaries</a>: Interviews with
+  scientists about their field experiences.</li>
+<li><a href="http://www.indefenseofplants.com/">In Defense of Plants</a>: I'm curious to
+  learn more about the weird world of botany.</li>
+<li><a href="https://www.alieward.com/ologies/">Ologies</a>: Each episode is about a
+  different field of knowledge. I think it's based on an idea from the Unmade
+  Podcast.</li>
+<li><a href="http://www.thetruthpodcast.com/">The Truth</a>: "Movies for your ears".</li>
+</ul>
+<p>That's it for my list.
+<em>Do you have any recommendations?</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/podcasts-2018.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/podcasts-2018.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>GMT and open-source at #AGU17 and a GMT/Python online demo</title>
+        <link>https://www.leouieda.com/blog/gmt-at-agu2017.html</link>
+        <guid>https://www.leouieda.com/blog/gmt-at-agu2017.html</guid>
+        <pubDate>Tue, 05 Dec 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt-at-agu2017.png">
+
+            <p></p>
+
+            
+
+
+            <p>The <a href="https://fallmeeting.agu.org/2017/">AGU Fall Meeting</a> is happening next
+week in New Orleans, potentially gathering more than 20,000 geoscientists in a
+single place.
+Me and <a href="http://www.soest.hawaii.edu/wessel/">Paul</a> will be there to talk about
+the next version of the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools</a>,
+my work on <a href="https://www.gmtpython.xyz">GMT/Python</a>, and the role of open-source
+software in the Geosciences.</p>
+<p>There is so much going on at AGU that it can be daunting just to browse the
+scientific program.
+I haven't even started and my calendar is already packed.
+For now, I'll just share the sessions and events in which I'm taking part.</p>
+<h2 id="earth-arxiv-meetup">Earth ArXiv meetup</h2>
+<p><em>Thursday evening - TBD</em></p>
+<p><img alt="The Earth ArXiv logo" src="/images/eartharxiv-banner.png" /></p>
+<p>The <a href="https://eartharxiv.org/">Earth ArXiv</a> is a brand new community developed
+preprint server for the Earth and Planetary Sciences.
+Me and some other folks who are involved will get together for dinner/drinks on
+Thursday to nerd-out offline for a change.</p>
+<p>If you are interested in getting involved in Earth ArXiv,
+<a href="https://www.loomio.org/g/lpIH8bFU/eartharxiv">join the Loomio group</a>
+and the
+<a href="https://esip-slack-invite.herokuapp.com">ESIP Slack channel</a>
+and say "Hi".
+The community is very welcoming and it needs all the help it can get to grow.</p>
+<p>We don't know where we'll meet yet but keep posted on Slack and Loomio if
+you're interested in joining us.</p>
+<h2 id="panel-session-in-the-agu-data-fair">Panel session in the AGU Data Fair</h2>
+<p><em>Wednesday 12:30pm - Room 203</em></p>
+<p>I was invited to be a panelist on the
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30157">Data Capacity Building</a>
+session of the
+<a href="https://fallmeeting.agu.org/2017/agu-data-fair/">AGU Data Fair</a>.
+The fair has other very interesting panels happing throughout the week.
+They all center around "data": where to get it, what to do with it, how to
+preserve it, and how to give and receive credit for it.</p>
+<p>We'll be discussing what to do with the data once you acquire. From the
+panel description:</p>
+<blockquote>
+<p>The panel will discuss the challenges the researcher faces and how methods
+ for managing data are currently available or are expected in the future that
+ will help the researcher build value and capacity in the research data
+ lifecycle.</p>
+</blockquote>
+<p>The discussion will be in an
+<a href="https://en.wikipedia.org/wiki/Reddit#IAmA_and_AMA">Ask-Me-Anything style (AMA)</a>
+with moderated questions from the audience (on and offline).
+If you have any questions that you want us to tackle, tweet them using the
+hashtag <a href="https://twitter.com/search?f=tweets&amp;q=%23AGUDataCapacity&amp;src=typd">#AGUDataCapacity</a>.
+They'll be added to a list for the moderators.</p>
+<p>I'm really looking forward to this panel and getting to meet some new people in
+the process.</p>
+<h2 id="pauls-talk-about-gmt6">Paul's talk about GMT6</h2>
+<p><em>Thursday 4:15pm - Room 228</em></p>
+<p>Paul is giving the talk
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Paper/233558">The Generic Mapping Tools 6: Classic versus Modern Mode</a>
+at the
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/33628">Challenges and Benefits of Open-Source Software and Open Data</a>
+session.
+He'll be showcasing the new changes that are coming to GMT6, including "modern
+mode" and a new <code>gmt subplot</code> command.
+These are awesome new features of GMT aimed at making it more accessible to new
+users.
+For all the GMT gurus out there: Don't worry, they're also a huge time saver by
+eliminating many repeated command online options and boilerplate code.</p>
+<h2 id="panel-session-about-open-source-software">Panel session about open-source software</h2>
+<p><em>Thursday 4-6pm - Room 238</em></p>
+<p>I'll also be a panelist on the session
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30500">Open-Source Software in the Geosciences</a>.
+The lineup of panelists is amazing and I'm honored to be included among them.
+It'll be hard to contain the fan-boy in me.
+I wonder if geophysicists are used to getting asked for autographs.</p>
+<p>The discussion will center around the role of open-source software in our
+science, how it's affected the careers of those who make it, and what we can do
+to make it a viable career path for new geoscientists.</p>
+<p>My contribution is the abstract
+"<a href="/talks/agu2017-oss.html" title="Nurturing reliable and robust open-source scientific software">Nurturing reliable and robust open-source scientific software</a>".</p>
+<p>Many thanks to the chairs and conveners for putting it together.
+I'll surely have a lot more to say after the panel.</p>
+<h2 id="poster-about-gmtpython">Poster about GMT/Python</h2>
+<p><em>Friday morning - Poster Hall D-F</em></p>
+<p>Last but not least,
+I'll be presenting the poster
+"<a href="/posters/agu2017.html" title="A modern Python interface for the Generic Mapping Tools">A modern Python interface for the Generic Mapping Tools</a>"
+about my work on <a href="https://www.gmtpython.xyz">GMT/Python</a>.
+Come see the poster and chat with me and Paul!
+I'd love to hear what you want to see in this software.
+I'll also have a laptop and tablets for you to play around with a demo.</p>
+<p><img alt="My AGU 2017 poster" src="/images/poster-agu2017.png" /></p>
+<p>You can download a PDF of the poster from <a href="http://figshare.com">figshare</a> at
+doi:<a href="https://doi.org/10.6084/m9.figshare.5662411">10.6084/m9.figshare.5662411</a>.</p>
+<p>A lot has happened since
+<a href="/blog/gmt-after-scipy2017.html" title="GMT/Python update and feedback from Scipy 2017">my last update after Scipy2017</a>.
+Much of the infrastructure work to interface with the C API is done but there
+is still a lot do.
+Luckily, we just got our
+<a href="https://github.com/GenericMappingTools/gmt-python/pull/72">first code contributor</a>
+last week so it looks like I'll have some help!</p>
+<p>You can try out the latest features in an <strong>online demo</strong> Jupyter notebook by
+visiting
+<a href="http://agu2017demo.gmtpython.xyz">agu2017demo.gmtpython.xyz</a></p>
+<p>The notebook is running on the newly re-released
+<a href="https://mybinder.org/">mybinder.org</a> service.
+The Jupyter team did an amazing job!</p>
+<h2 id="come-say-hi">Come say "Hi"</h2>
+<p>If you'll be at AGU next week, <strong>stop by the poster on Friday or join the panel
+sessions if you want to chat or have any questions/suggestions</strong>.
+If you won't, there is always
+<a href="https://twitter.com/leouieda">Twitter</a>
+and the <a href="http://softwareunderground.org/">Software Underground</a> Slack group.</p>
+<p>See you in New Orleans!</p>
+<hr />
+<p><em>The photo of Bourbon Street in the thumbnail is copyright Chris Litherland
+and licensed
+<a href="https://commons.wikimedia.org/wiki/File:ChrisLitherlandBourbonSt.jpg">CC-BY-SA</a>.</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/gmt-at-agu2017.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/gmt-at-agu2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>GMT/Python update and feedback from Scipy 2017</title>
+        <link>https://www.leouieda.com/blog/gmt-after-scipy2017.html</link>
+        <guid>https://www.leouieda.com/blog/gmt-after-scipy2017.html</guid>
+        <pubDate>Wed, 26 Jul 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt-after-scipy2017.png">
+
+            <p></p>
+
+            
+
+
+            <p>Last week <a href="/talks/scipy2017.html" title="Bringing the Generic Mapping Tools to Python">I presented the first working prototype</a> of
+<a href="https://www.gmtpython.xyz">GMT/Python</a> at Scipy 2017, which is my favorite
+conference.
+I got a lot of excellent feedback about the project and will need to make some
+major changes as a result.
+Sadly, I wasn't very good at managing my time during the talk and didn't get to
+show the internals of the library.
+I'll use this post to describe how things are currently implemented, what I
+learned from the feedback, and what changes I'm making to the code base.</p>
+<p>Before we dive in, you can watch my talk on Youtube or just take a quick look
+at <a href="https://docs.google.com/presentation/d/15he1klG9gCvBgGr3jGeQhTbcY5xShKv54l4BVnIxYBg/pub?start=false&amp;loop=false&amp;delayms=3000">my slides</a>.</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/93M4How7R24" frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+<h2 id="running-the-code">Running the code</h2>
+<p>You can try out the
+<a href="http://nbviewer.jupyter.org/github/GenericMappingTools/scipy2017/blob/master/demo.ipynb">demo notebook</a>
+from the talk if you're on Linux or OSX
+(sorry Windows users,
+<a href="https://github.com/conda-forge/gmt-feedstock/pull/15">we're working on it</a>).
+First, you'll need to install an alpha version of GMT 6.0.0 from
+<a href="https://github.com/conda-forge/gmt-feedstock/">conda-forge</a>:</p>
+<div class="codehilite"><pre><span></span>conda install gmt=6.0.0a5 -c conda-forge/label/dev
+</pre></div>
+
+
+<p>I should note that this only works because of
+<a href="https://github.com/conda-forge/gmt-feedstock/pull/5">the amazing help I got</a>
+from
+<a href="https://github.com/ocefpaf">Filipe Fernandes</a>,
+<a href="https://github.com/mhearne-usgs">Mike Hearne</a>, and
+<a href="https://github.com/mingwandroid">Ray Donnelly</a> during the Scipy sprints.</p>
+<p>Now you can install the GMT/Python version from the talk:</p>
+<div class="codehilite"><pre><span></span>pip install https://github.com/GenericMappingTools/gmt-python/archive/0e2b118.zip
+</pre></div>
+
+
+<h2 id="current-implementation">Current implementation</h2>
+<p>All our code is hosted on the
+<a href="https://github.com/GenericMappingTools/gmt-python">GenericMappingTools/gmt-python</a>
+repository on Github.
+The Python package itself is called <code>gmt</code> so that you can <code>import gmt</code>
+instead of <code>import gmt-python</code> (which looks a bit silly).
+The following example wasn't on the video but it shows what is currently
+possible with the library:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">gmt</span>
+
+<span class="c1"># Start a new figure</span>
+<span class="n">gmt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="c1"># Plot coastlines of North America using readable aliases for the arguments</span>
+<span class="n">gmt</span><span class="o">.</span><span class="n">pscoast</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">130</span><span class="p">,</span> <span class="o">-</span><span class="mi">70</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">52</span><span class="p">],</span> <span class="n">projection</span><span class="o">=</span><span class="s2">&quot;B-100/35/33/45/6i&quot;</span><span class="p">,</span>
+            <span class="n">land</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">portrait</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">shorelines</span><span class="o">=</span><span class="s1">&#39;thinnest&#39;</span><span class="p">,</span>
+            <span class="n">borders</span><span class="o">=</span><span class="s1">&#39;1/thickest&#39;</span><span class="p">,</span> <span class="n">area_thresh</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="c1"># Embed the figure in the notebook</span>
+<span class="n">gmt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="" src="/images/gmt-after-scipy2017/sample-map.png" /></p>
+<p>Here is what the file structure of the <code>gmt</code> package looks like:</p>
+<div class="codehilite"><pre><span></span>gmt
+├── __init__.py
+├── clib/
+│   ├── __init__.py
+│   ├── constants.py
+│   ├── core.py
+├── decorators.py
+├── extra_modules.py
+├── ps_modules.py
+├── session_management.py
+├── tests/
+│   ├── __init__.py
+│   ├── baseline/
+│   ├── data/
+│   ├── test_*.py
+│   └── utils.py
+└── utils.py
+</pre></div>
+
+
+<h3 id="low-level-wrappers">Low-level wrappers</h3>
+<p>The subpackage <code>gmt.clib</code> contains all of the low-level <code>ctypes</code> code that
+interfaces with <code>libgmt</code>.
+A user will not need see or use this package.
+The main function that we need from the C API is <code>GMT_Call_Module</code>, which is
+wrapped by <code>gmt.clib.call_module</code>.
+This is how we execute all of the
+<a href="http://gmt.soest.hawaii.edu/doc/latest/index.html">GMT modules</a>
+(<code>pscoast</code>, <code>grdgradient</code>, etc).</p>
+<p>Each module is implemented as a function in one of the
+<code>*.py</code> files in the <code>gmt</code> package.
+For example, the Postscript generating modules live in <code>gmt/ps_modules.py</code>.
+These "module functions" are all accessible from the top-level package
+namespace.
+This means that you can access them as <code>gmt.pscoast</code> instead of
+<code>gmt.ps_modules.pscoast</code>.</p>
+<p>All of the unit and integration tests live in <code>gmt.tests</code> and are shipped with
+the package.
+Also included is a <code>gmt.test()</code> function that runs all of our tests using
+<a href="https://docs.pytest.org">pytest</a>.
+I'll go over how we run the tests below.</p>
+<h3 id="module-wrapper-functions">Module wrapper functions</h3>
+<p>This is what a function that wraps a GMT module looks like:</p>
+<div class="codehilite"><pre><span></span><span class="nd">@fmt_docstring</span>
+<span class="nd">@use_alias</span><span class="p">(</span><span class="n">R</span><span class="o">=</span><span class="s1">&#39;region&#39;</span><span class="p">,</span> <span class="n">J</span><span class="o">=</span><span class="s1">&#39;projection&#39;</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="s1">&#39;area_thresh&#39;</span><span class="p">,</span> <span class="n">B</span><span class="o">=</span><span class="s1">&#39;frame&#39;</span><span class="p">,</span>
+           <span class="n">D</span><span class="o">=</span><span class="s1">&#39;resolution&#39;</span><span class="p">,</span> <span class="n">P</span><span class="o">=</span><span class="s1">&#39;portrait&#39;</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="s1">&#39;rivers&#39;</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="s1">&#39;borders&#39;</span><span class="p">,</span>
+           <span class="n">W</span><span class="o">=</span><span class="s1">&#39;shorelines&#39;</span><span class="p">,</span> <span class="n">G</span><span class="o">=</span><span class="s1">&#39;land&#39;</span><span class="p">,</span> <span class="n">S</span><span class="o">=</span><span class="s1">&#39;water&#39;</span><span class="p">)</span>
+<span class="nd">@kwargs_to_strings</span><span class="p">(</span><span class="n">R</span><span class="o">=</span><span class="s1">&#39;sequence&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">pscoast</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plot continents, shorelines, rivers, and borders on maps</span>
+
+<span class="sd">    ...</span>
+
+<span class="sd">    {gmt_module_docs}</span>
+
+<span class="sd">    {aliases}</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    {J}</span>
+<span class="sd">    {R}</span>
+<span class="sd">    A : int, float, or str</span>
+<span class="sd">        ``&#39;min_area[/min_level/max_level][+ag|i|s|S][+r|l][+ppercent]&#39;``</span>
+<span class="sd">        Features with an area smaller than min_area in km^2 or of hierarchical</span>
+<span class="sd">        level that is lower than min_level or higher than max_level will not be</span>
+<span class="sd">        plotted.</span>
+<span class="sd">    {B}</span>
+<span class="sd">    C : str</span>
+<span class="sd">        Set the shade, color, or pattern for lakes and river-lakes.</span>
+<span class="sd">    ...</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="n">APISession</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+        <span class="n">call_module</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="s1">&#39;pscoast&#39;</span><span class="p">,</span> <span class="n">build_arg_string</span><span class="p">(</span><span class="n">kwargs</span><span class="p">))</span>
+</pre></div>
+
+
+<p>The function takes keyword arguments (<code>**kwargs</code>) and must have the same name
+as the corresponding GMT module, in this case <code>pscoast</code>.
+In the Python wrapper, the <code>ps</code> prefix doesn't really make much sense because
+we don't need to care that this module writes Postscript.
+We'll implement aliases for the function names later on to deal with this.</p>
+<p>The body of the function is quite simple and is only two lines.
+First, we need to create a <code>GMTAPI_CTRL</code> C structure that is required by all
+GMT functions.
+The <code>gmt.clib.APISession</code> context manager takes care of creating the structure
+by calling <code>GMT_Create_Session</code> from the C API, handing us a pointer in the
+<code>session</code> variable, and destroying it on exit using <code>GMT_Destroy_Session</code>.
+Next, we use <code>gmt.clib.call_module</code> to execute the <code>pscoast</code> GMT module.
+This function wraps <code>GMT_Call_Module</code> from the C API
+and receives inputs as a string of command-line arguments, like <code>'-R1/2/3/4
+-JM4i ...'</code>.
+Function <code>build_arg_string</code> from the <code>gmt.utils</code> module takes care of
+transforming the <code>kwargs</code> dictionary into that string.</p>
+<p>Notice that this functions doesn't pass in any data to the C API.
+We're still working on that.</p>
+<p>The majority of the parsing work is being done by the decorators (the things
+with <code>@</code> symbols) that live in <code>gmt.decorators</code>.
+The first is <code>kwargs_to_strings</code> that takes care of converting some of the
+function arguments into string representations.
+By default, it will convert any boolean arguments (<code>True</code> or <code>False</code>)
+into the empty string (if <code>True</code>) or remove the argument from <code>kwargs</code> (if
+<code>False</code>).
+For example, <code>P=True</code> will be transformed into <code>P=''</code>
+so that the argument string made by <code>build_arg_string</code> will be <code>-P</code>.
+<code>kwargs_to_strings</code> also allows specifying special conversions.
+Here, we ask it to convert the <code>R</code> argument into a string if it's a sequence
+(list, tuple, etc).
+So if given <code>R=[1, 2, 3, 4]</code> it will replace that with <code>R='1/2/3/4'</code>.</p>
+<p>The argument aliases are handled by <code>use_alias</code>.
+The format is <code>ARG='alias'</code> and it will replace any instance of <code>'alias'</code> in
+<code>kwargs</code> with <code>'ARG'</code>.
+This allows all other functions to only deal with the GMT version of the
+arguments and not have to worry about the aliases.</p>
+<p>Finally, <code>fmt_docstring</code> inserts stubs into the docstring,
+like a list of aliases (provided by <code>use_alias</code>), a link to the GMT module
+documentation, common arguments, etc.
+See the <a href="https://github.com/GenericMappingTools/gmt-python/blob/0e2b118b6276f9cced8aefb8851330060e76949d/gmt/decorators.py#L49">decorator
+docstring</a>
+for a full list.</p>
+<h3 id="tests">Tests</h3>
+<p>The testing code is packaged with the library in <code>gmt.tests</code>.
+We use
+<a href="https://github.com/matplotlib/pytest-mpl">pytest-mpl</a>
+to test plot generating commands.
+I had to hack together a class that implements a <code>savefig</code> method to make
+<code>pytest-mpl</code> work.
+This is bundled in a decorator called <code>figure_comparison_test</code>.
+A typical test looks like this:</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">figure_comparison_test</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">pscoast</span>
+
+
+<span class="nd">@figure_comparison_test</span>
+<span class="k">def</span> <span class="nf">test_pscoast_aliases</span><span class="p">():</span>
+    <span class="s2">&quot;Test that all aliases work&quot;</span>
+    <span class="n">figure</span><span class="p">()</span>
+    <span class="n">pscoast</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="s1">&#39;-30/30/-40/40&#39;</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;m0.1i&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s1">&#39;afg&#39;</span><span class="p">,</span>
+            <span class="n">rivers</span><span class="o">=</span><span class="s1">&#39;1/1p,black&#39;</span><span class="p">,</span> <span class="n">borders</span><span class="o">=</span><span class="s1">&#39;1/0.5p,-&#39;</span><span class="p">,</span>
+            <span class="n">shorelines</span><span class="o">=</span><span class="s1">&#39;0.25p,white&#39;</span><span class="p">,</span> <span class="n">land</span><span class="o">=</span><span class="s1">&#39;moccasin&#39;</span><span class="p">,</span> <span class="n">water</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span>
+            <span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="n">area_thresh</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">portrait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+
+<p>When you run the tests, pytest-mpl will generate the figure and compare it to a
+baseline that we have stored in <code>gmt/tests/baseline</code>.</p>
+<h2 id="changes-after-scipy">Changes after Scipy</h2>
+<p>Paul and I had the chance to talk about the project with a lot of smart and
+interesting people.
+Many thanks to
+<a href="http://geology.beer/">Joe Kington</a>,
+<a href="http://johnrleeman.com/">John Leeman</a>,
+<a href="https://github.com/dopplershift">Ryan May</a>,
+<a href="https://github.com/ocefpaf">Filipe Fernandes</a>,
+<a href="https://github.com/mhearne-usgs">Mike Hearne</a>,
+and <a href="https://github.com/WeatherGod">Benjamin Root</a>.</p>
+<h3 id="code-of-conduct">Code of conduct</h3>
+<p>Since a few people seemed interested in contributing to the project,
+I decided to add a
+<a href="https://github.com/GenericMappingTools/gmt-python/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
+to ensure that everyone who wants to get involved know the rules.
+I copied it from the <a href="http://contributor-covenant.org/">Contributor Covenant</a>
+template.
+<strong>It's so easy that there's no excuse for not having one anymore.</strong></p>
+<p>I also adapted the great
+<a href="https://github.com/GenericMappingTools/gmt-python#imposter-syndrome-disclaimer">"Impostor syndrome disclaimer"</a>
+from the <a href="https://github.com/Unidata/MetPy">MetPy project</a>.
+This was originally proposed by
+<a href="https://github.com/adriennefriend">Adrienne Lowe</a>
+during an <a href="https://www.youtube.com/watch?v=6Uj746j9Heo">awesome Pycon talk</a>.
+I highly recommend that you take a few minutes to watch it.</p>
+<h3 id="object-oriented-api">Object oriented API</h3>
+<p>By far the most requested feature was to have an object-oriented API, like that
+of matplotlib.
+I can see the appeal and usefulness of this and was convinced to make the
+change.
+It makes sense and we're already doing
+<a href="https://github.com/GenericMappingTools/gmt-python/blob/0e2b118b6276f9cced8aefb8851330060e76949d/gmt/tests/utils.py#L13">something like it</a>
+in an ugly way to be able to use pytest-mpl.</p>
+<p>What I'm not willing to do is to support both the existing API with functions
+and one with classes at the same time.
+I don't like that there are two ways of doing the same thing in
+matplotlib.
+It causes unnecessary confusion, particularly if you're new to the library.
+And it goes against the <a href="https://www.python.org/dev/peps/pep-0020/#the-zen-of-python">Zen of
+Python</a>:</p>
+<blockquote>
+<p>There should be one-- and preferably only one --obvious way to do it.</p>
+</blockquote>
+<p>So I'm going all in with the classes.</p>
+<p><strong>Note that this will only impact the figure generating functions</strong>.
+Other parts of GMT will still be wrapped by functions in the <code>gmt</code> package.</p>
+<p>The new API will look something like this:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">gmt</span>
+
+<span class="c1"># Start a figure</span>
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">gmt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<span class="c1"># Start a different figure</span>
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">gmt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="c1"># Use the methods in the Figure class to plot things</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">pscoast</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">130</span><span class="p">,</span> <span class="o">-</span><span class="mi">70</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">52</span><span class="p">],</span> <span class="n">projection</span><span class="o">=</span><span class="s2">&quot;B-100/35/33/45/6i&quot;</span><span class="p">,</span>
+             <span class="n">land</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">portrait</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">shorelines</span><span class="o">=</span><span class="s1">&#39;thinnest&#39;</span><span class="p">,</span>
+             <span class="n">borders</span><span class="o">=</span><span class="s1">&#39;1/thickest&#39;</span><span class="p">,</span> <span class="n">area_thresh</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># We can now alternate between figures when plotting</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">pscoast</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">130</span><span class="p">,</span> <span class="o">-</span><span class="mi">70</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">52</span><span class="p">],</span> <span class="n">projection</span><span class="o">=</span><span class="s2">&quot;B-100/35/33/45/6i&quot;</span><span class="p">,</span>
+             <span class="n">land</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">portrait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Use savefig to save to a file</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;north-america.pdf&#39;</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;north-america-blue.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>The <code>Figure</code> class can know how to plot and insert itself in the notebook using
+the
+<a href="http://ipython.readthedocs.io/en/stable/config/integrating.html#rich-display">rich display</a>
+features in IPython.
+I can think of a few possibilities to view the figures in the Jupyter notebook:</p>
+<ol>
+<li>
+<p>Include <code>fig</code> in the last line of the notebook. I don't like this at all
+   because it's ugly. But it should work anyway even if we go with another
+   option.</p>
+<div class="codehilite"><pre><span></span>fig = gmt.Figure()
+fig.pscoast(...)
+fig
+</pre></div>
+
+
+</li>
+<li>
+<p>All <code>Figure</code> methods return the figure itself so it'll be picked up by the
+   notebook. This eliminates the need for the ugly trailing <code>fig</code>. A problem
+   with this approach is that the last line in the cell needs to be a call to
+   <code>fig.something</code>.</p>
+<div class="codehilite"><pre><span></span>fig = gmt.Figure()
+fig.pscoast(...)
+</pre></div>
+
+
+</li>
+<li>
+<p>Have a <code>Figure.show()</code> method that inserts the figure into the notebook.
+   This is a nice explicit solution to the problem. The only drawback I can see
+   is that you wouldn't be able to show more than on figure at a time. But I'm OK
+   with that.</p>
+<div class="codehilite"><pre><span></span>fig = gmt.Figure()
+fig.pscoast(...)
+fig.show()
+</pre></div>
+
+
+</li>
+<li>
+<p>Have a <code>gmt.show()</code> function that displays all currently active figures.
+   This would require that we keep track of all figures created in a global
+   variable in the package namespace. I don't know if I like this too much
+   because it requires mutating global variables, which can cause a lot of
+   hard to track down bugs.</p>
+<div class="codehilite"><pre><span></span>fig = gmt.Figure()
+fig.pscoast(...)
+gmt.show()
+</pre></div>
+
+
+</li>
+</ol>
+<p>I'll probably implement some form of the <code>show</code> function to
+<a href="https://github.com/GenericMappingTools/gmt-python/issues/28">make it display a pop-up window in the terminal</a>
+as well.
+This is a case where a user might want the <code>gmt.show</code> option to view more than
+one figure.</p>
+<p>These options are not mutually exclusive.
+What I'm still pondering is whether or not to implement some of them
+(#1 will always be possible).
+Since I work mostly on the notebook, I don't care too much about #4.
+But I'm sure a lot of you have different needs and preferences.</p>
+<p><strong>How would you prefer to display your images?
+What would you like to see in the API?</strong>
+Let me know in the comments or
+<a href="https://github.com/GenericMappingTools/gmt-python/issues">on Github</a>.</p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/gmt-after-scipy2017.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/gmt-after-scipy2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Reviews of our Scipy 2017 talk proposal: Bringing the Generic Mapping Tools to Python</title>
+        <link>https://www.leouieda.com/blog/scipy2017-reviews.html</link>
+        <guid>https://www.leouieda.com/blog/scipy2017-reviews.html</guid>
+        <pubDate>Thu, 11 May 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy2017-reviews.png">
+
+            <p></p>
+
+            
+
+
+            <p>This year, <a href="https://scipy2017.scipy.org/ehome/220975/532468/">Scipy is using a double-open peer-review
+system</a>, meaning that both
+authors and reviewers know each others identities.
+These are the reviews that we got for
+<a href="/blog/scipy2017-proposal-gmt.html" title="Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python">our proposal</a>
+and our replies/comments
+(posted with permission from the reviewers).
+<strong>My sincerest thanks to all reviewers and editors for their time and effort</strong>.</p>
+<p>The open review model is great because it increases the transparency of the
+process and
+<a href="https://doi.org/10.1136/bmjopen-2015-008707">might even result in better reviews</a>.
+I started signing my reviews a few years ago and I found that I'm more careful
+with the tone of my review to make sure I don't offend anyone and provide
+constructive feedback.</p>
+<p>Now, on to the reviews!</p>
+<h2 id="review-1-paul-celicourt">Review 1 - <a href="http://hydrounits.com/">Paul Celicourt</a></h2>
+<blockquote>
+<p>The paper introduces a Python wrapper for the C-based Generic Mapping Tools
+used to process and analyze time series and gridded data. The content is well
+organized, but I encourage the authors to consider the following comments:
+While the authors promise to demonstrate an initial prototype of the wrapper,
+it is not sure that a WORKING prototype will be available by the time of the
+conference as claimed by the authors when looking at the potential
+functionalities to be implemented and presented in the second paragraph of
+the extended abstract. Furthermore, it is not clear what would be the
+functionalities of the initial prototype. On top of that, the approach to the
+implementation is not fully presented. For instance, the Simplified Wrapper
+and Interface Generator (SWIG) tool may be used to reduce the workload but
+the authors do not mention whether the wrapper would be manually developed or
+using an automated tool such as the SWIG. Finally, the portability of the
+shared memory process has not been addressed.</p>
+</blockquote>
+<p>Thanks for all your comments, Paul! They are good questions and we should have
+addressed them better in the abstract.</p>
+<p>That is a valid concern regarding the working prototype.  We're not sure how
+much of the prototype will be ready for the conference. We are sure that we'll
+have <em>something</em> to show, even if it's not complete. The focus of the talk will
+be on our design decisions, implementation details, and the changes in the GMT
+modern execution mode on which the Python wrappers are based. We'll run some
+examples of whatever we have working mostly for the "Oooh"s and "Aaah"s.</p>
+<p>The wrapper will be manually generated using
+<a href="http://docs.python.org/library/ctypes.html">ctypes</a>.
+We chose this over <a href="http://www.swig.org/">SWIG</a> or <a href="http://cython.org/">Cython</a>
+because ctypes allows us to write pure Python code.
+It's a much simpler way of wrapping a C library.
+Not having any compiled extension modules also greatly facilitates distributing
+the package across operating systems.
+The same wrapper code can work on Windows, OSX, and Linux (as long as the GMT
+shared library is available).</p>
+<p>The amount of C functions that we'll have to wrap is not that large.
+Mainly, we need <code>GMT_Call_Module</code> to run a command (like <code>psxy</code>),
+<code>GMT_Create_Session</code> for generating the session structure,
+and <code>GMT_Open_VirtualFile</code> and <code>GMT_Read_VirtualFile</code> for passing data to and
+from Python.
+The majority of the work will be in creating the Python functions for each GMT
+command, documenting them, and parsing the Python function arguments into
+something that <code>GMT_Call_Module</code> accepts.
+This work would have to be done manually using SWIG or Cython as well, so
+ctypes is not a disadvantage with regard to this.
+There are some more details about this in
+<a href="/blog/gmt-python-design.html" title="Design ideas and goals for the GMT Python interface">our initial design and goals</a>.</p>
+<h2 id="review-2-ricardo-barros-lourenco">Review 2 - <a href="https://github.com/ricardobarroslourenco">Ricardo Barros Lourenço</a></h2>
+<blockquote>
+<p>The authors submitted a clear abstract, in the sense that they will present a
+new Python library, which is a binding to the Generic Mapping Tools (GMT) C
+library, which is widely adopted by the Geosciences community. They were
+careful in detailing their reasoning in such implementation, and also in
+analogue initiatives by other groups.</p>
+<p>In terms of completeness, the abstract precisely describes that the design
+plans and some of the implementation would be detailed and explained, as well
+on a demo of their current version of the library. It was very interesting
+that the authors, while describing their implementation, also pointed that
+the library could be used in other applications not necessarily related to
+geoscientific applications, by the generation of general line plots, bar
+graphs, histograms, and 3D surfaces. It would be beneficial to the audience
+to see how this aspect is sustained, by comparing such capabilities with
+other libraries (such as Matplotlib and Seaborn) and evaluating their
+contribution to the geoscientific domain, and also on the expanded related
+areas.</p>
+<p>The abstract is highly compelling to the Earth Sciences community members at
+the event because the GMT module is already used for high-quality
+visualization (both in electronic, but also in printed outputs - maps - which
+is an important contribution to) , but with a Python integration it could
+simplify the integration of "Pythonic" workflows into it, expanding the
+possibilities in geoscientific visualization, especially in printed maps.</p>
+<p>It would be interesting, aside from a presumed comparison in online
+visualization with matplotlib and cartopy, if the authors would also discuss
+in their presentation other possible contributions, such as online tile
+generation in map servers, which is very expensive in terms of computational
+resources and is still is challenging in an exclusive "Pythonic" environment.
+Additionally, it would be interesting if the authors provide some
+clarification if there is any limitation on the usage of such library, more
+specifically to the high variance in geoscientific data sources, and also in
+how netCDF containers are consumed in their workflow (considering that these
+containers don't necessarily conform to a strict standard, allowing users to
+customize their usage) in terms of the automation of this I/O.</p>
+<p>The topic of high relevance because there is still few options for spatial
+data visualization in a "fully pythonic" environment, and none of them is
+used in the process of plotting physical maps, in a production setting, such
+as GMT is.  Considering these aspects, I recommend such proposal for
+acceptance.</p>
+</blockquote>
+<p>Thank you, Ricardo, for your incentives and suggestions for the presentation!</p>
+<p>I hadn't thought about the potential use in map tiling but we'll keep an eye on
+that from now on and see if we have anything to say about it. Thanks!</p>
+<p>Regarding netCDF, the idea is to leverage the
+<a href="http://xarray.pydata.org">xarray</a> library for I/O and use their <code>Dataset</code>
+objects as input and output arguments for the grid related GMT commands.
+There is also the option of giving the Python functions the file name of a grid
+and have GMT handle I/O, as it already does in the command line.
+The appeal of using xarray is that it integrates well with numpy and pandas and
+can be used instead of <code>gmt grdmath</code> (no need to tie your head in knots over
+<a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">RPN</a> anymore!).</p>
+<h2 id="review-3-ryan-may">Review 3 - <a href="https://github.com/dopplershift">Ryan May</a></h2>
+<blockquote>
+<p>Python bindings for GMT, as demonstrated by the authors, are very much in
+demand within the geoscience community. The work lays out a clear path
+towards implementation, so it's an important opportunity for the community to
+be able offer API and interaction feedback. I feel like this talk would be
+very well received and kick off an important dialogue within the geoscience
+Python community.</p>
+</blockquote>
+<p>Thanks, Ryan! Getting community feedback was the motivation for submitting a
+talk without having anything ready to show yet.
+It'll be much easier to see what the community wants and thinks before we have
+fully committed to an implementation.
+We're very much open and looking forward to getting a ton of questions!</p>
+<hr />
+<p><strong>What would you like to see in a GMT Python library?
+Let us know if there are any questions/suggestions before the conference.
+See you at Scipy in July!</strong></p>
+<hr />
+<p><em>Thumbnail image for this post is modified from
+<a href="https://commons.wikimedia.org/wiki/File:ScientificReview.jpg">"ScientificReview" by the Center for Scientific
+Review</a>
+which is in the public domain.</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/scipy2017-reviews.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/scipy2017-reviews.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Thoughts from the Introduction to Python Workshop at UH Manoa</title>
+        <link>https://www.leouieda.com/blog/python-hawaii-2017.html</link>
+        <guid>https://www.leouieda.com/blog/python-hawaii-2017.html</guid>
+        <pubDate>Fri, 28 Apr 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/python-hawaii-2017.png">
+
+            <p></p>
+
+            
+
+
+            <p>Last week, I taught a 3-day Python workshop at the
+<a href="http://www.soest.hawaii.edu/GG/index.html">Department of Geology and Geophysics of the University of Hawaii at
+Manoa</a>,
+where I'm currently <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">doing a postdoc</a>.
+It covered the basics of computer programming with Python, starting from the
+very beginning.
+Below are thoughts and information about the workshop, the demographics of
+people who signed up, and the feedback that I got from the participants.</p>
+<p>See the <a href="/teaching/python-hawaii-2017.html" title="Introduction to Python Workshop (UH Manoa - G&amp;G)">workshop page</a> and <a href="https://github.com/leouieda/python-hawaii-2017">Github
+repository</a> for more
+information and links to material used.</p>
+<h2 id="my-goals">My goals</h2>
+<p>I wanted this to be a hands-on workshop of the basic concepts needed to use
+Python for research. Participants who complete the workshop should be able to
+use Python to gather data from one or more files, process the data, run an
+analysis, make publication quality figures, and save the output.
+Most importantly, I wanted participants to know what they should type into
+Google to learn more about Python.</p>
+<h2 id="materials">Materials</h2>
+<p>The class is based on a mixture of the
+<a href="https://software-carpentry.org/">Software Carpentry</a>
+lessons
+<a href="http://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming in Python (under development)</a>
+and <a href="http://swcarpentry.github.io/python-novice-inflammation">Programming with Python</a>.
+However, I use temperature data from
+<a href="http://berkeleyearth.org/">Berkeley Earth</a>
+instead of the <a href="http://www.gapminder.org/">Gapminder</a> and inflammation data
+used by Software Carpentry.
+For example, our goal for the second day of the workshop was to reproduce this
+figure for
+<a href="http://berkeleyearth.lbl.gov/regions/hawaii">average temperature variation in Hawaii</a>
+from the website:</p>
+<p><a href="http://berkeleyearth.lbl.gov/regions/hawaii"><img alt="" src="http://berkeleyearth.lbl.gov/auto/Regional/TAVG/Figures/hawaii-TAVG-Trend.png" /></a></p>
+<p>On the last day, we finished with some code that processed a list of country
+names to download the respective data file (using <code>requests</code>), load it into
+Python, make a figure, and save it to a different folder
+(see <a href="https://github.com/leouieda/python-hawaii-2017/blob/master/notebooks/exercise-download-a-bunch-of-data.ipynb">this Jupyter notebook for the
+code</a>).</p>
+<p>I also used a few techniques from the
+<a href="http://swcarpentry.github.io/instructor-training/">Software Carpentry Instructor Training</a>,
+mainly the shared class notes (I used Google Docs instead of Etherpad)
+and colored sticky notes.
+The sticky notes were in two colors: pink and blue.
+Learners kept the blue sticky note on their laptop lid if everything was OK.
+They put up the pink one if they have a problem or need help.
+This way, myself and the teaching assistants can know at a glance who needs
+help.
+I had them write positive and negative feedback on the sticky notes at the
+end of the workshop.</p>
+<p>The notebooks that I created during class and some notes for myself are in the
+Github repository (in the <code>notebooks</code> and <code>notes</code> folders, respectively).</p>
+<h2 id="who-attended">Who attended</h2>
+<p>I asked all participants to sign up through a Google Form that asked a few
+questions regarding their operating system, background in programming, and
+position at the university.
+The file
+<a href="https://github.com/leouieda/python-hawaii-2017/blob/master/demographics.csv"><code>demographics.csv</code></a>
+in the Github repository has the anonymous information from this form.
+I wrote some code to analyze the data and generate the figures below using
+<a href="http://pandas.pydata.org/">pandas</a> and <a href="http://matplotlib.org/">matplotlib</a>.
+You can find in the
+<a href="http://nbviewer.jupyter.org/github/leouieda/python-hawaii-2017/blob/master/demographics-analysis.ipynb"><code>demographics-analysis.ipynb</code></a>
+Jupyter notebook (also in the Github repo).</p>
+<p>First, lets look at how many people signed up and then actually attended each
+day.</p>
+<p><img alt="Number of attendants per day of the workshop." src="/images/python-hawaii-2017/attendance.jpg" /></p>
+<p>We were very lucky that most people who signed up also attended the workshop on
+the first day, even though there was no sign up fee.
+It seems that the workshop really fills a need in the community!
+Some people gave up after the first day.
+Maybe it was too fast, or too basic, or life just happened.
+I can't really tell because I failed to collect feedback at the end of each
+day.
+That is something to keep in mind for the next iteration: <strong>get feedback every
+day</strong>.</p>
+<p><img alt="" src="/images/python-hawaii-2017/education.jpg" /></p>
+<p>The experience level of participants was more evenly distributed than I
+expected.
+I was very pleased with the number of people who had never programmed before.
+But the distribution made it challenging to keep everyone motivated and
+following along.
+From the feedback (see below), it seems that I managed it well enough.</p>
+<p><img alt="" src="/images/python-hawaii-2017/programming-languages.jpg" /></p>
+<p>Not surprisingly, most participants who already programmed know Matlab.
+What was a bit surprising is how few people reported experience with Fortran.
+Is this a reflection of the age of participants (a lot of young grad students)?
+The number of Fortran users does correlate with the number of faculty who
+signed up, so maybe yes.</p>
+<p><img alt="" src="/images/python-hawaii-2017/position.jpg" /></p>
+<p>I was very pleased to have someone from the
+<a href="https://www.hawaii.edu/diversity/seed-programs/na-kupuna-senior-citizen-visitor-program/">Nā Kūpuna Senior Citizen Visitor Program</a>
+and a not insignificant number of faculty.
+We even had an "interested citizen" who studies film production and education
+(a personal friend)!</p>
+<h2 id="feedback">Feedback</h2>
+<p><img alt="Feedback on the colored sticky notes." src="/images/python-hawaii-2017/sticky-note-feedback.jpg" /></p>
+<p>This is a synthesis from the feedback given by participants on the last day
+(using the pink and blue sticky notes):</p>
+<table class="table">
+<thead>
+<tr>
+<th align="left">The Good</th>
+<th align="left">#</th>
+<th align="left">The Bad</th>
+<th align="left">#</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Instructor style</td>
+<td align="left">5</td>
+<td align="left">Too short</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">Examples and exercises</td>
+<td align="left">5</td>
+<td align="left">Too fast</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">Dense but efficient (learn a lot in little time)</td>
+<td align="left">3</td>
+<td align="left">Too slow</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">Using real data</td>
+<td align="left">3</td>
+<td align="left">Hard to multi-task (pay attention + notes + exercise)</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">Simple and accessible level</td>
+<td align="left">3</td>
+<td align="left">No TA on Monday</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">Shared notes</td>
+<td align="left">1</td>
+<td align="left">Instructor took too many tangents when teaching</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Too many people</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Ran late</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Jupyter Google maps example failed</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p>It was a very funny coincidence that the exact same number of people complained
+about the pace being either too fast or too slow.</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<p>I was glad to see that the hands-on approach worked and the students
+appreciated using real data during the exercises.
+We had very little time (6h total) to cover a lot of material.
+So it's no wonder that people thought it was too short and maybe didn't explain
+quite as thoroughly some concepts (like <code>for</code> and <code>if</code>).
+Regarding the pace, it's hard to satisfy everyone.
+I expect that novices might have found the pace a bit too fast and more
+experienced programmers found it too slow (but I don't have data to back that
+up).
+Since only 6 people complained about the pace, I guess it wasn't too bad.
+Not having a TA on Monday (the first day) was not good because that is when the
+most serious problems occur (Jupyter won't start, where is my Python?, lost my
+files, etc).
+The next two days of the workshop were much smoother thanks to the generous
+help of volunteer TAs Sam Murphy and Julie Schnurr.
+We also didn't get to cover the last few topics on the last day (functions and
+getting data from headers).</p>
+<p>A few things that I would have done differently:</p>
+<ul>
+<li><strong>Get feedback through sticky notes at the end of each day</strong>. The Software
+  Carpentry material actually recommends this but I completely forgot.</li>
+<li><strong>Use more pair programming activities</strong>. This is also something recommended
+  by Software Carpentry and that I had planned on doing. In the end, I left
+  this as optional and didn't explicitly pair learners. A lot of people were
+  interacting naturally but I would have liked to see more of it.</li>
+</ul>
+<p><em>Have you taught or participated in a workshop like this before? What were your
+experiences?</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/python-hawaii-2017.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/python-hawaii-2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python</title>
+        <link>https://www.leouieda.com/blog/scipy2017-proposal-gmt.html</link>
+        <guid>https://www.leouieda.com/blog/scipy2017-proposal-gmt.html</guid>
+        <pubDate>Thu, 30 Mar 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy2017-proposal-gmt.png">
+
+            <p></p>
+
+            
+
+
+            <p>This is the proposal for talk that I co-authored with
+<a href="http://www.soest.hawaii.edu/wessel/">Paul Wessel</a>
+and submitted to Scipy 2017.
+Fingers crossed that they'll accept it!
+If not, this post can serve as an example of what <strong>not</strong> to do for next time
+:)</p>
+<p>The submission is on the
+<a href="https://github.com/GenericMappingTools/scipy2017">GenericMappingTools/scipy2017</a>
+Github repository.
+It covers our <a href="/blog/gmt-python-design.html" title="Design ideas and goals for the GMT Python interface">initial ideas about the GMT Python
+interface</a>.</p>
+<p><strong>UPDATE (8 May 2017):</strong> The proposal was accepted!</p>
+<p><strong>UPDATE (11 May 2017):</strong> I've posted the <a href="/blog/scipy2017-reviews.html" title="Reviews of our Scipy 2017 talk proposal: Bringing the Generic Mapping Tools to Python">reviews we got for the
+proposal</a> along with some comments and replies.</p>
+<hr />
+<h3 id="abstract">Abstract</h3>
+<p>The Generic Mapping Tools (GMT) is an open-source software package widely used
+in the geosciences to process and visualize time series and gridded data.
+Maps generated by GMT are ubiquitous in scientific publications in areas such
+as seismology and oceanography.
+We present a new GMT Python wrapper library built by the GMT team.
+We will show the design plans, internal implementations, and demonstrate an
+initial prototype of the library.
+Our wrapper connects to the GMT C API using ctypes and allows input and
+output using data from numpy ndarrays and xarray Datasets.
+The library is still in early stages of design and implementation and
+we are eager for contributions and feedback from the Scipy community.</p>
+<h3 id="extended-abstract">Extended Abstract</h3>
+<p>The <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a> is an
+open-source software package widely used in the geosciences to process and
+visualize time series and gridded data.
+GMT is a command-line tool written in C that is able to generate high quality
+figures and maps using the Postscript format.
+Maps generated by GMT are ubiquitous in scientific publications in areas such
+as seismology and oceanography.
+GMT has a large, feature rich, mature, and well tested code base.
+It has benefited from over 28 years of development and heavy usage within the
+scientific community.
+It is no wonder that there have been at least three attempts to bridge the gap
+between GMT and Python:
+<a href="https://github.com/emolch/gmtpy">gmtpy</a>,
+<a href="https://github.com/ian-r-rose/pygmt">pygmt</a>,
+and <a href="https://github.com/glimmer-cism/PyGMT">PyGMT</a>.
+Of the three, only gmtpy has had any development activity since 2014 and is the
+only project that has documentation.
+gmtpy interfaces with GMT through subprocesses.
+It pipes standard input and output to the GMT command-line application.
+Piping has it's limitations because all data are handled as text, making it
+difficult or impossible to pass binary data such as netCDF grids.
+On the Python side, the two main libraries for plotting data on maps are the
+matplotlib <a href="http://matplotlib.org/basemap">basemap toolkit</a> and
+<a href="http://scitools.org.uk/cartopy">Cartopy</a>.
+Both libraries rely on matplotlib as the backend for generating figures.
+Basemap is know to have its limitations (e.g.,
+<a href="https://ocefpaf.github.io/python4oceanographers/blog/2013/09/23/cartopy">this post by Filipe Fernandes</a>).
+Cartopy is a great improvement over basemap that fixes some of those
+limitations.
+However, Cartopy is still bound by the speed and memory usage constraints of
+matplotlib when it comes to very large and complex maps.</p>
+<p>We present a new GMT Python wrapper library
+<a href="https://github.com/GenericMappingTools/gmt-python"><code>gmt-python</code></a> built by the
+GMT team.
+We will show the design plans, internal implementations, and demonstrate an
+initial prototype of the library.
+Starting in version 5, GMT introduced a C API that is exposed through a shared
+library.
+The API allows access to GMT modules as C functions and provides mechanisms
+for input and output of binary data through shared memory.
+Our Python wrapper connects to this shared library using the ctypes standard
+library module.
+The wrapper code can thus be written in pure Python, which greatly simplifies
+packaging and distribution.
+Input and output will be handled using the GMT C API "virtual files" that allow
+access to shared memory between C and Python.
+We will implement a thin conversion layer between native scientific Python data
+types and the GMT internal data structures.
+Thus, we can accept input and produce output as numpy ndarrays and pandas
+DataFrames for tabular data and xarray Datasets for netCDF grids.
+Support for displaying figures inline in the Jupyter notebook is planned from
+the start by retrieving PNG previews of the Postscript figures.
+This will allow GMT to be seamlessly integrated into the rich scientific Python
+ecosystem.</p>
+<p>Internally, the <code>gmt-python</code> library will contain low-level wrappers around the
+GMT C API functions and data structures.
+Users will interact with a higher-level API in which each GMT module is
+represented by a function.
+The module functions can take arguments as a single string representing the
+command-line arguments ("-Rg -JN180"), as keyword arguments (R='g',
+J='N180'), or as long-form aliases (region='g', projection='N180').
+The Python interface relies on new features in GMT that are currently under
+development in the trunk of the SVN repository, mainly the
+<a href="http://gmt.soest.hawaii.edu/projects/gmt/wiki/Modernization">"modern" execution mode</a>,
+which greatly simplify the building of Postscript figures and maps.
+We are working in close collaboration with the rest of the GMT core developers
+to make changes on the GMT side as we exercise the new C API and discover bugs
+and missing features.</p>
+<p>The capabilities of GMT go beyond the geosciences.
+It can produce high-quality line plots, bar graphs, histograms, and 3D
+surfaces.
+Significant barriers to entry for GMT have been the complexities of programming
+in bash and the many command-line options and their meanings.
+The Python wrapper library can serve as a backend for new and easier to use
+APIs, making GMT more accessible while retaining the high quality of figures.
+Work on <code>gmt-python</code> is still in early stages of design and implementation.
+A prototype is not yet available but is predicted in time for the conference in
+July.
+We are open and eager for contributions and feedback from the Scipy community.</p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/scipy2017-proposal-gmt.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/scipy2017-proposal-gmt.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Design ideas and goals for the GMT Python interface</title>
+        <link>https://www.leouieda.com/blog/gmt-python-design.html</link>
+        <guid>https://www.leouieda.com/blog/gmt-python-design.html</guid>
+        <pubDate>Wed, 29 Mar 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt-python-design.png">
+
+            <p></p>
+
+            
+
+
+            <p>As you may already know, I'm away on a <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">postdoct writing a Python interface
+for the Generic Mapping Tools</a>.
+Recently, I started laying out our goals for the project and some of my design
+ideas.
+This all lives on the
+<a href="https://github.com/GenericMappingTools/gmt-python">GenericMappingTools/gmt-python</a>
+Github repository, which is where the code will eventually be as well.
+I thought it would be good to post it here as well to have a snapshot of this
+phase of the project for future reference.</p>
+<p>I have also submitted a <a href="/blog/scipy2017-proposal-gmt.html" title="Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python">talk proposal for Scipy 2017 about the
+project</a>.</p>
+<hr />
+<h2 id="goals">Goals</h2>
+<ul>
+<li>Provide access to GMT modules from Python using the GMT C API (no system
+  calls).</li>
+<li>Input and output using Python native containers: numpy <code>ndarray</code> or pandas
+  <code>DataFrame</code> for data tables and <a href="http://xarray.pydata.org">xarray</a> <code>Dataset</code>
+  for netCDF grids.</li>
+<li>Integration with the <a href="http://jupyter.org/">Jupyter notebook</a> to display plots
+  and maps inline.</li>
+<li>API design familiar for veteran GMT users (arguments <code>R</code>, <code>J</code>, etc) with more
+  newbie-friendly alternatives/aliases (<code>region=[10, 20, -30, -10]</code>,
+  <code>projection='M'</code>, etc).</li>
+</ul>
+<h2 id="previous-work">Previous work</h2>
+<p>To my knowledge, there have been 3 attempts at a GMT Python interface:</p>
+<ul>
+<li><a href="https://github.com/emolch/gmtpy">gmtpy</a> by <a href="https://github.com/emolch">Sebastian
+    Heimann</a></li>
+<li><a href="https://github.com/ian-r-rose/pygmt">pygmt</a> by <a href="https://github.com/ian-r-rose">Ian
+    Rose</a></li>
+<li><a href="https://github.com/glimmer-cism/PyGMT">PyGMT</a> by <a href="https://github.com/mhagdorn">Magnus
+    Hagdorn</a></li>
+</ul>
+<p>Only <code>gmtpy</code> has received commits since 2014 and is the more mature
+alternative. However, the project <a href="https://github.com/emolch/gmtpy/graphs/contributors">doesn't seem to be very
+active</a>. Both
+<code>gmtpy</code> and <code>PyGMT</code> use system class (through <code>subprocess.Popen</code>) and
+pass input and output through <code>subprocess.PIPE</code>. <code>pygmt</code> seems to call
+the GMT C API directly through a hand-coded Python C extension. This
+might compromise the portability of the package across operating systems
+and makes distribution very painful.</p>
+<h2 id="design">Design</h2>
+<p><code>gmt-python</code> is made for the future. We will support <strong>only Python 3.5
+or later</strong> and require the <a href="http://gmt.soest.hawaii.edu/projects/gmt/wiki/Modernization">new "modern" mode of
+GMT</a>
+(currently only in the <code>trunk</code> of the SVN repository). The <code>modern</code> mode
+removes the need for <code>-O -K</code> and explicitly redirecting to a <code>.ps</code> file. This
+all happens in the background. A final call to <code>gmt psconvert</code> brings the plot
+out of hiding and finalizes the Postscript. This mode is perfect for the Python
+interface, which would have to handle generation of the Postscript file in the
+background anyway.</p>
+<p>We will wrap the GMT C API using the
+<a href="https://docs.python.org/3/library/ctypes.html">ctypes</a> module of the
+Python standard library. <code>ctypes</code> grants access to C data types and
+foreign functions in DDLs and shared libraries, making it possible to
+wrap these libraries with pure Python code. Not having compiled modules
+makes packaging and distribution of Python software a lot easier.</p>
+<p>Wrappers for GMT data types and C functions will be implemented in a
+lower level wrapper library. These will be direct <code>ctypes</code> wrappers of
+the GMT module functions and any other function that is needed on the
+Python side. The low-level functions will not handle any data type
+conversion or setting up of argument list.</p>
+<p>We'll also provide higher level functions that mirror all GMT modules.
+These functions will be built on top of the low-level library and will
+handle all data conversions and parsing of arguments. This is the part
+of the library with which the user will interact (the GMT Python API).</p>
+<h3 id="the-gmt-python-api">The GMT Python API</h3>
+<p>Each GMT module has a function in the <code>gmt</code> package. Command-line
+arguments are passes as function keyword arguments. Data can be passed
+as file names or in-memory data.</p>
+<p>The simplest usage would be with data in a file and generating a PDF
+output figure, just as a normal GMT script:</p>
+<div class="codehilite"><pre><span></span>import gmt
+
+cpt = gmt.makecpt(C=&#39;cubhelix&#39;, T=[-4500, 4500])
+gmt.grdimage(input=&#39;grid.nc&#39;, J=&#39;M6i&#39;, B=&#39;af&#39;, P=True, C=cpt)
+gmt.psscale(C=cpt, D=&#39;jTC+w6i/0.2i+h+e+o0/1i&#39;, B=&#39;af&#39;)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>Arguments can also be passed as in the GMT command-line by using a
+single string:</p>
+<div class="codehilite"><pre><span></span>import gmt
+
+gmt.makecpt(&#39;-Ccubhelix -T-4500/4500&#39;, output=&#39;my.cpt&#39;)
+gmt.grdimage(&#39;grid.nc -JM6i -Baf -P -Cmy.cpt&#39;)
+gmt.psscale(&#39;-Cmy.cpt -DjTC+w6i/0.2i+h+e+o0/1i -Baf&#39;)
+gmt.psconvert(&#39;-Tf -Fmy-figure&#39;)
+</pre></div>
+
+
+<p>Notice that output that would be redirected to a file is specified using
+the <code>output</code> keyword argument.</p>
+<p>You can also pass in data from Python. Grids in netCDF format are passed
+as xarray <code>Datasets</code> that can come from a netCDF file or generated in
+memory:</p>
+<div class="codehilite"><pre><span></span>import gmt
+import xarray as xr
+
+data = xr.open_dataset(&#39;grid.nc&#39;)
+
+cpt = gmt.makecpt(C=&#39;cubhelix&#39;, T=&#39;-4500/4500&#39;)
+gmt.grdimage(input=data, J=&#39;M6i&#39;, B=&#39;af&#39;, P=True, C=cpt)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>Tabular data can be passed as numpy arrays:</p>
+<div class="codehilite"><pre><span></span>import numpy as np
+import gmt
+
+data = np.loadtxt(&#39;data_file.csv&#39;)
+
+cpt = gmt.makecpt(C=&quot;red,green,blue&quot;, T=&quot;0,70,300,10000&quot;)
+gmt.pscoast(R=&#39;g&#39;, J=&#39;N180/10i&#39;, G=&#39;bisque&#39;, S=&#39;azure1&#39;, B=&#39;af&#39;, X=&#39;c&#39;)
+gmt.psxy(input=data, S=&#39;ci&#39;, C=cpt, h=&#39;i1&#39;, i=&#39;2,1,3,4+s0.02&#39;)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>In the Jupyter notebook, we can preview the plot by calling
+<code>gmt.show()</code>, which embeds the image in the notebook:</p>
+<div class="codehilite"><pre><span></span>import numpy as np
+import gmt
+
+data = np.loadtxt(&#39;data_file.csv&#39;)
+
+cpt = gmt.makecpt(C=&quot;red,green,blue&quot;, T=&quot;0,70,300,10000&quot;)
+gmt.pscoast(R=&#39;g&#39;, J=&#39;N180/10i&#39;, G=&#39;bisque&#39;, S=&#39;azure1&#39;, B=&#39;af&#39;, X=&#39;c&#39;)
+gmt.psxy(input=data, S=&#39;ci&#39;, C=cpt, h=&#39;i1&#39;, i=&#39;2,1,3,4+s0.02&#39;)
+gmt.show()
+</pre></div>
+
+
+<p><code>gmt.show</code> will call <code>psconvert</code> in the background to get a PNG image
+back and use <code>IPython.display.Image</code> to insert it into the notebook.</p>
+<p><strong>TODO</strong>: We're still thinking of the best way to call <code>gmt.psconvert</code>
+first to generate a high-quality PDF and right after call <code>gmt.show()</code>
+for an inline preview. The issue is that <code>psconvert</code> deletes the
+temporary Postscript file that was being constructed on the background,
+this calling it a second time through <code>gmt.show()</code> would not work. Any
+suggestions are welcome!</p>
+<h3 id="package-organization">Package organization</h3>
+<p>The general layout of the Python package will probably look something
+like this:</p>
+<div class="codehilite"><pre><span></span>gmt/
+    c_api/     # Package with low-level wrappers for the C API
+        ...
+    modules/  # Defines the functions corresponding to GMT modules
+        ...
+</pre></div>
+
+
+<h3 id="the-module-functions">The module functions</h3>
+<p>The functions corresponding to GMT modules (<code>pscoast</code>, <code>psconvert</code>, etc)
+are how the user interacts with the Python API. They will be organized
+in different files in the <code>gmt.modules</code> package but will all be
+accessible from the <code>gmt</code> package namespace. For example, <code>pscoast</code> can
+live in <code>gmt/modules/ps_generating.py</code> but can be called as
+<code>gmt.pscoast</code>.</p>
+<p>Here is what a module function will look like:</p>
+<div class="codehilite"><pre><span></span>def module_function(**kwargs):
+    &quot;&quot;&quot;
+    Docstring explaining what each option is and all the aliases.
+
+    Likely derived from the GMT documentation.
+    &quot;&quot;&quot;
+    # Convert any inputs into things the C API can digest
+    ...
+    # Parse the keyword arguments and make an &quot;args&quot; list
+    ...
+    # Call the module function from the C API with the inputs
+    ...
+    # Process any outputs from the C API into Python data types
+    ...
+    return output
+</pre></div>
+
+
+<p>We will automate this process as much as possible:</p>
+<ul>
+<li>Common options in the docstrings can be reused from an <code>OPTIONS</code> dictionary.</li>
+<li>Parsing of common arguments (R, J, etc) can be done by a function.</li>
+<li>Creating the GMT session and calling the module can be automated.</li>
+<li>Conversion of inputs and outputs will most likely be: tables to numpy arrays,
+  grids to xarray <code>Datasets</code>, text to Python text.</li>
+</ul>
+<p>Most of the work in this part will be wrapping all of the many GMT
+modules, parsing non-standard options, and making sure the docstrings
+are accurate. It might even be possible to automatically generate the
+docstrings or parts of them from the command-line help messages by
+passing a Python callback as the <code>print_func</code> when creating a GMT
+session.</p>
+<h3 id="the-low-level-wrappers">The low-level wrappers</h3>
+<p>The low-level wrapper functions will be bare-bones <code>ctypes</code> foreign
+functions from the <code>libgmt.so</code> shared library. The functions can be
+accessed from Python like so:</p>
+<div class="codehilite"><pre><span></span>import ctypes as ct
+
+libgmt = ct.cdll.LoadLibrary(&quot;libgmt.so&quot;)
+
+# Functions are accessed as members of the &#39;libgmt&#39; object
+GMT_Call_Module = libgmt.GMT_Call_Module
+
+# Call them like normal Python functions
+GMT_Call_Module(... inputs ...)
+</pre></div>
+
+
+<p>The tricky part is making sure the functions get the input types they
+need. <code>ctypes</code> provides access to C data types and a way to specify the
+data type conversions that the function requires:</p>
+<div class="codehilite"><pre><span></span>GMT_Call_Module.argstypes = [ct.c_void_p, ct.c_char_p, ct.c_int, ct.c_void_p]
+</pre></div>
+
+
+<p>This is fine for standard data types like <code>int</code>, <code>char</code>, etc, but will
+need extra work for custom GMT <code>struct</code>. These data types will need to
+be wrapped by Python classes that inherit from <code>ctypes.Structure</code>.</p>
+<p>The <code>gmt.c_api</code> module will expose these foreign functions (with output
+and input types specified) and GMT data types for the modules to use.</p>
+<p>The main entry point into GMT will be through the <code>GMT_Call_Module</code>
+function. This is what the <code>gmt</code> command-line application uses to run a
+given module, like <code>GMT_pscoast</code> for example. We will use it to run the
+modules from the Python side as well. It has the following signature:</p>
+<div class="codehilite"><pre><span></span>int GMT_Call_Module (void *V_API, const char *module, int mode, void *args)
+</pre></div>
+
+
+<p>The arguments <code>module</code>, <code>mode</code>, and <code>args</code> (the command-line argument
+list) are plain C types and can be generated easily using <code>ctypes</code>. The
+Python module code will need to generate the <code>args</code> array from the given
+function arguments. The <code>V_API</code> argument is a "GMT Session" and is
+created through the <code>GMT_Create_Session</code> function, which will have to be
+wrapped as well.</p>
+<p>The input and output of Python data will be handled through the GMT
+virtual file machinery. This allows us to write data to a memory
+location instead of a file without GMT knowing the difference. For
+input, we can use <code>GMT_Open_VirtualFile</code> and point it to the location in
+memory of the Python data, for example using
+<a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ctypes.html">numpy.ndarray.ctypes</a>.
+We can also translate the Python data into <code>ctypes</code> compatible types.
+The virtual file pointer can also be passed as the output option for the
+module, for example as <code>-G</code> or through redirection (<code>-&gt;</code>). We can read
+the contents of the virtual file using <code>GMT_Read_VirtualFile</code>.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>There are gonna be some rough edges on the C API that will have to get sorted
+before all of this is usable.
+The API is new (from 2013) and hasn't been much used by third-party libraries.
+Some of the details aren't documented and require diving into the GMT source
+code or having access to a <a href="http://www.soest.hawaii.edu/wessel/">GMT guru</a>,
+like I have.
+Hopefully this work will make it more robust and new GMT wrappers can be made
+for other languages without so much effort.</p>
+<p>All of this work in its very early stages and I'd love to get some feedback and
+ideas!
+You can leave a comment below or
+<a href="https://github.com/GenericMappingTools/gmt-python/issues">create an issue on the Github repository</a>.</p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/gmt-python-design.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/gmt-python-design.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>A year in Hawaii hacking on the Generic Mapping Tools</title>
+        <link>https://www.leouieda.com/blog/hawaii-gmt-postdoc.html</link>
+        <guid>https://www.leouieda.com/blog/hawaii-gmt-postdoc.html</guid>
+        <pubDate>Thu, 02 Mar 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/hawaii-gmt-postdoc.png">
+
+            <p></p>
+
+            
+
+
+            <p>Back in July of 2016, I applied for a postdoc position to build Python bindings
+for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a> software
+with Professor <a href="http://www.soest.hawaii.edu/wessel/">Paul Wessel</a> at the
+<a href="http://www.soest.hawaii.edu/GG/index.html">University of Hawaii</a>.
+The short version is that I got the position, asked for a 1 year leave from
+<a href="http://www.uerj.br/">UERJ</a> (where I currently work as a professor),
+came to Hawaii, and right now I'm starting to get familiar with the GMT code
+base.</p>
+<p>Read on for the long version.</p>
+<p><img alt="" src="/images/post-building-university-hawaii.jpg" />
+<em>The Pacific Ocean Science and Technology (POST) building in the UH Manoa
+campus. My office is on the top floor with a nice view of downtown Honolulu.</em></p>
+<p>After two and half years as a <a href="/about/" title="About">Professor at UERJ</a>,
+struggling to teach classes without any experience or time to prepare,
+all while finishing <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">my PhD</a>,
+I was feeling a bit burned-out and eager to do something different.
+Meanwhile, Brazil was (and still is) in a huge economic and political crisis
+and Rio was hit pretty hard.
+The University, which is State owned, was on strike from March 2016 until after
+the Olympic games in August.
+The time was ripe to apply for something different abroad.</p>
+<p>I signed up for a couple of mailing lists where people post job opportunities
+just to see what was out there.
+If you're looking for a new position or just want to get a feeling for what is
+currently on demand, I highly recommend signing up for the
+<a href="http://lists.geodynamics.org/cgi-bin/mailman/listinfo/cig-jobpostings">Computational Infrastructure for Geodynamics (CIG) list</a>
+and the
+<a href="http://mailman.ucar.edu/mailman/listinfo/es_jobs_net">Earth Sciences Job Email list (ES-JOBS)</a>.
+I get at least 5-10 emails on the ES-JOBS list per day (you might want to
+redirect them to a folder to keep your inbox from exploding).
+After about a month on the lists, this message from Paul came on the CIG list:</p>
+<blockquote>
+<p>A full-time postdoctoral position is available in the Department of Geology
+and Geophysics at the University of Hawaii at Mānoa to participate in funded
+research in support of the expansion of the Generic Mapping Tools (GMT) to
+Python (possibly via Cython), with applications in plate tectonics and
+geodynamics. A one-year initial appointment is anticipated, with the
+possibility of a second year extension, depending on progress and
+availability of funds.</p>
+<p>The successful applicant will be a highly motivated, independent researcher
+with extensive programming experience (preferably in C) and Python scripting
+and will assist Dr. Wessel and the GMT team in developing the GMT/Python API.
+Applicants must have completed a PhD in the physical sciences at the time of
+appointment, with a preference for geophysics, and should be proficient in
+spoken and written English. The position is open immediately and will remain
+open until an appointment is made.</p>
+<p>To apply, please send a curriculum vitae, a brief (1 page) statement of
+research objectives, a brief (1 page) statement of skills or experience
+suitable for contributing to GMT development, and the names of three
+references to Dr. Paul Wessel.  Questions should also be addressed to Dr.
+Wessel directly via e-mail. Information on the Department can be found at
+http://www.soest.hawaii.edu/GG. The University is an Equal
+Opportunity/Affirmative Action Institution.</p>
+</blockquote>
+<p>The requirements seemed to fit me perfectly.
+My <a href="/about/bachelors.html" title="&lt;b&gt;BSc&lt;/b&gt; in Geophysics">Bachelor's thesis</a> was to developed a
+<a href="http://www.tesseroids.org">C program</a> and I spent most of <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">my PhD</a>
+building a <a href="https://www.fatiando.org">Python library</a>.
+After some careful consideration with my wife and bit of hesitation, I decided
+to apply for the position.
+I consulted my department and they generously agreed to cover my
+geophysics couses (<a href="/teaching/geofisica1.html" title="Geofísica 1: Gravimetria e magnetometria">1</a> and <a href="/teaching/geofisica2.html" title="Geofísica 2: Sismologia e sísmica">2</a>)
+during the year that I would be away.
+So I sent in
+<a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_cv.pdf">my CV</a>,
+the <a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_research_statement.pdf">statement of research objectives</a>,
+and the <a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_skills_statement.pdf">statement of skills</a>.
+As always, the LaTeX sources for all three are on a
+<a href="https://github.com/leouieda/cv/tree/June2016">Github repository</a> if you want
+to have a look or need a template to get started.</p>
+<p>I did a Skype interview with the very friendly GMT team and after a while I got
+an email saying that the position was mine!
+I finished my responsibilities for 2016 and took some vacation time to
+sort out the trip.
+In the middle of February I hopped on a quick ~24h trip from São Paulo to
+Honolulu and now here I am.</p>
+<p><img alt="" src="/images/university-office-view-hawaii.jpg" />
+<em>My new desk at UH with a great view of the tall buildings of
+<a href="https://en.wikipedia.org/wiki/Waikiki">Waikiki</a> and downtown Honolulu on a
+nice rainy day.</em></p>
+<p>The goal of the project is to build a bridge between GMT (a set C-coded
+command-line programs) and the Python programming language.
+GMT is arguably the best map plotting software around and
+it certainly makes <a href="http://gmt.soest.hawaii.edu/doc/latest/Gallery.html">the most beautiful maps</a>.
+This bridge will bring that power to the Python community.</p>
+<p>The way I'm currently exploring for doing this is to hook into the
+<a href="http://gmt.soest.hawaii.edu/doc/latest/GMT_API.html">GMT C API</a> (the internal
+functions that GMT exposes through a shared library)
+using the <a href="https://docs.python.org/3/library/ctypes.html">ctypes</a>
+package from the Python standard library.
+This way, a user could call the internal GMT functions from a Python program
+or, even better, from a <a href="http://jupyter.org/">Jupyter notebook</a>.
+This will serve as a basis for building a more Pythonic higher-level library
+for GMT.
+Hopefully this will help smooth the rough edges of the GMT command-line
+interface that cuts newbies and gurus alike.
+After all, who could possibly remember what <a href="http://gmt.soest.hawaii.edu/doc/latest/gallery/ex17.html#example-17"><code>-DjTR+o0.3i/0.1i+w4i/0.2i+h</code> is
+supposed to
+do</a>?</p>
+<p>Right now, I'm still struggling with CMake configuration issues, linking
+problems, incompatibilities with
+<a href="https://www.continuum.io/downloads#all">Anaconda</a>, and other pleasant things
+that come with dealing with compiled code.
+But I'll write more about that in a later post.
+<em>Now, I wonder where I put that <code>libgdal.so</code> file?</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/hawaii-gmt-postdoc.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/hawaii-gmt-postdoc.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Recommended reading to get started with Python for science and data analysis</title>
+        <link>https://www.leouieda.com/blog/getting-started-with-python-for-science.html</link>
+        <guid>https://www.leouieda.com/blog/getting-started-with-python-for-science.html</guid>
+        <pubDate>Tue, 07 Feb 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/getting-started-python.png">
+
+            <p></p>
+
+            
+
+
+            <p>I get asked a lot in the <a href="https://www.fatiando.org">Fatiando a Terra</a>
+<a href="https://groups.google.com/d/forum/fatiando">mailing list</a>
+how to do some basic Python and numpy tasks which are not necessarily related
+to Fatiando.
+The most common question is some variant of "I have some data in a csv/txt/xyz
+file and I want to load it into Python".
+I think this happens because a lot of people find the project while searching
+for a replacement for GUI based commercial projects,
+like Geosoft's Oasis Montaj,
+but they don't necessarily know Python.
+So instead of writing yet another email,
+I decided to <a href="http://matt.might.net/articles/how-to-blog-as-an-academic/">"Reply to public"</a>
+here.</p>
+<p><strong>Before you start</strong>, try to find a task or problem that you would like to
+solve using programming.
+Then learn what you need to solve this problem.
+This will let you apply the knowledge you gain straight away.
+Plus, you get something useful by the end of your studies.
+If you don't have anything in mind, here a few ideas:</p>
+<ul>
+<li>Loading data from several text files and making a plot for each one.</li>
+<li>Extracting a section of data from several files and compiling them into a
+  single file.</li>
+<li>Download data from an online source and fit a trend line to it (for example,
+  the temperature data from
+  <a href="/blog/python-hawaii-2017.html" title="Thoughts from the Introduction to Python Workshop at UH Manoa">my Python workshop at UH</a>).</li>
+<li>Implement a common (and simple) method in your field that is only available
+  in commercial software.</li>
+</ul>
+<p>Finally, here are my recommendations (in order):</p>
+<ol>
+<li><strong>Don't start</strong> with a general Python programming book/site/tutorial/video.
+   They are usually meant for programmers, not scientists. You'll have to wade
+   through mountains of string formatting and Fibonacci numbers before you find
+   an answer to "How do I load these data?" (and it won't be <code>numpy.loadtxt</code>).</li>
+<li><strong>Ignore</strong> any reference that uses Python 2. All support for Python 2.7
+   will end in 2020 and there is no reason to still be using it. </li>
+<li><strong>Start</strong> with the <a href="https://software-carpentry.org/lessons/">Software Carpentry
+   lessons</a>. Read all of them if you
+   can. <strong>Everything there will make your life easier.</strong> If you don't have the
+   time, focus on "Programming with Python" and "Version Control with git".
+   The lessons are not detailed but instead show you what is out
+   there and what you should type into Google.</li>
+<li>After you wet your appetite, <strong>dive deeper</strong> into more detailed material. I
+   highly recommend the <a href="http://www.scipy-lectures.org/">Scipy Lecture Notes</a>.
+   If you like the feeling of paper in your hands and have some money to spare,
+   try the books
+   <a href="http://shop.oreilly.com/product/0636920033424.do">Effective Computation in Physics</a>
+   by <a href="http://www.scopatz.com/">Anthony Scopatz</a> and
+   <a href="http://katyhuff.github.io/">Katy Huff</a>
+   and <a href="http://shop.oreilly.com/product/0636920034919.do">Python Data Science Handbook</a>
+   by <a href="http://staff.washington.edu/jakevdp/">Jake VanderPlas</a>.
+   There is also <a href="http://greenteapress.com/wp/think-python-2e/">Think Python</a> by
+   the excellent <a href="http://www.allendowney.com/">Allen Downey</a>, which is available
+   for free if you don't have the option to purchace.
+   <strong>Beware that I have not read these books</strong> so I cannot vouch for them
+   (but I have read good reviews online).</li>
+<li>Now that you have the basics down, <strong>use the project documentation pages</strong>
+   to find specific instructions for what you want, for example the
+   <a href="http://www.numpy.org/">numpy documentation</a> and the
+   <a href="http://matplotlib.org/gallery.html">matplotlib gallery</a>.</li>
+<li>If you like games and want to learn useful general Python skills, try the
+   <a href="http://www.pythonchallenge.com/">Python Challenge</a>.</li>
+</ol>
+<p>From now on, learning new things will be a continuous process. I've been
+programming Python for 10 years and every once in a while I'll still learn
+something new, usually that reduces the amount of code I have to write (less
+code = less bugs).
+The key is to stay informed and you can do that by subscribing to some (or all)
+of the following:</p>
+<ul>
+<li><a href="https://planet.scipy.org/">Planet Scipy</a>, an aggregator feed for scientific
+  Python blogs.</li>
+<li>The <a href="http://www.pythonweekly.com/">Python Weekly</a> email news letter.</li>
+<li>The podcasts <a href="https://www.podcastinit.com/">Podcast.__init__</a> and
+  <a href="https://talkpython.fm/">Talk Python To Me</a>. See my <a href="/blog/podcasts-2016.html" title="Podcasts in my playlist">previous post for more
+  podcast recommendations</a>.</li>
+</ul>
+<p>Now go out there and learn a skill that just might save you in these times of
+crisis!</p>
+<p><em>How did you get started with Python? Do you have anything to add to this list?
+Let me know!</em></p>
+<p><em>Update (2017-11-13): Added "Before you start" and the Python Challenge.</em></p>
+<p><em>Update (2018-12-17): Added "Think Python" and a warning about Python 2.</em></p>
+<hr />
+<p><em>The open science logo is by <a href="https://commons.wikimedia.org/wiki/File:Open_Science_Logo.jpg">G.emmerich on Wikimedia
+Commons</a>
+and the picture of the Python book is by
+<a href="https://www.flickr.com/photos/marcusjhbrown/14939378037">Marcus Brown</a>.
+Because both are licensed CC-BY-SA, then so is the thumbnail image for this
+blog post (a composite of the two images).</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/getting-started-with-python-for-science.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/getting-started-with-python-for-science.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Running Jupyter and the Scipy stack on Android</title>
+        <link>https://www.leouieda.com/blog/scipy-on-android.html</link>
+        <guid>https://www.leouieda.com/blog/scipy-on-android.html</guid>
+        <pubDate>Mon, 23 Jan 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy-on-android.png">
+
+            <p></p>
+
+            
+
+
+            <h2 id="tldr">TL;DR</h2>
+<p>Install Termux from Google Play, open it and run:</p>
+<div class="codehilite"><pre><span></span>$ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install numpy matplotlib pandas jupyter
+$ jupyter notebook
+</pre></div>
+
+
+<p>Copy the URL printed to the screen (it will look something like
+<code>http://localhost:8888/?token=longstringofcharacters</code>)
+and paste it into Chrome/Firefox. Enjoy!</p>
+<p>Read on for more tips and a few tweaks.</p>
+<p><strong>UPDATE (25-01-2017):</strong>
+There were a few dependencies that I had left out of the instructions for
+installing numpy et al. I edited the post to make things more complete and
+clear.</p>
+<h2 id="some-background">Some background</h2>
+<p>I bought my first tablet last October, an
+<a href="https://www.amazon.com/NVIDIA-SHIELD-K1-Tablet-Black/dp/B0171BS9CG/ref=sr_1_2?s=pc&amp;ie=UTF8&amp;qid=1484937529&amp;sr=1-2&amp;keywords=nvidia+shield+k1">NVIDIA Shield K1</a>.
+I had been putting off getting one because I never could think of a good use
+for them.
+I have my phone for messaging and Internet, my kindle for reading, and my
+Linux laptop for working.
+It seemed to me that the tablet would be a nice toy but not something I could
+use and justify the purchase.</p>
+<p>The dream would be to be able to ditch my laptop and do actual work on the
+tablet.
+Mark O'Connor wrote about doing just that on
+<a href="http://yieldthought.com/post/12239282034/swapped-my-macbook-for-an-ipad">Yield
+Thought</a>
+but he cheats a bit by running everything on a Linode server.
+And how does anyone do scientific programming these days without a Jupyter
+notebook?</p>
+<p>I finally gave in, thinking that I would use the tablet mainly for reading
+papers and taking notes.
+Maybe even play a few games.
+Then I discovered <a href="https://termux.com/">Termux</a>.</p>
+<h2 id="show-dont-tell">Show, don't tell</h2>
+<p>Here is a screencast of me running a Jupyter notebook
+server on my tablet.
+Notice that the URL is <code>localhost:8888/</code> so this is not a remote server.</p>
+<p><img alt="Screencast of Termux running the Jupyter notebook on my Shield K1 tablet" src="/images/termux-running-jupyter.gif" /></p>
+<h2 id="setting-up-your-terminal">Setting up your terminal</h2>
+<p>Install Termux from Google Play and open it.
+You'll be dropped into a bash terminal, like the one below.</p>
+<p><img alt="Blank Termux startup screen" src="/images/termux-blank.png" /></p>
+<p>Termux uses the <code>apt</code> package manager so you can install packages pretty much
+like you would on Debian/Ubuntu.</p>
+<p>The first thing I do on any new computer is install git so that I can fetch my
+<a href="https://github.com/leouieda/dotfiles">configuration files from Github</a>:</p>
+<div class="codehilite"><pre><span></span>$ apt install git
+</pre></div>
+
+
+<p>Before cloning the repository, I need to generate a new SSH key (only required
+if you <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">use the SSH protocol with git</a>):</p>
+<div class="codehilite"><pre><span></span>$ apt install openssh
+$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+$ cat .ssh/id_rsa.pub  # copy and paste your public key to Github
+</pre></div>
+
+
+<p>Then I can clone my <a href="https://github.com/leouieda/dotfiles">dotfiles</a>
+repository:</p>
+<div class="codehilite"><pre><span></span>$ git clone git@github.com:leouieda/dotfiles.git
+</pre></div>
+
+
+<p>Now my Termux terminal looks just like my Linux terminal on my laptops.</p>
+<p><img alt="Cloning git repository with my config files" src="/images/termux-git.png" /></p>
+<p><img alt="My Linux terminal to compare with termux" src="/images/termux-linux-terminal.png" /></p>
+<h2 id="installing-the-scipy-stack">Installing the Scipy stack</h2>
+<p>If you're from the pre-Anaconda era, you'll probably remember the frustration
+of trying to <code>pip install numpy scipy matplotlib</code>.
+Sadly, there is no Anaconda for Termux so we're stuck with using the system
+python and <code>pip</code> to install packages.</p>
+<p>But don't despair!
+Things work more smoothly these days (if you follow the
+<a href="https://github.com/termux/termux-packages/issues/136">magic incantations</a>).
+Sadly, the scipy library itself so far <a href="https://github.com/termux/termux-packages/issues/471">can't be installed without significant
+effort</a>.
+Even then you might not be able to do it because of all the Fortran
+requirements (BLAS, LAPACK, and gfortran).
+So for now, we have to make do with numpy only.</p>
+<p>First, we must install python it self (version 3.6), the headers files, a C compiler,
+and the FFTW package from Termux:</p>
+<div class="codehilite"><pre><span></span>$ apt install python python-dev clang fftw
+</pre></div>
+
+
+<p>Now we can install numpy using pip:</p>
+<div class="codehilite"><pre><span></span>$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install numpy
+</pre></div>
+
+
+<p>For matplotlib, we'll need to install a few more dependencies:</p>
+<div class="codehilite"><pre><span></span>$ apt install freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install matplotlib
+</pre></div>
+
+
+<p>And for Jupyter we need to install the zmq library as well:</p>
+<div class="codehilite"><pre><span></span>$ apt install libzmq libzmq-dev
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install jupyter
+</pre></div>
+
+
+<p>Finally, we can get pandas:</p>
+<div class="codehilite"><pre><span></span>$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install pandas
+</pre></div>
+
+
+<p>Now you have access to things like <code>ipython</code> on the command-line:</p>
+<p><img alt="IPython running inside Termux" src="/images/termux-ipython-numpy.png" /></p>
+<p>One thing that won't work are matplotlib plots because there is no backend for
+Android.
+You can, however, use <code>%matplotlib inline</code> or <code>%matplotlib notebook</code> inside
+Jupyter notebooks to get the plots working.
+Using <code>plt.savefig</code> without using <code>plt.show()</code> should also work.</p>
+<p>To get a Jupyter notebook server running, so the same thing you would on any
+other computer:</p>
+<div class="codehilite"><pre><span></span>$ jupyter notebook
+</pre></div>
+
+
+<p>The server won't automatically open a browser but
+you can copy the URL from the output and paste it into Chrome or Firefox.</p>
+<p><img alt="Jupyter notebook server running inside Termux" src="/images/termux-jupyter-startup.png" /></p>
+<h2 id="getting-comfortable">Getting comfortable</h2>
+<p>While it is possible to do some work using this setup (I wrote part of this
+post on the tablet using Vim and pushing to the <a href="https://github.com/leouieda/website">website's Github
+repo</a>), it may not be the most productive
+environment.
+Here are a few tips for making life a little bit easier.</p>
+<ul>
+<li>Enable <a href="https://termux.com/touch-keyboard.html">extra keys (esc, ctrl, tab)</a>
+  to complement your touch keyboard by pressing "Volume Up" + Q. Can you
+  imagine using a terminal without tab completion?</li>
+<li>Get a bluetooth keyboard. I bought the
+  <a href="https://www.amazon.com/Logitech-920-003390-Tablet-Keyboard-Android/dp/B0054L8N7M/ref=sr_1_15?s=pc&amp;ie=UTF8&amp;qid=1476900899&amp;sr=1-15&amp;keywords=Android+keyboard">Logitech 920-003390</a>.
+  It's not great but much better than a touch screen.</li>
+<li>If you want to use the touch screen, you'll need the
+  <a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard&amp;hl=en">Hacker's Keyboard app</a>
+  to execute your code cells with Shift+Enter and not go crazy.</li>
+<li><a href="http://vim.wikia.com/wiki/Avoid_the_escape_key">Remap Esc to anything else</a>
+  when using Vim. Esc shows the homescreen on Android and is a very frustrating
+  habit to loose.</li>
+</ul>
+<p><img alt="Sreenshot of vim running inside termux writing this post,
+inception style." src="/images/termux-vim.png" /></p>
+<h2 id="things-that-are-still-missing">Things that are still missing</h2>
+<p>This setup works and is way beyond what I expected to be able to accomplish
+with a $200 tablet.
+However, going back to pip installing numpy feels a bit like I'm back in 2010.
+What I've missed the most is <a href="http://continuum.io/downloads#all">Anaconda</a>
+and the <a href="http://conda.pydata.org/docs/">conda package manager</a>.
+Having a prebuilt bundle certainly makes life a lot easier.
+But I miss the conda environments the most.
+I use them extensively for my projects and papers.</p>
+<p>The scipy package. So yeah, that is still missing as well. A lot of things can
+be done using numpy replacements (<code>numpy.fft</code> instead of <code>scipy.fftpack</code> etc)
+though they are usually slower.</p>
+<p>Another recent arrival that has made a huge impact on my daily work is <a href="https://conda-forge.github.io/">conda-forge</a>.
+This project greatly democratizes conda packages.
+Now anyone can build their own packages for Linux, Windows, and Mac.
+It would be awesome to have some for Android as well.
+Assuming that you can get conda installed, the major difficulty might
+be finding a continuous integration service that runs Android and setting up
+the infrastructure.</p>
+<p><strong>Let me know if you try this out! Is there another setup that you use?  What
+else is missing?  Do you think we'll be able to fully work like this one day?</strong></p>
+<hr />
+<p><em>The Jupyter logo was downloaded from their Github repository
+(<a href="https://github.com/jupyter/design">jupyter/design</a>).
+The Android logo is <a href="http://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>
+Google Inc.,
+<a href="https://commons.wikimedia.org/wiki/File%3AAndroid_robot.svg">via Wikimedia Commons</a>.</em></p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/scipy-on-android.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/scipy-on-android.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>Podcasts in my playlist</title>
+        <link>https://www.leouieda.com/blog/podcasts-2016.html</link>
+        <guid>https://www.leouieda.com/blog/podcasts-2016.html</guid>
+        <pubDate>Thu, 12 Jan 2017 12:00:00 GMT</pubDate>
+        <description><![CDATA[
+
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/podcasts-2016.png">
+
+            <p></p>
+
+            
+
+
+            <p>Last week, John Leeman wrote
+<a href="http://www.johnrleeman.com/2017/01/03/podcasts-im-listening-to/">a list of podcasts recommendations</a>
+and I thought I'd share mine here as well.
+I have been listening to podcasts since around 2014 and I've experimented with
+a few before finding some that I really enjoy.
+I still subscribe to some new podcasts when I find them.
+I'll listen to a couple of episodes but lately none have stuck with me¹.</p>
+<p>Here are the ones that stayed with me throughout 2016:</p>
+<ul>
+<li><a href="http://www.hellointernet.fm/">Hello Internet</a>: The one that got me started
+  with podcasts. A light conversation between two friends who make science
+  videos on YouTube.</li>
+<li><a href="https://www.relay.fm/cortex">Cortex</a>: <a href="http://www.cgpgrey.com/">CGP Grey</a>
+  and <a href="http://www.mykehurley.net/">Myke Hurley</a> talk about productivity and
+  running small businesses.</li>
+<li><a href="http://www.imaginaryworldspodcast.org/">Imaginary Worlds</a>: "A show about how
+  we create them and why we suspend our disbelief". One of my favorites. If
+  you're looking for a place to start, try episode
+  <a href="http://www.imaginaryworldspodcast.org/dumbledore-s-army.html">Dumbledore's Army</a>
+  (even if you don't like Harry Potter).</li>
+<li><a href="http://www.npr.org/podcasts/510307/invisibilia">Invisibilia</a>: A series about
+  the forces that shape our lives. Also one of my favorites.</li>
+<li><a href="https://talkpython.fm/">Talk Python To Me</a>: The title pretty much says it
+  all.</li>
+<li><a href="https://undersampledrad.io/">Undersampled Radio</a>: Geeky and fun interviews,
+  mostly about geo/science/technology.</li>
+<li><a href="http://www.dontpanicgeocast.com/">Don't Panic Geocast</a>:
+  <a href="http://www.johnrleeman.com">John Leeman</a> and
+  <a href="https://twitter.com/shannondulin">Shannon Dulin</a> talk about all things
+  geoscience (sometimes with very interesting guests).</li>
+<li><a href="http://www.radiolab.org/">Radiolab</a>: Interesting stories about all sorts of
+  topics. Very high quality production.</li>
+</ul>
+<p>And here are the ones that I tried but ended up dropping for some reason:</p>
+<ul>
+<li><a href="http://www.wnyc.org/shows/notetoself">Note to Self</a></li>
+<li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
+<li><a href="https://www.podcastinit.com/">Podcast.__init__</a></li>
+<li><a href="https://www.startalkradio.net/">Star Talk</a></li>
+<li><a href="https://changelog.com/">Changelog</a></li>
+</ul>
+<p>I subscribe and listen to all of them using the
+<a href="https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&amp;hl=en">Podcast Addict</a>
+app on my Android phone.
+You can also get most of them through Google Play Music or iTunes.</p>
+<p><em>What are your recommendations?</em></p>
+<hr />
+<p>¹ I know I've doing too much Python when I have to fight the urge to capitalize
+"none".</p>
+
+
+                <hr><p><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/podcasts-2016.html">tweet @leouieda</a>).</p><p><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/podcasts-2016.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</p>
+
+        ]]></description>
+    </item>
+
+</channel>
+</rss>

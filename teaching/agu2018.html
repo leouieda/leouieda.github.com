@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/agu2018-workshop.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Best practices for modern open-source research codes (AGU)">
+            <meta name="twitter:description" content="About This half-day workshop was taught at the 2018 AGU Fall Meeting in Washington DC, USA. It was organized by myself, Lindsey Heagy, Lion ...">
+
+    <meta property="og:title" content="Best practices for modern open-source research codes (AGU)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/teaching/agu2018.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/agu2018-workshop.png">
+            <meta property="og:description" content="About This half-day workshop was taught at the 2018 AGU Fall Meeting in Washington DC, USA. It was organized by myself, Lindsey Heagy, Lion ...">
+
+    <title>    Best practices for modern open-source research codes (AGU) | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/teaching/">Teaching</a></li></ol>
+
+
+    <h1>Best practices for modern open-source research codes (AGU)</h1>
+
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-university fa-fw" title="Institution"></i>
+                AGU 2018 Fall Meeting
+            </li><li>
+                <i class="fa-li fa fa-graduation-cap fa-fw" title="Course type"></i>
+                Short course
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                Creative Commons Attribution License
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/opengeophysics/2018-agu-oss">opengeophysics/2018-agu-oss</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/python-workshop">python-workshop</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This half-day workshop was taught at the 2018 AGU Fall Meeting in Washington DC, USA.
+It was organized by myself,
+<a href="https://lindseyjh.ca/">Lindsey Heagy</a>,
+<a href="https://github.com/krischer">Lion Krischer</a>,
+and
+<a href="https://www.fwagner.info/">Florian Wagner</a>.
+Our goal was to help people who are already programming and want to take the next step
+towards developing open-source software.</p>
+<h3 id="description">Description</h3>
+<p>Modern science increasingly relies on code, ranging from small scripts to workflows with
+many interacting parts. Reproducibility and extension of studies employing these codes
+require that they are accessible. The open-source community has established modern
+best-practices for making software available, usable, and maintainable. In this
+workshop, we will demonstrate a workflow for publishing research code following these
+best-practices. We will cover open-source licenses, version control, automated testing,
+documentation, and continuous integration. The workshop will be hands-on: participants
+will work to set up a project using sample code provided by the instructors. By the end,
+participants will have the knowledge needed to continue learning independently and apply
+these practices to their own research code. These resources can be applied to any
+programming language or scientific discipline.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>Our aim with this workshop is for participants to:</p>
+<ol>
+<li>Gain awareness of tools available to researchers within the open-source ecosystem
+   including <a href="http://jupyter.org/">Jupyter</a>, <a href="https://git-scm.com/">git</a>,
+   <a href="http://readthedocs.org">ReadTheDocs</a>, continuous integration services (for testing), etc</li>
+<li>Learn modern best-practices for structuring a repository for research software that
+   promotes accessibility, reusability, and reproducibility</li>
+<li>Learn about the tools available for testing, publishing documentation, and versioning
+   that can be immediately applied to their own codes</li>
+</ol>
+
+    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/teaching/agu2018.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/teaching/agu2018.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/python-hawaii-2017.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/python-hawaii-2017.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Thoughts from the Introduction to Python Workshop at UH Manoa
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/teaching/python-hawaii-2017.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/python-hawaii-2017.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introduction to Python Workshop (UH Manoa - G&G)
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/teaching/python-geologia-2016.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/python-geologia-2016.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Python para Geólogos (SAGEO - UERJ)
+            </span><br>
+                <span class="card-date">(2016)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/teaching/python-iag-2016.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/python-iag-2016.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Python para Ciências da Terra (IAG/USP)
+            </span><br>
+                <span class="card-date">(2016)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

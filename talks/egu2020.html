@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/egu2020.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Evaluating the accuracy of equivalent-source predictions using cross-validation">
+            <meta name="twitter:description" content="About Presented at EGU 2020 (online because of COVID-19), session "G4.3: Acquisition and processing of gravity and magnetic field data and t...">
+
+    <meta property="og:title" content="Evaluating the accuracy of equivalent-source predictions using cross-validation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/egu2020.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/egu2020.png">
+            <meta property="og:description" content="About Presented at EGU 2020 (online because of COVID-19), session "G4.3: Acquisition and processing of gravity and magnetic field data and t...">
+
+    <title>    Evaluating the accuracy of equivalent-source predictions using cross-validation | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Evaluating the accuracy of equivalent-source predictions using cross-validation</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Santiado R. Soler
+                <span class="post-date">(2020)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                EGU 2020
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                Creative Commons Attribution License
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.12245372">10.6084/m9.figshare.12245372</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.5194/egusphere-egu2020-15729">10.5194/egusphere-egu2020-15729</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/equivalent-layer">equivalent-layer</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/machine-learning">machine-learning</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>Presented at EGU 2020 (online because of COVID-19), session
+"<a href="https://meetingorganizer.copernicus.org/EGU2020/session/35332">G4.3: Acquisition and processing of gravity and magnetic field data and their integrative interpretation</a>".
+Details some of the work we've been doing in <a href="/papers/verde.html" title="Verde: Processing and gridding spatial data using Green's functions">Verde</a> and
+<a href="https://github.com/fatiando/harmonica">Harmonica</a> for machine-learning style
+interpolation with equivalent-sources.
+In particular, applying state-of-the-art cross-validation strategies to
+estimate interpolation accuracy and tune equivalent-source parameters.</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQRbUG9XTvZxH-rwviVSMuiJPC7DqpFe3dJKw5ZsxI3mHr9L1Zh94OQBUKnnJBZ3Rej-jj8CsHI16l/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h3 id="short-pitch">Short pitch</h3>
+<blockquote>
+<p>For the meeting, we had to introduce our presentation with a short pitch in
+the online chat.</p>
+</blockquote>
+<p>We are looking into cross-validation (CV) to automatically determine the main
+parameters in equivalent source/layer processing: depth, damping, source
+layouts. But before we can do that, we need to understand how well CV estimates
+the error of equivalent source model predictions. We know from the ecological
+modeling literature that data that are spatially auto-correlated (close
+variables tend to be similar) tend to underestimate error in cross-validation.</p>
+<p>Our main question for this presentation was: Does this also happen for
+potential field modeling with equivalent sources?</p>
+<p>In short, yes it does.</p>
+<p>We found that regular CV methods underestimate the prediction mean square
+error. But "block" versions of CV (again, borrowed from ecology) are capable of
+mitigating this bias.</p>
+<p>Main message: take care when using cross-validation in potential field
+modeling. Prefer "block" versions of methods when possible.</p>
+<p>Both the cross-validation and equivalent source models are open-source and
+implemented in Python libraries.
+The block cross-validation is being implemented into the next release of
+<a href="/papers/verde.html" title="Verde: Processing and gridding spatial data using Green's functions">Verde</a> and equivalent source processing is already
+available in <a href="https://github.com/fatiando/harmonica">Harmonica</a>.</p>
+<h3 id="abstract">Abstract</h3>
+<p>We investigate the use of cross-validation (CV) techniques to estimate the
+accuracy of equivalent-source (also known as equivalent-layer) models for
+interpolation and processing of potential-field data.
+Our preliminary results indicate that some common CV algorithms (e.g., random
+permutations and k-folds) tend to overestimate the accuracy.
+We have found that blocked CV methods, where the data are split along spatial
+blocks instead of randomly, provide more conservative and realistic accuracy
+estimates.
+Beyond evaluating an equivalent-source model's performance, cross-validation
+can be used to automatically determine configuration parameters, like source
+depth and amount of regularization, that maximize prediction accuracy and avoid
+over-fitting.</p>
+<p>Widely used in gravity and magnetic data processing,
+the equivalent-source technique consists of a linear model (usually point
+sources) used to predict the observed field at arbitrary locations.
+Upward-continuation, interpolation, gradient calculations, leveling, and
+reduction-to-the-pole can be performed simultaneously by using the model
+to make predictions (i.e., forward modelling).
+Likewise, the use of linear models to make predictions is the backbone of many
+machine learning (ML) applications.
+The predictive performance of ML models is usually evaluated through
+cross-validation, in which the data are split (usually randomly) into a
+training set and a validation set.
+Models are fit on the training set and their predictions are evaluated using
+the validation set using a goodness-of-fit metric, like the mean square error
+or the R² coefficient of determination.
+Many cross-validation methods exist in the literature, varying in how the data
+are split and how this process is repeated.
+Prior research from the statistical modelling of ecological data suggests that
+prediction accuracy is usually overestimated by traditional CV methods when the
+data are spatially auto-correlated.
+This issue can be mitigated by splitting the data along spatial blocks
+rather than randomly.
+We conducted experiments on synthetic gravity data to investigate the use of
+traditional and blocked CV methods in equivalent-source interpolation.
+We found that the overestimation problem also occurs and that more conservative
+accuracy estimates are obtained when applying blocked versions of random
+permutations and k-fold.
+Further studies need to be conducted to generalize these findings to
+upward-continuation, reduction-to-the-pole, and derivative calculation.</p>
+<p>Open-source software implementations of the equivalent-source and blocked
+cross-validation (in progress) methods are available in the Python libraries
+Harmonica and Verde, which are part of the Fatiando a Terra project
+(<a href="https://www.fatiando.org/">www.fatiando.org</a>).</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.5194/egusphere-egu2020-15729"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.5194/egusphere-egu2020-15729" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/egu2020.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/egu2020.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Coupled interpolation of three-component GPS velocities
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/tgif2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tgif2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Machine Learning Lessons for Geophysics
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

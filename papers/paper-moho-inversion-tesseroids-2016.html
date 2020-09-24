@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/paper-moho-inversion-2016.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">
+            <meta name="twitter:description" content="About This paper is a chapter of my PhD thesis. It describes a new gravity inversion method to estimate the depth of the crust-mantle interf...">
+
+    <meta property="og:title" content="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/papers/paper-moho-inversion-tesseroids-2016.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/paper-moho-inversion-2016.png">
+            <meta property="og:description" content="About This paper is a chapter of my PhD thesis. It describes a new gravity inversion method to estimate the depth of the crust-mantle interf...">
+
+    <title>    Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/papers/">Papers</a></li></ol>
+
+
+    <h1>Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Valéria C. F. Barbosa
+                <span class="post-date">(2017)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Geophysical Journal International</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/pinga-lab/paper-moho-inversion-tesseroids">pinga-lab/paper-moho-inversion-tesseroids</a>
+            </li><li>
+                <i class="fa-li fa fa-paperclip fa-fw" title="Supplementary material"></i>
+                Data/Supplement: <a href="https://doi.org/10.6084/m9.figshare.3987267">10.6084/m9.figshare.3987267</a>
+            </li><li>
+                <i class="fa-li fa fa-file-pdf-o fa-fw" title="Preprint PDF"></i>
+                PDF (preprint): <a href="https://doi.org/10.31223/osf.io/9ba4m">10.31223/osf.io/9ba4m</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.1093/gji/ggw390">10.1093/gji/ggw390</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/moho">moho</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/inversion">inversion</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gravity">gravity</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/tesseroids">tesseroids</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This paper is a chapter of my <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">PhD thesis</a>.
+It describes a new gravity inversion method to estimate the depth of the
+crust-mantle interface (the Moho).
+The inversion uses a spherical Earth approximation by discretizing the Earth
+into tesseroids (spherical prisms).
+The forward modeling method used is described in the paper
+<a href="/papers/paper-tesseroids-2016.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">Tesseroids: forward modeling gravitational fields in spherical coordinates</a>.
+We applied the inversion to estimate the Moho depth for South America.</p>
+<p>The main result from this publication is the gravity-derived Moho depth model
+for South America and the differences between it and seismological estimates
+of <a href="https://doi.org/10.1016/j.tecto.2012.11.014">Assumpção et al. (2013)</a>.
+These differences allow us to know where the gravity-derived model can be trusted and where there might be unaccounted sources in the gravity data.</p>
+<p>You can <strong>download</strong> the model results, source code, and input data from
+doi:<a href="https://doi.org/10.6084/m9.figshare.3987267">10.6084/m9.figshare.3987267</a></p>
+<p><img alt="The estimated Moho depth for South America and differences with seismological estimates." src="/images/south-american-moho-gravity-inversion.png" />
+[<a href="https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png">high resolution version</a>]
+<br>
+<em>Figure caption:
+Dotted lines represent the boundaries between major geologic provinces.
+AD: Andean Province, AFB: Andean foreland basins, AM: Amazonas Basin, BR:
+Brazilian Shield, BO: Borborema province, CH: Chaco Basin, GB: Guyana
+Basin, GU: Guyana Shield, PB: Parnaíba Basin, PC: Parecis Basin, PR:
+Paraná Basin, PT: Patagonia province, SF: São Francisco Craton, SM:
+Solimões Basin.  Solid orange lines mark the limits of the main
+lithospheric plates. AF: Africa Plate, AN: Antarctica Plate, CA:
+Caribbean Plate, CO: Cocos Plate, SA: South America Plate, SC: Scotia
+Plate, NZ: Nazca Plate.  The solid light grey line is the 35 km Moho
+depth contour.</em></p>
+<h2 id="open-source-implementation">Open-source implementation</h2>
+<p>The inversion method proposed here is implemented in the Python programming
+language.
+The code uses the forward modeling and inversion packages of the
+<a href="https://www.fatiando.org">Fatiando a Terra</a> library (version 0.5).</p>
+<p>You'll find the source code, input data, and instructions to produce the
+results from the paper on the Github repository. There should be enough
+information for you to produce all figures of the paper.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Estimating the relief of the Moho from gravity data is a computationally
+intensive non-linear inverse problem.  What is more, the modeling must
+take the Earths curvature into account when the study area is of regional
+scale or greater.  We present a regularized non-linear gravity inversion
+method that has a low computational footprint and employs a spherical
+Earth approximation.  To achieve this, we combine the highly efficient
+Bott's method with smoothness regularization and a discretization of the
+anomalous Moho into tesseroids (spherical prisms).  The computational
+efficiency of our method is attained by harnessing the fact that all
+matrices involved are sparse.  The inversion results are controlled by
+three hyper-parameters: the regularization parameter, the anomalous Moho
+density-contrast, and the reference Moho depth.  We estimate the
+regularization parameter using the method of hold-out cross-validation.
+Additionally, we estimate the density-contrast and the reference depth
+using knowledge of the Moho depth at certain points.  We apply the
+proposed method to estimate the Moho depth for the South American
+continent using satellite gravity data and seismological data.  The final
+Moho model is in accordance with previous gravity-derived models and
+seismological data.  The misfit to the gravity and seismological data is
+worse in the Andes and best in oceanic areas, central Brazil and
+Patagonia, and along the Atlantic coast.  Similarly to previous results,
+the model suggests a thinner crust of 30-35 km under the Andean foreland
+basins.  Discrepancies with the seismological data are greatest in the
+Guyana Shield, the central Solimões and Amazonas Basins, the Paraná
+Basin, and the Borborema province.  These differences suggest the
+existence of crustal or mantle density anomalies that were unaccounted
+for during gravity data processing.</p>
+
+        <h2>Citation</h2>
+        <p>Uieda, L., and V. C. F. Barbosa (2017), Fast nonlinear gravity inversion in spherical coordinates with application to the South American Moho, Geophys. J. Int., 208(1), 162-176, doi:10.1093/gji/ggw390.</p>
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.1093/gji/ggw390"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.1093/gji/ggw390" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/papers/paper-moho-inversion-tesseroids-2016.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/papers/paper-moho-inversion-tesseroids-2016.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/tesseroid-variable-density.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tesseroid-variable-density.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Gravitational field calculation in spherical coordinates using variable densities in depth
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/fast-tesseroid-inversion-moon.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fast-tesseroid-inversion-moon.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/use-the-disturbance.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/use-the-disturbance.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Should geophysicists use the gravity disturbance or the anomaly?
+            </span><br>
+                <span class="card-date">(2018)</span><br><span class="label label-warning">IN REVIEW</span></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/pooch.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Pooch: A friend to fetch your data files">
+            <meta name="twitter:description" content="About This paper marks the release of Pooch v0.7.1, a Python library for downloading and managing data files. Pooch is a part of the new eco...">
+
+    <meta property="og:title" content="Pooch: A friend to fetch your data files">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/papers/pooch.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/pooch.png">
+            <meta property="og:description" content="About This paper marks the release of Pooch v0.7.1, a Python library for downloading and managing data files. Pooch is a part of the new eco...">
+
+    <title>    Pooch: A friend to fetch your data files | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/papers/">Papers</a></li></ol>
+
+
+    <h1>Pooch: A friend to fetch your data files</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Santiado R. Soler, Rémi Rampin, Hugo van Kemenade, Matthew Turk, Daniel Shapero, Anderson Banihirwe, John Leeman
+                <span class="post-date">(2020)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li ai ai-open-access fa-fw" title="Open-access article"></i>
+                Open-Access
+            </li><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Journal of Open Source Software</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/fatiando/pooch">fatiando/pooch</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.21105/joss.01943">10.21105/joss.01943</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This paper marks the release of <a href="http://www.fatiando.org/pooch">Pooch</a> v0.7.1,
+a Python library for downloading and managing data files.
+Pooch is a part of the new ecosystem of packages in
+<a href="https://www.fatiando.org">Fatiando a Terra</a>.
+It's used by most of the other packages to manage the sample data files used
+for testing and documentation.</p>
+<p>Pooch was first introduced in <a href="/blog/introducing-pooch.html" title="Introducing Pooch">this blog post from 2018</a>.</p>
+<p>The peer-review at JOSS is open and can be found at
+<a href="https://github.com/openjournals/joss-reviews/issues/1943">openjournals/joss-reviews#1943</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Scientific software is usually created to acquire, analyze, model, and
+visualize data. As such, many software libraries include sample datasets in
+their distributions for use in documentation, tests, benchmarks, and workshops.
+A common approach is to include smaller datasets in the GitHub repository
+directly and package them with the source and binary distributions (e.g.,
+scikit-learn and scikit-image do this). As data files increase in size, it
+becomes unfeasible to store them in GitHub repositories. Thus, larger datasets
+require writing code to download the files from a remote server to the user's
+computer. The same problem is faced by scientists using version control to
+manage their research projects. While downloading a data file over HTTPS can be
+done easily with modern Python libraries, it is not trivial to manage a set of
+files, keep them updated, and check for corruption. For example, scikit-learn,
+Cartopy, and PyVista all include code dedicated to this particular task.
+Instead of scientists and library authors recreating the same code, it would be
+best to have a minimalistic and easy to set up tool for fetching and
+maintaining data files.</p>
+<p>Pooch is a Python library that fills this gap. It manages a data <em>registry</em>
+(containing file names, SHA-256 cryptographic hashes, and download URLs) by
+downloading files from one or more remote servers and storing them in a local
+data cache. Pooch is written in pure Python and has minimal dependencies. It
+can be easily installed from the Python Package Index (PyPI) and conda-forge on
+a wide range of Python versions: 2.7 (up to Pooch 0.6.0) and from 3.5 to 3.8.</p>
+
+        <h2>Citation</h2>
+        <p>Uieda, L., Soler, S.R., Rampin, R., van Kemenade, H., Turk, M., Shapero, D., Banihirwe, A., and Leeman, J. (2020). Pooch: A friend to fetch your data files. Journal of Open Source Software, 5(45), 1943. doi:10.21105/joss.01943</p>
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.21105/joss.01943"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.21105/joss.01943" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/papers/pooch.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/papers/pooch.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/egu2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/egu2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Evaluating the accuracy of equivalent-source predictions using cross-validation
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/gmt6.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt6.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The Generic Mapping Tools Version 6
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

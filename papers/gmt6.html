@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/gmt6.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="The Generic Mapping Tools Version 6">
+            <meta name="twitter:description" content="About This paper marks the release of GMT version 6. Most of the work done for this release had the goal of reducing barriers to entry for n...">
+
+    <meta property="og:title" content="The Generic Mapping Tools Version 6">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/papers/gmt6.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/gmt6.png">
+            <meta property="og:description" content="About This paper marks the release of GMT version 6. Most of the work done for this release had the goal of reducing barriers to entry for n...">
+
+    <title>    The Generic Mapping Tools Version 6 | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/papers/">Papers</a></li></ol>
+
+
+    <h1>The Generic Mapping Tools Version 6</h1>
+
+        <p class="pub-date-author">
+            Paul Wessel, Joaquim Luis, <strong>Leonardo Uieda</strong>, Remko Scharroo, Florian Wobbe, Walter H. F. Smith, Dongdong Tian
+                <span class="post-date">(2019)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li ai ai-open-access fa-fw" title="Open-access article"></i>
+                Open-Access
+            </li><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Geochemistry, Geophysics, Geosystems</em>
+            </li><li>
+                <i class="fa-li fa fa-paperclip fa-fw" title="Supplementary material"></i>
+                Data/Supplement: <a href="https://doi.org/10.6084/m9.figshare.8171339">10.6084/m9.figshare.8171339</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.1029/2019GC008515">10.1029/2019GC008515</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/gmt">gmt</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/earthscope2018">earthscope2018</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This paper marks the release of <a href="https://www.generic-mapping-tools.org/">GMT</a> version 6.
+Most of the work done for this release had the goal of reducing barriers to entry for
+new users. The user experience as a whole has been improved and these changes are the
+foundation for <a href="/tag/pygmt/" title="pygmt">my work on PyGMT</a>.</p>
+<p>The development of the new <em>modern mode</em> was funded by our <a href="/research/earthscope2018.html" title="NSF-EAR: The EarthScope/GMT Analysis and Visualization Toolbox">NSF EarthScope
+grant</a>.</p>
+<h2 id="plain-language-summary">Plain language summary</h2>
+<p>The Generic Mapping Tools software is widely used in Earth and Ocean sciences to process
+data and make maps and illustrations. This new version simplifies usage, adds quick
+access to key data sets and provides a tool for making scientific animations.</p>
+<h2 id="abstract">Abstract</h2>
+<p>The Generic Mapping Tools (GMT) software is ubiquitous in the Earth and Ocean sciences.
+As a cross-platform tool producing high quality maps and figures, it is used by tens of
+thousands of scientists around the world. The basic syntax of GMT scripts has evolved
+very slowly since the 1990s, despite the fact that GMT is generally perceived to have a
+steep learning curve with many pitfalls for beginners and experienced users alike.
+Reducing these pitfalls means changing the interface, which would break compatibility
+with thousands of existing scripts. With the latest GMT version 6, we solve this
+conundrum by introducing a new "modern mode" to complement the interface used in
+previous versions, which GMT 6 now calls "classic mode". GMT 6 defaults to classic mode
+and thus is a recommended upgrade for all GMT 5 users. Nonetheless, new users should
+take advantage of modern mode to make shorter scripts, quickly access commonly used
+global data sets, and take full advantage of the new tools to draw subplots, place
+insets, and create animations.</p>
+
+        <h2>Citation</h2>
+        <p>Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H. F., & Tian, D. ( 2019). The Generic Mapping Tools version 6. Geochemistry, Geophysics, Geosystems, 20. doi:10.1029/2019GC008515</p>
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.1029/2019GC008515"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.1029/2019GC008515" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/papers/gmt6.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/papers/gmt6.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/liverpool2019.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool2019.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Building the foundations for open-source geophysics
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

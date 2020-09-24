@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/aogs2018-gps.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity">
+            <meta name="twitter:description" content="About This talk is about some early results from a collaboration me and Paul have with David Sandwell. The project was started by Paul and D...">
+
+    <meta property="og:title" content="Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/aogs2018.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/aogs2018-gps.png">
+            <meta property="og:description" content="About This talk is about some early results from a collaboration me and Paul have with David Sandwell. The project was started by Paul and D...">
+
+    <title>    Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Joint Interpolation of 3-component GPS Velocities Constrained by Elasticity</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, David Sandwell, Paul Wessel
+                <span class="post-date">(2018)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                AOGS 15th Annual Meeting
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                Creative Commons Attribution License
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.6387467">10.6084/m9.figshare.6387467</a>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/aogs2018-gps">leouieda/aogs2018-gps</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/equivalent-layer">equivalent-layer</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gps">gps</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/earthscope2018">earthscope2018</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This talk is about some early results from a collaboration me and Paul have
+with <a href="http://topex.ucsd.edu/sandwell/">David Sandwell</a>. The project was started
+by Paul and Dave as a follow up to their <a href="https://doi.org/10.1002/2016GL070340">2016 paper about interpolating 2D
+vector data</a>.
+We're expanding it into 3D and ironing out some kinks in the methodology.
+I picked it up at the beginning of the year and have been slowly trying things
+out.
+It was a great chance to play with some tools from machine learning since this
+is a supervised prediction problem.
+Unlike most geophysical inversion, we're not really interested in the estimated
+parameters themselves.
+They are only a means to predict new values (on a regular grid in the case of
+gridding).
+I started implementing the tools I would need in a Python library called
+<a href="https://github.com/fatiando/verde">Verde</a>, which served as the basis for the
+results shown in the presentation.</p>
+<p>I made the slides using Google Docs with the Barlow font for the most part and
+EB Garamond for some of the math symbols. I used an <a href="http://www.codecogs.com/latex/eqneditor.php">online Latex equation
+editor</a> to generate the equations
+as high resolution PNGs. Not ideal but it's a price I will pay for avoiding
+LibreOffice Impress.</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT2blQXTNT6lrJnOOq2GjOdTwQKG4POzYRff8IkrIlb6EZdpFWLobEUe91FYWjBrvSWFv1bfkrO2yBM/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p>Vertical ground motion at fault systems can be difficult to detect due to their
+small amplitude and contamination from non-tectonic sources, such as ground
+water loading. However, it may play an important role in our understanding of
+the earthquake cycle and the associated seismic hazards. Ground motion
+measurements from GPS are often sparse and must be interpolated onto a regular
+grid (e.g., for computing strain rate), ideally taking into account the varying
+degrees of uncertainty of the data. Traditionally, each vector component is
+interpolated separately using minimum curvature or biharmonic spline methods.
+Recently, a joint interpolation of the two horizontal components has been
+developed using the Green's functions for a point force deforming a thin
+elastic sheet. The elasticity constraints provide a coupling between the two
+vector components and lead to improved results because the underlying physics
+of the method approximately matches that of the GPS observations. We propose an
+expansion of this method into 3D in order to incorporate vertical GPS velocity
+measurements. To smooth the model and avoid singularities, we formulate the
+interpolation as a weighted least-squares inverse problem with damping
+regularization. Optimal values of the regularization parameter and the
+Poisson's ratio of the elastic medium are determined through K-fold
+cross-validation, a technique often used in machine learning for model
+selection. Additionally, the cross-validation provides a measure of the
+accuracy of model predictions and eliminates the need for manual configuration.
+The computational load of the inversion is lessened by imposing a cutoff
+distance to the Green's functions computations, which makes the sensitivity
+matrix sparse. We will present preliminary results from an application to
+EarthScope GPS data from the San Andreas Fault system. In the future, we aim to
+develop a joint inversion of 3D GPS and InSAR line-of-sight velocities to
+improve data coverage.</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.6084/m9.figshare.6387467"
+        >
+        </div>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/aogs2018.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/aogs2018.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/egu2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/egu2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Evaluating the accuracy of equivalent-source predictions using cross-validation
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/gmt6.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt6.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The Generic Mapping Tools Version 6
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Coupled interpolation of three-component GPS velocities
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</body>
+</html>

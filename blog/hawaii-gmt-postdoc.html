@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/hawaii-gmt-postdoc.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="A year in Hawaii hacking on the Generic Mapping Tools">
+            <meta name="twitter:description" content="Back in July of 2016, I applied for a postdoc position to build Python bindings for the Generic Mapping Tools (GMT) software with Professor ...">
+
+    <meta property="og:title" content="A year in Hawaii hacking on the Generic Mapping Tools">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/hawaii-gmt-postdoc.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/hawaii-gmt-postdoc.png">
+            <meta property="og:description" content="Back in July of 2016, I applied for a postdoc position to build Python bindings for the Generic Mapping Tools (GMT) software with Professor ...">
+
+    <title>    A year in Hawaii hacking on the Generic Mapping Tools | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>A year in Hawaii hacking on the Generic Mapping Tools</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             02 March 2017
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/pygmt">pygmt</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/academia">academia</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>Back in July of 2016, I applied for a postdoc position to build Python bindings
+for the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools (GMT)</a> software
+with Professor <a href="http://www.soest.hawaii.edu/wessel/">Paul Wessel</a> at the
+<a href="http://www.soest.hawaii.edu/GG/index.html">University of Hawaii</a>.
+The short version is that I got the position, asked for a 1 year leave from
+<a href="http://www.uerj.br/">UERJ</a> (where I currently work as a professor),
+came to Hawaii, and right now I'm starting to get familiar with the GMT code
+base.</p>
+<p>Read on for the long version.</p>
+<p><img alt="" src="/images/post-building-university-hawaii.jpg" />
+<em>The Pacific Ocean Science and Technology (POST) building in the UH Manoa
+campus. My office is on the top floor with a nice view of downtown Honolulu.</em></p>
+<p>After two and half years as a <a href="/about/" title="About">Professor at UERJ</a>,
+struggling to teach classes without any experience or time to prepare,
+all while finishing <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">my PhD</a>,
+I was feeling a bit burned-out and eager to do something different.
+Meanwhile, Brazil was (and still is) in a huge economic and political crisis
+and Rio was hit pretty hard.
+The University, which is State owned, was on strike from March 2016 until after
+the Olympic games in August.
+The time was ripe to apply for something different abroad.</p>
+<p>I signed up for a couple of mailing lists where people post job opportunities
+just to see what was out there.
+If you're looking for a new position or just want to get a feeling for what is
+currently on demand, I highly recommend signing up for the
+<a href="http://lists.geodynamics.org/cgi-bin/mailman/listinfo/cig-jobpostings">Computational Infrastructure for Geodynamics (CIG) list</a>
+and the
+<a href="http://mailman.ucar.edu/mailman/listinfo/es_jobs_net">Earth Sciences Job Email list (ES-JOBS)</a>.
+I get at least 5-10 emails on the ES-JOBS list per day (you might want to
+redirect them to a folder to keep your inbox from exploding).
+After about a month on the lists, this message from Paul came on the CIG list:</p>
+<blockquote>
+<p>A full-time postdoctoral position is available in the Department of Geology
+and Geophysics at the University of Hawaii at Mānoa to participate in funded
+research in support of the expansion of the Generic Mapping Tools (GMT) to
+Python (possibly via Cython), with applications in plate tectonics and
+geodynamics. A one-year initial appointment is anticipated, with the
+possibility of a second year extension, depending on progress and
+availability of funds.</p>
+<p>The successful applicant will be a highly motivated, independent researcher
+with extensive programming experience (preferably in C) and Python scripting
+and will assist Dr. Wessel and the GMT team in developing the GMT/Python API.
+Applicants must have completed a PhD in the physical sciences at the time of
+appointment, with a preference for geophysics, and should be proficient in
+spoken and written English. The position is open immediately and will remain
+open until an appointment is made.</p>
+<p>To apply, please send a curriculum vitae, a brief (1 page) statement of
+research objectives, a brief (1 page) statement of skills or experience
+suitable for contributing to GMT development, and the names of three
+references to Dr. Paul Wessel.  Questions should also be addressed to Dr.
+Wessel directly via e-mail. Information on the Department can be found at
+http://www.soest.hawaii.edu/GG. The University is an Equal
+Opportunity/Affirmative Action Institution.</p>
+</blockquote>
+<p>The requirements seemed to fit me perfectly.
+My <a href="/about/bachelors.html" title="&lt;b&gt;BSc&lt;/b&gt; in Geophysics">Bachelor's thesis</a> was to developed a
+<a href="http://www.tesseroids.org">C program</a> and I spent most of <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">my PhD</a>
+building a <a href="https://www.fatiando.org">Python library</a>.
+After some careful consideration with my wife and bit of hesitation, I decided
+to apply for the position.
+I consulted my department and they generously agreed to cover my
+geophysics couses (<a href="/teaching/geofisica1.html" title="Geofísica 1: Gravimetria e magnetometria">1</a> and <a href="/teaching/geofisica2.html" title="Geofísica 2: Sismologia e sísmica">2</a>)
+during the year that I would be away.
+So I sent in
+<a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_cv.pdf">my CV</a>,
+the <a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_research_statement.pdf">statement of research objectives</a>,
+and the <a href="https://github.com/leouieda/cv/releases/download/June2016/leonardo_uieda_skills_statement.pdf">statement of skills</a>.
+As always, the LaTeX sources for all three are on a
+<a href="https://github.com/leouieda/cv/tree/June2016">Github repository</a> if you want
+to have a look or need a template to get started.</p>
+<p>I did a Skype interview with the very friendly GMT team and after a while I got
+an email saying that the position was mine!
+I finished my responsibilities for 2016 and took some vacation time to
+sort out the trip.
+In the middle of February I hopped on a quick ~24h trip from São Paulo to
+Honolulu and now here I am.</p>
+<p><img alt="" src="/images/university-office-view-hawaii.jpg" />
+<em>My new desk at UH with a great view of the tall buildings of
+<a href="https://en.wikipedia.org/wiki/Waikiki">Waikiki</a> and downtown Honolulu on a
+nice rainy day.</em></p>
+<p>The goal of the project is to build a bridge between GMT (a set C-coded
+command-line programs) and the Python programming language.
+GMT is arguably the best map plotting software around and
+it certainly makes <a href="http://gmt.soest.hawaii.edu/doc/latest/Gallery.html">the most beautiful maps</a>.
+This bridge will bring that power to the Python community.</p>
+<p>The way I'm currently exploring for doing this is to hook into the
+<a href="http://gmt.soest.hawaii.edu/doc/latest/GMT_API.html">GMT C API</a> (the internal
+functions that GMT exposes through a shared library)
+using the <a href="https://docs.python.org/3/library/ctypes.html">ctypes</a>
+package from the Python standard library.
+This way, a user could call the internal GMT functions from a Python program
+or, even better, from a <a href="http://jupyter.org/">Jupyter notebook</a>.
+This will serve as a basis for building a more Pythonic higher-level library
+for GMT.
+Hopefully this will help smooth the rough edges of the GMT command-line
+interface that cuts newbies and gurus alike.
+After all, who could possibly remember what <a href="http://gmt.soest.hawaii.edu/doc/latest/gallery/ex17.html#example-17"><code>-DjTR+o0.3i/0.1i+w4i/0.2i+h</code> is
+supposed to
+do</a>?</p>
+<p>Right now, I'm still struggling with CMake configuration issues, linking
+problems, incompatibilities with
+<a href="https://www.continuum.io/downloads#all">Anaconda</a>, and other pleasant things
+that come with dealing with compiled code.
+But I'll write more about that in a later post.
+<em>Now, I wonder where I put that <code>libgdal.so</code> file?</em></p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/hawaii-gmt-postdoc.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/hawaii-gmt-postdoc.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2019.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2019.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                PyGMT: Accessing the Generic Mapping Tools from Python
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/job-sites.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/job-sites.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Websites for Earth Scientists on the academic job hunt
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/scipy2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Building an object-oriented Python interface for the Generic Mapping Tools
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/aogs2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/aogs2018-gmtpython.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Integrating the Generic Mapping Tools with the Scientific Python Ecosystem
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

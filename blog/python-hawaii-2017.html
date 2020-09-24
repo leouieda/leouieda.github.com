@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/python-hawaii-2017.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Thoughts from the Introduction to Python Workshop at UH Manoa">
+            <meta name="twitter:description" content="Last week, I taught a 3-day Python workshop at the Department of Geology and Geophysics of the University of Hawaii at Manoa, where I'm curr...">
+
+    <meta property="og:title" content="Thoughts from the Introduction to Python Workshop at UH Manoa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/python-hawaii-2017.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/python-hawaii-2017.png">
+            <meta property="og:description" content="Last week, I taught a 3-day Python workshop at the Department of Geology and Geophysics of the University of Hawaii at Manoa, where I'm curr...">
+
+    <title>    Thoughts from the Introduction to Python Workshop at UH Manoa | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>Thoughts from the Introduction to Python Workshop at UH Manoa</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             28 April 2017
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/python">python</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/hawaii">hawaii</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/python-workshop">python-workshop</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>Last week, I taught a 3-day Python workshop at the
+<a href="http://www.soest.hawaii.edu/GG/index.html">Department of Geology and Geophysics of the University of Hawaii at
+Manoa</a>,
+where I'm currently <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">doing a postdoc</a>.
+It covered the basics of computer programming with Python, starting from the
+very beginning.
+Below are thoughts and information about the workshop, the demographics of
+people who signed up, and the feedback that I got from the participants.</p>
+<p>See the <a href="/teaching/python-hawaii-2017.html" title="Introduction to Python Workshop (UH Manoa - G&amp;G)">workshop page</a> and <a href="https://github.com/leouieda/python-hawaii-2017">Github
+repository</a> for more
+information and links to material used.</p>
+<h2 id="my-goals">My goals</h2>
+<p>I wanted this to be a hands-on workshop of the basic concepts needed to use
+Python for research. Participants who complete the workshop should be able to
+use Python to gather data from one or more files, process the data, run an
+analysis, make publication quality figures, and save the output.
+Most importantly, I wanted participants to know what they should type into
+Google to learn more about Python.</p>
+<h2 id="materials">Materials</h2>
+<p>The class is based on a mixture of the
+<a href="https://software-carpentry.org/">Software Carpentry</a>
+lessons
+<a href="http://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming in Python (under development)</a>
+and <a href="http://swcarpentry.github.io/python-novice-inflammation">Programming with Python</a>.
+However, I use temperature data from
+<a href="http://berkeleyearth.org/">Berkeley Earth</a>
+instead of the <a href="http://www.gapminder.org/">Gapminder</a> and inflammation data
+used by Software Carpentry.
+For example, our goal for the second day of the workshop was to reproduce this
+figure for
+<a href="http://berkeleyearth.lbl.gov/regions/hawaii">average temperature variation in Hawaii</a>
+from the website:</p>
+<p><a href="http://berkeleyearth.lbl.gov/regions/hawaii"><img alt="" src="http://berkeleyearth.lbl.gov/auto/Regional/TAVG/Figures/hawaii-TAVG-Trend.png" /></a></p>
+<p>On the last day, we finished with some code that processed a list of country
+names to download the respective data file (using <code>requests</code>), load it into
+Python, make a figure, and save it to a different folder
+(see <a href="https://github.com/leouieda/python-hawaii-2017/blob/master/notebooks/exercise-download-a-bunch-of-data.ipynb">this Jupyter notebook for the
+code</a>).</p>
+<p>I also used a few techniques from the
+<a href="http://swcarpentry.github.io/instructor-training/">Software Carpentry Instructor Training</a>,
+mainly the shared class notes (I used Google Docs instead of Etherpad)
+and colored sticky notes.
+The sticky notes were in two colors: pink and blue.
+Learners kept the blue sticky note on their laptop lid if everything was OK.
+They put up the pink one if they have a problem or need help.
+This way, myself and the teaching assistants can know at a glance who needs
+help.
+I had them write positive and negative feedback on the sticky notes at the
+end of the workshop.</p>
+<p>The notebooks that I created during class and some notes for myself are in the
+Github repository (in the <code>notebooks</code> and <code>notes</code> folders, respectively).</p>
+<h2 id="who-attended">Who attended</h2>
+<p>I asked all participants to sign up through a Google Form that asked a few
+questions regarding their operating system, background in programming, and
+position at the university.
+The file
+<a href="https://github.com/leouieda/python-hawaii-2017/blob/master/demographics.csv"><code>demographics.csv</code></a>
+in the Github repository has the anonymous information from this form.
+I wrote some code to analyze the data and generate the figures below using
+<a href="http://pandas.pydata.org/">pandas</a> and <a href="http://matplotlib.org/">matplotlib</a>.
+You can find in the
+<a href="http://nbviewer.jupyter.org/github/leouieda/python-hawaii-2017/blob/master/demographics-analysis.ipynb"><code>demographics-analysis.ipynb</code></a>
+Jupyter notebook (also in the Github repo).</p>
+<p>First, lets look at how many people signed up and then actually attended each
+day.</p>
+<p><img alt="Number of attendants per day of the workshop." src="/images/python-hawaii-2017/attendance.jpg" /></p>
+<p>We were very lucky that most people who signed up also attended the workshop on
+the first day, even though there was no sign up fee.
+It seems that the workshop really fills a need in the community!
+Some people gave up after the first day.
+Maybe it was too fast, or too basic, or life just happened.
+I can't really tell because I failed to collect feedback at the end of each
+day.
+That is something to keep in mind for the next iteration: <strong>get feedback every
+day</strong>.</p>
+<p><img alt="" src="/images/python-hawaii-2017/education.jpg" /></p>
+<p>The experience level of participants was more evenly distributed than I
+expected.
+I was very pleased with the number of people who had never programmed before.
+But the distribution made it challenging to keep everyone motivated and
+following along.
+From the feedback (see below), it seems that I managed it well enough.</p>
+<p><img alt="" src="/images/python-hawaii-2017/programming-languages.jpg" /></p>
+<p>Not surprisingly, most participants who already programmed know Matlab.
+What was a bit surprising is how few people reported experience with Fortran.
+Is this a reflection of the age of participants (a lot of young grad students)?
+The number of Fortran users does correlate with the number of faculty who
+signed up, so maybe yes.</p>
+<p><img alt="" src="/images/python-hawaii-2017/position.jpg" /></p>
+<p>I was very pleased to have someone from the
+<a href="https://www.hawaii.edu/diversity/seed-programs/na-kupuna-senior-citizen-visitor-program/">Nā Kūpuna Senior Citizen Visitor Program</a>
+and a not insignificant number of faculty.
+We even had an "interested citizen" who studies film production and education
+(a personal friend)!</p>
+<h2 id="feedback">Feedback</h2>
+<p><img alt="Feedback on the colored sticky notes." src="/images/python-hawaii-2017/sticky-note-feedback.jpg" /></p>
+<p>This is a synthesis from the feedback given by participants on the last day
+(using the pink and blue sticky notes):</p>
+<table class="table">
+<thead>
+<tr>
+<th align="left">The Good</th>
+<th align="left">#</th>
+<th align="left">The Bad</th>
+<th align="left">#</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Instructor style</td>
+<td align="left">5</td>
+<td align="left">Too short</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">Examples and exercises</td>
+<td align="left">5</td>
+<td align="left">Too fast</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">Dense but efficient (learn a lot in little time)</td>
+<td align="left">3</td>
+<td align="left">Too slow</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">Using real data</td>
+<td align="left">3</td>
+<td align="left">Hard to multi-task (pay attention + notes + exercise)</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">Simple and accessible level</td>
+<td align="left">3</td>
+<td align="left">No TA on Monday</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">Shared notes</td>
+<td align="left">1</td>
+<td align="left">Instructor took too many tangents when teaching</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Too many people</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Ran late</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Jupyter Google maps example failed</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p>It was a very funny coincidence that the exact same number of people complained
+about the pace being either too fast or too slow.</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<p>I was glad to see that the hands-on approach worked and the students
+appreciated using real data during the exercises.
+We had very little time (6h total) to cover a lot of material.
+So it's no wonder that people thought it was too short and maybe didn't explain
+quite as thoroughly some concepts (like <code>for</code> and <code>if</code>).
+Regarding the pace, it's hard to satisfy everyone.
+I expect that novices might have found the pace a bit too fast and more
+experienced programmers found it too slow (but I don't have data to back that
+up).
+Since only 6 people complained about the pace, I guess it wasn't too bad.
+Not having a TA on Monday (the first day) was not good because that is when the
+most serious problems occur (Jupyter won't start, where is my Python?, lost my
+files, etc).
+The next two days of the workshop were much smoother thanks to the generous
+help of volunteer TAs Sam Murphy and Julie Schnurr.
+We also didn't get to cover the last few topics on the last day (functions and
+getting data from headers).</p>
+<p>A few things that I would have done differently:</p>
+<ul>
+<li><strong>Get feedback through sticky notes at the end of each day</strong>. The Software
+  Carpentry material actually recommends this but I completely forgot.</li>
+<li><strong>Use more pair programming activities</strong>. This is also something recommended
+  by Software Carpentry and that I had planned on doing. In the end, I left
+  this as optional and didn't explicitly pair learners. A lot of people were
+  interacting naturally but I would have liked to see more of it.</li>
+</ul>
+<p><em>Have you taught or participated in a workshop like this before? What were your
+experiences?</em></p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/python-hawaii-2017.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/python-hawaii-2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/teaching/agu2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2018-workshop.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Best practices for modern open-source research codes (AGU)
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Pooch
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/future-of-fatiando.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fatiando.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The future of Fatiando a Terra
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

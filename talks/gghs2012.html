@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/gghs2012.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Rapid 3D inversion of gravity and gravity gradient data to test geologic hypotheses">
+            <meta name="twitter:description" content="Presentation Abstract Forward modeling of potential fields is a useful way to incorporate the interpreter's knowledge about the geology of t...">
+
+    <meta property="og:title" content="Rapid 3D inversion of gravity and gravity gradient data to test geologic hypotheses">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/gghs2012.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/gghs2012.png">
+            <meta property="og:description" content="Presentation Abstract Forward modeling of potential fields is a useful way to incorporate the interpreter's knowledge about the geology of t...">
+
+    <title>    Rapid 3D inversion of gravity and gravity gradient data to test geologic hypotheses | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Rapid 3D inversion of gravity and gravity gradient data to test geologic hypotheses</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Valéria C. F. Barbosa
+                <span class="post-date">(2012)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                International Symposium on Gravity, Geoid and Height Systems
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.156859">10.6084/m9.figshare.156859</a>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/gghs2012">leouieda/gghs2012</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/planting-inversion">planting-inversion</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gravity">gravity</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="presentation">Presentation</h2>
+<script async class="speakerdeck-embed"
+data-id="e13e025b29be431aabdd9cdb3c91c840" data-ratio="1.33159947984395"
+src="//speakerdeck.com/assets/embed.js"></script>
+
+<h2 id="abstract">Abstract</h2>
+<p>Forward modeling of potential fields is a useful way to incorporate the
+interpreter's knowledge about the geology of the interpretation area into the
+model. However, this can be a very tedious task. This is specially true when
+modeling in 3D and trying to fit multiple components, e.g., in gravity
+gradiometry. The interpreter is required to simultaneously supervise the data
+fit and the construction of geologically realistic 3D bodies. This problem is
+partially solved by methods of geophysical inversion, which automatically fit
+the data. Conversely, inverse problems introduce other challenges of their own.
+Most geophysical inverse problems are ill-posed because their solutions are
+neither unique nor stable. Thus, they require the introduction of prior
+information, usually through regularizing functions. Moreover, 3D inverse
+problems are very computationally expensive. Recent developments in potential
+field inversion have proposed different regularizing functions to transform the
+ill-posed problem into a well-posed one. Also, several techniques, like data
+compression and parallel computation, have been applied to overcome the
+computational complexity. We call attention to the method of potential field
+inversion by planting anomalous densities. This method uses an iterative
+algorithm to automatically grow the anomalous bodies around user-specified
+prismatic elements called "seeds", which have fixed density contrasts and
+positions. These seeds provide a first estimate of the skeletal outlines of the
+presumed anomalous bodies. Then, the inversion iteratively concentrates mass
+around this "skeleton" in a way that both fits the observed data and yields
+compact bodies. Therefore, the interpreter can easily impose prior information
+on the inversion through the seeds. The interpreter needs only to supply a few
+seeds that specify the sources' skeleton, eliminating the exhaustive task of
+specifying the complete geometry of multiple sources. Moreover, the interpreter
+is liberated from the time- consuming procedure of yielding a reasonable fit to
+the data. Due to its high computational efficiency, the method of planting
+anomalous densities can be used to quickly test geologic hypothesis of
+different locations and density contrasts for presumed sources. To test a
+hypothesis, one would choose the locations and density contrasts of the seeds
+accordingly and verify if the inversion result is able to fit the observed
+data. If it is not able, then the hypothesis can be rejected and a new one can
+be formulated and tested. Otherwise, there is no reason to reject the
+hypothesis on the basis of the geophysical data. Thus, the method can be viewed
+as a an enhanced forward modeling. The method of planting anomalous densities
+can be used with both gravity and gravity gradient data. This makes it an ideal
+tool to interpret compact geologic bodies using the new generation GOCE data.
+We present applications to synthetic and real data that illustrate the
+usefulness of our method.</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.6084/m9.figshare.156859"
+        >
+        </div>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/gghs2012.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/gghs2012.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/tesseroid-variable-density.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tesseroid-variable-density.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Gravitational field calculation in spherical coordinates using variable densities in depth
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/fast-tesseroid-inversion-moon.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fast-tesseroid-inversion-moon.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/use-the-disturbance.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/use-the-disturbance.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Should geophysicists use the gravity disturbance or the anomaly?
+            </span><br>
+                <span class="card-date">(2018)</span><br><span class="label label-warning">IN REVIEW</span></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/tgif-2017.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tgif-2017.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Inverting gravity to map the Moho: A new method and the open source software that made it possible
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</body>
+</html>

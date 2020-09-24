@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/fatiando.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="The future of Fatiando a Terra">
+            <meta name="twitter:description" content="I started developing the Fatiando a Terra Python library in 2010. Since then, many other open-source Python libraries for geophysics have ap...">
+
+    <meta property="og:title" content="The future of Fatiando a Terra">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/future-of-fatiando.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/fatiando.png">
+            <meta property="og:description" content="I started developing the Fatiando a Terra Python library in 2010. Since then, many other open-source Python libraries for geophysics have ap...">
+
+    <title>    The future of Fatiando a Terra | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>The future of Fatiando a Terra</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             25 March 2018
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/python">python</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>I started developing the <a href="http://www.fatiando.org">Fatiando a Terra</a> Python
+library in 2010.
+Since then, many other open-source Python libraries for geophysics have
+appeared, each with unique capabilities.
+In this post, I'll explore where I think Fatiando fits in this larger
+ecosystem and how we can better fill our niche.</p>
+<h2 id="what-is-fatiando-a-terra">What is Fatiando a Terra?</h2>
+<p><em>Fatiando</em> is a Python library for modeling and inversion in geophysics.
+It's composed of different <em>subpackages</em>:</p>
+<ul>
+<li><code>fatiando.gridder</code>: functions for dealing with spatial data. It's mostly used
+  to generate point scatters or coordinate arrays for regular grids. Both are
+  required as inputs for modeling or creating synthetic datasets.</li>
+<li><code>fatiando.mesher</code>: classes that represent geometric objects (polygons,
+  prisms, spheres, etc) and regular meshes. These
+  classes are used to define the geometry and physical properties of our
+  models. They are often the inputs for gravity and magnetic modeling
+  functions.</li>
+<li><code>fatiando.vis</code>: utilities for plotting data using matplotlib and 3D models
+  using Mayavi. Mostly deprecated but there is a lot of useful code for
+  displaying <code>fatiando.mesher</code> elements in Mayavi.</li>
+<li><code>fatiando.inversion</code>: classes for solving inverse problems. The idea is that
+  the user needs only to implement the forward problem (the forward function
+  and the Jacobian matrix) and the classes take care of the rest. Ideally, this
+  would form the basis for all inversions in Fatiando.</li>
+<li><code>fatiando.datasets</code>: functions for loading data from common file formats and
+  loading sample datasets packaged with Fatiando.</li>
+<li><code>fatiando.seismic</code>: functions and classes for modeling seismic data and some
+  basic inversions. Mostly toy problems.</li>
+<li><code>fatiando.geothermal</code>: geothermal modeling functions. Has a single module for
+  modeling how temperature perturbations at the surface propagate down into the
+  Earth.</li>
+<li><code>fatiando.gravmag</code>: functions for gravity and magnetic processing, modeling,
+  and inversion. By far the most developed package, though some components have
+  lagged behind.</li>
+</ul>
+<h2 id="fatiandos-niche">Fatiando's niche</h2>
+<p>We set out with the goal of modeling the whole Earth using all geophysical
+methods.
+Humble, right?
+Turns out this is extremely hard and way beyond what a couple of grad students
+can do in a couple of years.
+Back then, there were very few Python geophysical modeling libraries.
+A decade later, the ecosystem has expanded.
+The five currently on going projects of which I'm aware are (let me
+know in the comments if I missed any):</p>
+<ul>
+<li><a href="https://github.com/Patrick-Cole/pygmi">PyGMI</a>: GUI + library for 3D modeling
+  of gravity and magnetic data.</li>
+<li><a href="http://simpeg.xyz/">SimPEG</a>: Forward modeling and inversion library based on
+  the finite volume method.</li>
+<li><a href="https://www.pygimli.org/">pyGIMLi</a>: Forward modeling and inversion library
+  based on the finite element and finite volume methods.</li>
+<li><a href="https://github.com/agile-geoscience/bruges">Bruges</a>: Modeling and processing
+  for seismic and petrophysics.</li>
+<li><a href="https://pyrocko.org">Pyrocko</a>: A collection of tools and libraries, mostly
+  for seismology.</li>
+</ul>
+<p>The two projects that are most similar to us (SimPEG and pyGIMLi) implement
+flexible
+<a href="https://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equation</a>
+solvers that they use to run all forward modeling calculations.
+This makes a lot of sense because it gives them a unified framework to model
+most geophysical methods.
+It is the most sensible approach to build joint inversions of multiple
+geophysical datasets.
+However, there are some inverse problems that don't fit this paradigm, like
+<a href="/papers/paper-moho-inversion-tesseroids-2016.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">inverting Moho relief from gravity data</a>
+and some <a href="/papers/paper-planting-anomalous-densities-2012.html" title="Robust 3D gravity gradient inversion by planting anomalous densities">non-conventional inversion algorithms</a>
+(see the animation below).</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
+width="568" height="426" frameborder="0"></iframe>
+</div>
+
+<p>It's no coincidence that Fatiando mostly contains the tools needed to implement
+this type of inverse problem (i.e., analytical solutions for the gravity and
+magnetic fields of geometric objects).
+This is precisely the type of research that we do at the
+<a href="http://www.pinga-lab.org/">PINGA lab</a>.
+We also develop processing methods for gravity and magnetics.</p>
+<p>The niche I see for Fatiando is in gravity and magnetic methods, particularly
+using these analytical solutions.
+The processing functions are an important feature because there are hardly any
+open-source alternatives out there to commercial software like
+<a href="http://www.geosoft.com/">Oasis Montaj</a>
+and <a href="https://www.intrepid-geophysics.com/">Intrepid</a>.</p>
+<h2 id="the-current-state">The current state</h2>
+<p>Fatiando has grown over the years as I slowly learned how to develop and
+maintain an open-source Python project.
+As a result, the codebase is littered with the bad choices that I made along
+the way.
+The most urgent problems that need to be fixed are:</p>
+<ul>
+<li><strong>Python 3 support.</strong> It's no longer a huge sacrifice to make the switch
+  because all of our dependencies are supported. Actually, some of them <a href="https://python3statement.org/">don't
+  even support Python 2 anymore</a>. Support both
+  versions is a bit of a pain and it's not worth it. The <a href="https://conda.io/docs/using/envs.html">conda
+  environments</a> also make using multiple
+  versions of Python easy. We should just migrate to Python 3 only and be done
+  with it.</li>
+<li><strong>Test coverage is sparse and a lot of code is not maintained.</strong>
+  There is a lot of old code in Fatiando that was included before I learned how
+  to write good tests. As a result, they have little to no tests and are
+  largely unused. They might be broken right now and I would have no way of
+  knowing.
+  We should only include code that we are willing to use and maintain.</li>
+<li><strong>Too many "toy problems".</strong> Mostly in the seismic package. They are
+  useful for teaching and I don't think we need to delete all of it. But we
+  have to be careful how we advertise these features. They shouldn't be
+  packaged with well-tested and robust production code.</li>
+<li><strong>A single package.</strong> The meshing, inversion, and gridding code is not really
+  dependent on the rest of Fatiando. There is no reason why they can't be
+  standalone projects. This modularity might help lower the barrier for other
+  projects to use them. Installing can still be easy by using <code>fatiando</code> as a
+  metapackage (like Jupyter).</li>
+</ul>
+<h2 id="a-way-forward">A way forward</h2>
+<p>The best way forward for Fatiando that I can see, is to become an ecosystem of
+specialized tools and libraries, rather than a single Python package.
+Having things in separate libraries allows us to better indicate what is robust
+and professional and what is experimental or meant as a teaching tool.
+In particular, the meshing library has some overlap with
+<a href="https://github.com/simpeg/discretize">discretize</a> and we should be considering
+a merger of our projects.
+Separating what we have in a library will help us articulate the
+requirements of Fatiando so that we can see if a merger is beneficial.
+We can also include experimental libraries (like <code>fatiando.seismic.wavefd</code>) and
+CLI or GUI programs as independent projects.</p>
+<p>This is how I envision the Fatiando ecosystem in the future (I have already
+started working on some of these projects):</p>
+<ul>
+<li><code>fatiando</code>: A metapackage that can be used to install all the whole stack
+  (like the <code>jupyter</code> package).</li>
+<li><code>deeplook</code>: the inversion package. Should define a scikit-learn like
+  interface and provide all of the standard tools (regularization,
+  optimization, etc).</li>
+<li><code>geometric</code>: the geometric objects and meshes. Includes an optional way of
+  plotting them on Mayavi and matplotlib. The way physical properties are
+  handled needs to be redesigned and meshes need to support slicing and fancy
+  indexing.</li>
+<li><code>verde</code>: the gridding package. It will include some new Green's functions based
+  interpolation on which I've been working. Should also include the functions
+  for calculating derivatives that are currently in <code>fatiando.gravmag.transform</code>.</li>
+<li><code>harmonica</code>: the gravity and magnetic methods package. Will port over most of
+  the code from <code>fatiando.gravmag</code>.</li>
+<li><code>sismica</code>: a package for seismics and seismology. For now, will include some
+  of the toy examples from the <code>fatiando.seismic</code>.</li>
+<li><code>wavefd</code>: the experimental 2D FD wave propagation code (useful for teaching
+  but I don't trust it enough for research).</li>
+<li><code>moulder</code>: GUI for 2D gravity and magnetic modeling.</li>
+</ul>
+<p>All of these packages will be tied together in the
+<a href="https://github.com/fatiando/"><code>fatiando</code> Github organization</a>
+and the <a href="http://www.fatiando.org/">fatiando.org</a> website, which will include
+instructions for installing the entire stack.
+The website will also link to individual packages (as is done right now for the
+subpackages) and any other project in the <code>fatiando</code> umbrella.
+Members of the organization will be free to create new repositories and we'll
+provide a template for doing so.</p>
+<p>The requirements and goals for these new packages are:</p>
+<ul>
+<li>All code will be Python 3 only.</li>
+<li>All docstrings will use the numpy style.</li>
+<li>Each package will have it's own docs page with tutorials,
+  API reference, install instructions, changelog, and gallery. They will share
+  a common template and a simple theme.</li>
+<li>All repos will include a Code of Conduct and Contributing Guide.</li>
+<li>All main packages will have a comprehensive test suite. Anything not tested
+  or experimental will be moved to separate packages. Full test coverage (or as
+  much as possible) will be a requirement for merging a contribution.</li>
+</ul>
+<p>This is how I think we could implement this:</p>
+<ol>
+<li>Release Fatiando 0.6 with what we currently have in the <em>master</em> branch
+   along with a note that this will be the last release to support Python 2.7.</li>
+<li>Create a package template repository with the shared infrastructure
+   (<code>setup.py</code>, docs, continuous integration configuration, <code>Makefile</code>,
+   testing, etc).</li>
+<li>Start repositories for each of the packages listed above.</li>
+<li>Specify clear goals for each package and an example of how we want the
+   API to look.</li>
+<li>Focus on redesigning the inversion package first. This is the basis for many
+   other packages.</li>
+<li>Slowly copy over code from <code>fatiando/fatiando</code> while ensuring that
+   everything is tested and documented.</li>
+</ol>
+<h2 id="help">Help!</h2>
+<p>The goal of all these changes is to make <em>Fatiando</em> better for users and
+developers by making the code more robust and well documented.
+I'm curious to know what the Python geophysics community thinks about all of
+this.
+Do I have it all wrong?
+What should be done differently?
+And most importantly, <strong>would you like to help?</strong></p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/future-of-fatiando.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/future-of-fatiando.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/egu2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/egu2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Evaluating the accuracy of equivalent-source predictions using cross-validation
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

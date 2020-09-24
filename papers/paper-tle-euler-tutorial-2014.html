@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/paper-tle-euler-tutorial-2014.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Geophysical tutorial: Euler deconvolution of potential-field data">
+            <meta name="twitter:description" content="About This article is part of the Geophysical Tutorials section in The Leading Edge, started by Matt Hall of Agile Geoscience. All tutorials...">
+
+    <meta property="og:title" content="Geophysical tutorial: Euler deconvolution of potential-field data">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/papers/paper-tle-euler-tutorial-2014.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/paper-tle-euler-tutorial-2014.png">
+            <meta property="og:description" content="About This article is part of the Geophysical Tutorials section in The Leading Edge, started by Matt Hall of Agile Geoscience. All tutorials...">
+
+    <title>    Geophysical tutorial: Euler deconvolution of potential-field data | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/papers/">Papers</a></li></ol>
+
+
+    <h1>Geophysical tutorial: Euler deconvolution of potential-field data</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Vanderlei C. Oliveira Jr, Valéria C. F. Barbosa
+                <span class="post-date">(2014)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li ai ai-open-access fa-fw" title="Open-access article"></i>
+                Open-Access
+            </li><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>The Leading Edge</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/pinga-lab/paper-tle-euler-tutorial">pinga-lab/paper-tle-euler-tutorial</a>
+            </li><li>
+                <i class="fa-li fa fa-paperclip fa-fw" title="Supplementary material"></i>
+                Data/Supplement: <a href="https://doi.org/10.6084/m9.figshare.923450">10.6084/m9.figshare.923450</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.1190/tle33040448.1">10.1190/tle33040448.1</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/euler-deconvolution">euler-deconvolution</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/inversion">inversion</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/tutorial">tutorial</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This article is part of the
+<a href="http://wiki.seg.org/wiki/Geophysical_tutorials">Geophysical Tutorials</a>
+section in <a href="http://library.seg.org/journal/leedff">The Leading Edge</a>,
+started by Matt Hall of <a href="http://agilegeoscience.com/">Agile Geoscience</a>.
+All tutorials are Open-Access and include open-source code examples.
+Read the
+<a href="https://doi.org/10.1190/tle35020190.1">February 2016 tutorial</a> by Matt
+for an introduction to the tutorial series
+and what you need to know to get started running the code in them.
+The article is also available at the
+<a href="http://wiki.seg.org/wiki/Euler_deconvolution_of_potential_field_data_%28tutorial%29">SEG wiki</a>
+where it can edited and improved.</p>
+<h2 id="open-source-implementation">Open-source implementation</h2>
+<p>This article uses the Euler deconvolution implemented in
+<a href="http://www.fatiando.org">Fatiando a Terra</a>,
+an open-source Python library.
+See the repository
+<a href="https://github.com/pinga-lab/paper-tle-euler-tutorial">pinga-lab/paper-tle-euler-tutorial</a>
+for the source code that accompanies the article
+and extra material.</p>
+<h2 id="abstract">Abstract</h2>
+<p>In this tutorial we'll talk about a widely used method of interpretation for
+potential-field data called Euler deconvolution. Our goal is to demonstrate its
+usefulness and, most importantly, call attention to some pitfalls encountered
+in the interpretation of the results. The code and synthetic data required to
+reproduce our results and figures can be found in the accompanying IPython
+notebooks (<a href="http://ipython.org/notebook">ipython.org/notebook</a>)
+at <a href="https://doi.org/10.6084/m9.figshare.923450">dx.doi.org/10.6084/m9.figshare.923450</a>
+or <a href="https://github.com/pinga-lab/paper-tle-euler-tutorial">github.com/pinga-lab/paper-tle-euler-tutorial</a>.
+The notebooks also expand the
+analysis presented here. We encourage you to download the data and try it on
+your software of choice. For this tutorial we'll use the implementation in the
+open-source Python package Fatiando a Terra
+(<a href="http://fatiando.org">fatiando.org</a>).</p>
+<h2 id="bibtex">Bibtex</h2>
+<div class="codehilite"><pre><span></span>@article{uieda2014,
+    title = {Geophysical tutorial: {Euler} deconvolution of potential-field data},
+    volume = {33},
+    issn = {1070-485X, 1938-3789},
+    doi = {10.1190/tle33040448.1},
+    number = {4},
+    journal = {The Leading Edge},
+    author = {Uieda, Leonardo and Oliveira Jr., Vanderlei C. and Barbosa, Valéria C. F.},
+    month = apr,
+    year = {2014},
+    pages = {448--450}
+}
+</pre></div>
+
+        <h2>Citation</h2>
+        <p>Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2014), Geophysical tutorial: Euler deconvolution of potential-field data, The Leading Edge, 33(4), 448-450, doi:10.1190/tle33040448.1</p>
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.1190/tle33040448.1"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.1190/tle33040448.1" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/papers/paper-tle-euler-tutorial-2014.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/papers/paper-tle-euler-tutorial-2014.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/fast-tesseroid-inversion-moon.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fast-tesseroid-inversion-moon.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/nmo-tutorial.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/nmo-tutorial.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Step-by-step NMO correction
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/scipy-on-android.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy-on-android.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Running Jupyter and the Scipy stack on Android
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

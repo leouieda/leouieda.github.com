@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/paper-template.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="A template for reproducible papers">
+            <meta name="twitter:description" content="At the PINGA lab, we have been experimenting with ways to increase the reproducibility of our research by publishing the git repositories th...">
+
+    <meta property="og:title" content="A template for reproducible papers">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/paper-template.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/paper-template.png">
+            <meta property="og:description" content="At the PINGA lab, we have been experimenting with ways to increase the reproducibility of our research by publishing the git repositories th...">
+
+    <title>    A template for reproducible papers | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>A template for reproducible papers</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             15 March 2018
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-science">open-science</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/reproducibility">reproducibility</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/academia">academia</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>At the <a href="http://www.pinga-lab.org/">PINGA lab</a>, we have been experimenting with
+ways to increase the reproducibility of our research by publishing the git
+repositories that accompany our papers.
+You can find them on our
+<a href="https://github.com/pinga-lab">Github organzation</a>.
+I've synthesized the experience of the last 4 years into a template in the
+<a href="https://github.com/pinga-lab/paper-template">pinga-lab/paper-template</a>
+repository.</p>
+<p><img alt="Screenshot of the paper-template Github repository." src="/images/paper-template-repository.png" /></p>
+<p>The template reflects the tools we've been using and the type of research that
+we do:</p>
+<ul>
+<li>Most papers are proposing a new methodology rather than the analysis of a
+  dataset.</li>
+<li>There is always an application to a dataset to show the method works. We
+  can't always publish the data but we include it in the repository whenever we
+  can.</li>
+<li>All papers include an implementation of the proposed method.</li>
+<li>Our code is usually written in Python and executed in Jupyter notebooks.</li>
+<li>The focus of the paper is usually on the methodology, not the code. As such,
+  the code is more of a proof-of-concept than a full blown application or
+  library.</li>
+<li>The paper itself is written in LaTeX with the source usually included in the
+  repository.</li>
+</ul>
+<p>This certainly won't fit everyone's needs but I hope that you can at least use
+a few bits and pieces for inspiration.
+Of course, the template code is open-source (BSD license) and you are free to
+reuse it however you like.
+The template includes a sample application to climate change data, complete
+with a Python package, automated tests, an analysis notebook, a notebook that
+generates the paper figure, raw data, and a LaTeX text.
+Everything, from compilation to building the final PDF, can be done with a
+single <code>make</code> command.</p>
+<p><img alt="Screenshot of running &quot;make&quot; in the paper-template with the final paper PDF and a Jupyter notebook." src="/images/paper-template-in-action.png" /></p>
+<p>We've been using different versions of this template for a few years and I've
+been tweaking it to address some of the difficulties we encountered along the
+way.</p>
+<ul>
+<li>Running experiments in Jupyter notebooks can get messy when people aren't
+  diligent about the execution order. It can be hard to remember to "Reset and
+  run all" before using the results.</li>
+<li>The execution was done manually so you had to remember and document in what
+  order the notebooks need to be run.</li>
+<li>Experimental parameters (e.g., number of data points, inversion parameters,
+  model configuration) were copied into the text manually. This sometimes led
+  to values getting out of sync between the notebooks and paper.</li>
+<li>We only had integration tests implemented in notebooks. More often than not,
+  the checks were visual and not automated. I think a big reason for this is
+  the lack of experience in writing tests within the group and setting up all
+  of the testing infrastructure (mainly how to use pytest and what kind of test
+  to perform).</li>
+</ul>
+<p>The <a href="https://github.com/pinga-lab/paper-template/pull/5">latest update</a>
+addresses all of these pain points.
+The main features of the new template are:</p>
+<ul>
+<li>Uses <code>Makefile</code>s to automate the workflow. You can build and test the
+  software, generate results and figures, and compile the PDF with a single
+  <code>make</code> command.</li>
+<li>A <code>Makefile</code> for building the manuscript PDF with extra rules for
+  running <a href="https://github.com/amperser/proselint">proselint</a>, counting words,
+  and opening the PDF.</li>
+<li>A starter <a href="https://conda.io/docs/user-guide/tasks/manage-environments.html">conda
+  environment</a>
+  for managing dependencies and making sure everyone gets the same version of
+  the dependencies.</li>
+<li>Boilerplate instructions for downloading the code and reproducing the
+  results.</li>
+<li>A <code>Makefile</code> for building the Python package, testing it with
+  <a href="https://docs.pytest.org">pytest</a>, running static code
+  checks (<a href="http://flake8.pycqa.org">flake8</a> and
+  <a href="https://www.pylint.org/">pylint</a>), and generating results and figures from
+  the notebooks.</li>
+<li>The code <code>Makefile</code> can run the notebooks using <code>jupyter nbconvert</code> to
+  guarantee that the notebooks are executed in sequential order (top to
+  bottom). I would love to use <a href="https://github.com/jhamrick/nbflow">nbflow</a> but
+  the <a href="http://scons.org/">SCons</a> requirement puts me off a bit. <code>make</code> works
+  fine and the basic syntax is easier to understand.</li>
+<li>An example of using code to write experimental parameters in a <code>.tex</code> file.
+  The file defines new variables that are used in the main text. This
+  guarantees that the values cited in the text are the ones that you actually
+  used to produce the results.</li>
+</ul>
+<p>This last feature is my favorite. For example, the notebook
+<code>code/notebooks/estimate-hawaii-trend.ipynb</code> has the following code:</p>
+<div class="codehilite"><pre><span></span><span class="n">tex</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="si">% G</span><span class="s2">enerated by code/notebooks/estimate-hawaii-trend.ipynb</span>
+<span class="s2">\newcommand{{\HawaiiLinearCoef}}{{</span><span class="si">{linear:.3f}</span><span class="s2"> C}}</span>
+<span class="s2">\newcommand{{\HawaiiAngularCoef}}{{</span><span class="si">{angular:.3f}</span><span class="s2"> C/year}}</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">linear</span><span class="o">=</span><span class="n">trend</span><span class="o">.</span><span class="n">linear_coef</span><span class="p">,</span> <span class="n">angular</span><span class="o">=</span><span class="n">trend</span><span class="o">.</span><span class="n">angular_coef</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../manuscript/hawaii_trend.tex&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">tex</span><span class="p">)</span>
+</pre></div>
+
+
+<p>It defines the LaTeX commands <code>\HawaiiLinearCoef</code> and <code>\HawaiiAngularCoef</code> that
+can be used in the paper to insert the values estimated by the Python code.
+The commands are saved to a <code>.tex</code> file that can be included in the main
+<code>manuscript.tex</code>.
+Since this file is generated by the code, the values are guaranteed to be
+up-to-date.</p>
+<p>If you want to use the template to start a new project:</p>
+<ol>
+<li>
+<p>Create a new git repository:</p>
+<div class="codehilite"><pre><span></span>mkdir mypaper
+cd mypaper
+git init
+</pre></div>
+
+
+</li>
+<li>
+<p>Pull in the template code:</p>
+<div class="codehilite"><pre><span></span>git pull https://github.com/pinga-lab/paper-template.git master
+</pre></div>
+
+
+</li>
+<li>
+<p>Create a new repository on Github.</p>
+</li>
+<li>
+<p>Push the template code to Github:</p>
+<div class="codehilite"><pre><span></span>git remote add origin https://github.com/USER/REPOSITORY.git
+git push -u origin master
+</pre></div>
+
+
+</li>
+<li>
+<p>Follow the instruction in the <code>README.md</code>.</p>
+</li>
+</ol>
+<p>Alternatively, you can use the "Import repository" option on Github.</p>
+<p><img alt="Screenshot of the Github page for importing code from an existing repository." src="/images/paper-template-import-repository.png" /></p>
+<p>I hope that this template will be useful to people outside of our lab.
+There is definitely still room for improvement and I'm looking forward to
+trying it out on my next project.</p>
+<p><em>What other features would you like to see in the template?</em>
+Let me know in the comments (or better yet, <a href="https://github.com/pinga-lab/paper-template">submit a pull
+request</a>).
+I'd love to know about your experiences and workflows for computational papers.</p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/paper-template.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/paper-template.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/gmt6.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt6.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The Generic Mapping Tools Version 6
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

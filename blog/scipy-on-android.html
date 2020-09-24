@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/scipy-on-android.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Running Jupyter and the Scipy stack on Android">
+            <meta name="twitter:description" content="TL;DR Install Termux from Google Play, open it and run: $ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev l...">
+
+    <meta property="og:title" content="Running Jupyter and the Scipy stack on Android">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/scipy-on-android.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/scipy-on-android.png">
+            <meta property="og:description" content="TL;DR Install Termux from Google Play, open it and run: $ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev l...">
+
+    <title>    Running Jupyter and the Scipy stack on Android | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>Running Jupyter and the Scipy stack on Android</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             23 January 2017
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/tutorial">tutorial</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/jupyter">jupyter</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/android">android</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/python">python</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <h2 id="tldr">TL;DR</h2>
+<p>Install Termux from Google Play, open it and run:</p>
+<div class="codehilite"><pre><span></span>$ apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install numpy matplotlib pandas jupyter
+$ jupyter notebook
+</pre></div>
+
+
+<p>Copy the URL printed to the screen (it will look something like
+<code>http://localhost:8888/?token=longstringofcharacters</code>)
+and paste it into Chrome/Firefox. Enjoy!</p>
+<p>Read on for more tips and a few tweaks.</p>
+<p><strong>UPDATE (25-01-2017):</strong>
+There were a few dependencies that I had left out of the instructions for
+installing numpy et al. I edited the post to make things more complete and
+clear.</p>
+<h2 id="some-background">Some background</h2>
+<p>I bought my first tablet last October, an
+<a href="https://www.amazon.com/NVIDIA-SHIELD-K1-Tablet-Black/dp/B0171BS9CG/ref=sr_1_2?s=pc&amp;ie=UTF8&amp;qid=1484937529&amp;sr=1-2&amp;keywords=nvidia+shield+k1">NVIDIA Shield K1</a>.
+I had been putting off getting one because I never could think of a good use
+for them.
+I have my phone for messaging and Internet, my kindle for reading, and my
+Linux laptop for working.
+It seemed to me that the tablet would be a nice toy but not something I could
+use and justify the purchase.</p>
+<p>The dream would be to be able to ditch my laptop and do actual work on the
+tablet.
+Mark O'Connor wrote about doing just that on
+<a href="http://yieldthought.com/post/12239282034/swapped-my-macbook-for-an-ipad">Yield
+Thought</a>
+but he cheats a bit by running everything on a Linode server.
+And how does anyone do scientific programming these days without a Jupyter
+notebook?</p>
+<p>I finally gave in, thinking that I would use the tablet mainly for reading
+papers and taking notes.
+Maybe even play a few games.
+Then I discovered <a href="https://termux.com/">Termux</a>.</p>
+<h2 id="show-dont-tell">Show, don't tell</h2>
+<p>Here is a screencast of me running a Jupyter notebook
+server on my tablet.
+Notice that the URL is <code>localhost:8888/</code> so this is not a remote server.</p>
+<p><img alt="Screencast of Termux running the Jupyter notebook on my Shield K1 tablet" src="/images/termux-running-jupyter.gif" /></p>
+<h2 id="setting-up-your-terminal">Setting up your terminal</h2>
+<p>Install Termux from Google Play and open it.
+You'll be dropped into a bash terminal, like the one below.</p>
+<p><img alt="Blank Termux startup screen" src="/images/termux-blank.png" /></p>
+<p>Termux uses the <code>apt</code> package manager so you can install packages pretty much
+like you would on Debian/Ubuntu.</p>
+<p>The first thing I do on any new computer is install git so that I can fetch my
+<a href="https://github.com/leouieda/dotfiles">configuration files from Github</a>:</p>
+<div class="codehilite"><pre><span></span>$ apt install git
+</pre></div>
+
+
+<p>Before cloning the repository, I need to generate a new SSH key (only required
+if you <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">use the SSH protocol with git</a>):</p>
+<div class="codehilite"><pre><span></span>$ apt install openssh
+$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+$ cat .ssh/id_rsa.pub  # copy and paste your public key to Github
+</pre></div>
+
+
+<p>Then I can clone my <a href="https://github.com/leouieda/dotfiles">dotfiles</a>
+repository:</p>
+<div class="codehilite"><pre><span></span>$ git clone git@github.com:leouieda/dotfiles.git
+</pre></div>
+
+
+<p>Now my Termux terminal looks just like my Linux terminal on my laptops.</p>
+<p><img alt="Cloning git repository with my config files" src="/images/termux-git.png" /></p>
+<p><img alt="My Linux terminal to compare with termux" src="/images/termux-linux-terminal.png" /></p>
+<h2 id="installing-the-scipy-stack">Installing the Scipy stack</h2>
+<p>If you're from the pre-Anaconda era, you'll probably remember the frustration
+of trying to <code>pip install numpy scipy matplotlib</code>.
+Sadly, there is no Anaconda for Termux so we're stuck with using the system
+python and <code>pip</code> to install packages.</p>
+<p>But don't despair!
+Things work more smoothly these days (if you follow the
+<a href="https://github.com/termux/termux-packages/issues/136">magic incantations</a>).
+Sadly, the scipy library itself so far <a href="https://github.com/termux/termux-packages/issues/471">can't be installed without significant
+effort</a>.
+Even then you might not be able to do it because of all the Fortran
+requirements (BLAS, LAPACK, and gfortran).
+So for now, we have to make do with numpy only.</p>
+<p>First, we must install python it self (version 3.6), the headers files, a C compiler,
+and the FFTW package from Termux:</p>
+<div class="codehilite"><pre><span></span>$ apt install python python-dev clang fftw
+</pre></div>
+
+
+<p>Now we can install numpy using pip:</p>
+<div class="codehilite"><pre><span></span>$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install numpy
+</pre></div>
+
+
+<p>For matplotlib, we'll need to install a few more dependencies:</p>
+<div class="codehilite"><pre><span></span>$ apt install freetype freetype-dev libpng libpng-dev pkg-config
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install matplotlib
+</pre></div>
+
+
+<p>And for Jupyter we need to install the zmq library as well:</p>
+<div class="codehilite"><pre><span></span>$ apt install libzmq libzmq-dev
+$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install jupyter
+</pre></div>
+
+
+<p>Finally, we can get pandas:</p>
+<div class="codehilite"><pre><span></span>$ LDFLAGS=&quot; -lm -lcompiler_rt&quot; pip install pandas
+</pre></div>
+
+
+<p>Now you have access to things like <code>ipython</code> on the command-line:</p>
+<p><img alt="IPython running inside Termux" src="/images/termux-ipython-numpy.png" /></p>
+<p>One thing that won't work are matplotlib plots because there is no backend for
+Android.
+You can, however, use <code>%matplotlib inline</code> or <code>%matplotlib notebook</code> inside
+Jupyter notebooks to get the plots working.
+Using <code>plt.savefig</code> without using <code>plt.show()</code> should also work.</p>
+<p>To get a Jupyter notebook server running, so the same thing you would on any
+other computer:</p>
+<div class="codehilite"><pre><span></span>$ jupyter notebook
+</pre></div>
+
+
+<p>The server won't automatically open a browser but
+you can copy the URL from the output and paste it into Chrome or Firefox.</p>
+<p><img alt="Jupyter notebook server running inside Termux" src="/images/termux-jupyter-startup.png" /></p>
+<h2 id="getting-comfortable">Getting comfortable</h2>
+<p>While it is possible to do some work using this setup (I wrote part of this
+post on the tablet using Vim and pushing to the <a href="https://github.com/leouieda/website">website's Github
+repo</a>), it may not be the most productive
+environment.
+Here are a few tips for making life a little bit easier.</p>
+<ul>
+<li>Enable <a href="https://termux.com/touch-keyboard.html">extra keys (esc, ctrl, tab)</a>
+  to complement your touch keyboard by pressing "Volume Up" + Q. Can you
+  imagine using a terminal without tab completion?</li>
+<li>Get a bluetooth keyboard. I bought the
+  <a href="https://www.amazon.com/Logitech-920-003390-Tablet-Keyboard-Android/dp/B0054L8N7M/ref=sr_1_15?s=pc&amp;ie=UTF8&amp;qid=1476900899&amp;sr=1-15&amp;keywords=Android+keyboard">Logitech 920-003390</a>.
+  It's not great but much better than a touch screen.</li>
+<li>If you want to use the touch screen, you'll need the
+  <a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard&amp;hl=en">Hacker's Keyboard app</a>
+  to execute your code cells with Shift+Enter and not go crazy.</li>
+<li><a href="http://vim.wikia.com/wiki/Avoid_the_escape_key">Remap Esc to anything else</a>
+  when using Vim. Esc shows the homescreen on Android and is a very frustrating
+  habit to loose.</li>
+</ul>
+<p><img alt="Sreenshot of vim running inside termux writing this post,
+inception style." src="/images/termux-vim.png" /></p>
+<h2 id="things-that-are-still-missing">Things that are still missing</h2>
+<p>This setup works and is way beyond what I expected to be able to accomplish
+with a $200 tablet.
+However, going back to pip installing numpy feels a bit like I'm back in 2010.
+What I've missed the most is <a href="http://continuum.io/downloads#all">Anaconda</a>
+and the <a href="http://conda.pydata.org/docs/">conda package manager</a>.
+Having a prebuilt bundle certainly makes life a lot easier.
+But I miss the conda environments the most.
+I use them extensively for my projects and papers.</p>
+<p>The scipy package. So yeah, that is still missing as well. A lot of things can
+be done using numpy replacements (<code>numpy.fft</code> instead of <code>scipy.fftpack</code> etc)
+though they are usually slower.</p>
+<p>Another recent arrival that has made a huge impact on my daily work is <a href="https://conda-forge.github.io/">conda-forge</a>.
+This project greatly democratizes conda packages.
+Now anyone can build their own packages for Linux, Windows, and Mac.
+It would be awesome to have some for Android as well.
+Assuming that you can get conda installed, the major difficulty might
+be finding a continuous integration service that runs Android and setting up
+the infrastructure.</p>
+<p><strong>Let me know if you try this out! Is there another setup that you use?  What
+else is missing?  Do you think we'll be able to fully work like this one day?</strong></p>
+<hr />
+<p><em>The Jupyter logo was downloaded from their Github repository
+(<a href="https://github.com/jupyter/design">jupyter/design</a>).
+The Android logo is <a href="http://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>
+Google Inc.,
+<a href="https://commons.wikimedia.org/wiki/File%3AAndroid_robot.svg">via Wikimedia Commons</a>.</em></p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/scipy-on-android.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/scipy-on-android.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Pooch
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/future-of-fatiando.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/fatiando.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The future of Fatiando a Terra
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

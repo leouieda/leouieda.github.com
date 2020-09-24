@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/tgif-2017.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Inverting gravity to map the Moho: A new method and the open source software that made it possible">
+            <meta name="twitter:description" content="About I gave this presentation at the Department of Geology and Geophysics TGIF Seminar series shortly after arriving at the University of H...">
+
+    <meta property="og:title" content="Inverting gravity to map the Moho: A new method and the open source software that made it possible">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/tgif-2017.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/tgif-2017.png">
+            <meta property="og:description" content="About I gave this presentation at the Department of Geology and Geophysics TGIF Seminar series shortly after arriving at the University of H...">
+
+    <title>    Inverting gravity to map the Moho: A new method and the open source software that made it possible | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Inverting gravity to map the Moho: A new method and the open source software that made it possible</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>
+                <span class="post-date">(2017)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                TGIF Seminar
+            </li><li>
+                <i class="fa-li fa fa-university fa-fw" title="Institution"></i>
+                University of Hawaii at Manoa
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                Creative Commons Attribution License
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.4779766">10.6084/m9.figshare.4779766</a>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/tgif-2017">leouieda/tgif-2017</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/moho">moho</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/tesseroids">tesseroids</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gravity">gravity</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>I gave this presentation at the
+<a href="http://www.soest.hawaii.edu/GG/index.html">Department of Geology and Geophysics</a>
+TGIF Seminar series shortly after arriving at
+the University of Hawaii
+for my <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">postdoc to work on GMT</a>.
+The last interesting results that I'd had were from my <a href="/about/phd.html" title="&lt;b&gt;PhD&lt;/b&gt; in Geophysics">PhD thesis</a>
+so I thought I'd present that, though heavily edited in the interest of time
+(my thesis presentation was about 1h 20min).</p>
+<p>I gave a few live demos of <a href="https://www.fatiando.org">Fatiando a Terra</a> using Jupyter
+notebooks during the talk:</p>
+<ul>
+<li>Magnetic data processing (in the Github repository):
+  <a href="http://nbviewer.jupyter.org/github/leouieda/tgif-2017/blob/master/demo-mag-data.ipynb">demo-mag-data.ipynb</a></li>
+<li>The total field magnetic anomaly (from my <a href="/teaching/geofisica1.html" title="Geofísica 1: Gravimetria e magnetometria">Geofísica 1</a> course):
+  <a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/2015/notebooks/6-igrf-anomalia-campo-total.ipynb">6-igrf-anomalia-campo-total.ipynb</a></li>
+<li>Introduction to seismic waves (from my <a href="/teaching/geofisica2.html" title="Geofísica 2: Sismologia e sísmica">Geofísica 2</a> course): <a href="http://nbviewer.ipython.org/github/leouieda/geofisica2/blob/2016/notebooks/1-ondas-sismicas.ipynb">1-ondas-sismicas.ipynb</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe src="https://docs.google.com/presentation/d/1RRnD3fgPhub3uvV7L2wbCDZRgvg-WKmydn5O5p-GgNA/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p><img alt="" src="/images/tgif-2017-flyer-image.png" /></p>
+<p>The inner density distribution of the Earth can be inferred from disturbances
+in its gravitational field. However, accomplishing this is never easy. There
+are many possible parameterizations for the mathematical model, which is often
+non-linear. To make matters worse, gravity data alone do not contain enough
+information to obtain a unique and stable solution. One must add independent
+information to constrain the solution space, often in the form of
+regularization. Many different methods for performing this inference have been
+developed and research in this field is still active. Investigating new
+methodologies implies developing complex software, which often must be able to
+deal with sparse matrices and parallelism. I’ll present the open-source Python
+library <a href="https://www.fatiando.org">Fatiando a Terra</a>. It implements many of the
+components required for developing inversion methods, such as forward modeling,
+data processing and I/O, and regularization. I’ll also show how I used this
+library to develop a computationally efficient <a href="/papers/paper-moho-inversion-tesseroids-2016.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">method for estimating the Moho
+depth from gravity data using a spherical approximation of the
+Earth</a>.</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.6084/m9.figshare.4779766"
+        >
+        </div>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/tgif-2017.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/tgif-2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/egu2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/egu2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Evaluating the accuracy of equivalent-source predictions using cross-validation
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/tesseroid-variable-density.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tesseroid-variable-density.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Gravitational field calculation in spherical coordinates using variable densities in depth
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/gmt-at-agu2017.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="GMT and open-source at #AGU17 and a GMT/Python online demo">
+            <meta name="twitter:description" content="The AGU Fall Meeting is happening next week in New Orleans, potentially gathering more than 20,000 geoscientists in a single place. Me and P...">
+
+    <meta property="og:title" content="GMT and open-source at #AGU17 and a GMT/Python online demo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/gmt-at-agu2017.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/gmt-at-agu2017.png">
+            <meta property="og:description" content="The AGU Fall Meeting is happening next week in New Orleans, potentially gathering more than 20,000 geoscientists in a single place. Me and P...">
+
+    <title>    GMT and open-source at #AGU17 and a GMT/Python online demo | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>GMT and open-source at #AGU17 and a GMT/Python online demo</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             05 December 2017
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/pygmt">pygmt</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gmt">gmt</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>The <a href="https://fallmeeting.agu.org/2017/">AGU Fall Meeting</a> is happening next
+week in New Orleans, potentially gathering more than 20,000 geoscientists in a
+single place.
+Me and <a href="http://www.soest.hawaii.edu/wessel/">Paul</a> will be there to talk about
+the next version of the <a href="http://gmt.soest.hawaii.edu/">Generic Mapping Tools</a>,
+my work on <a href="https://www.gmtpython.xyz">GMT/Python</a>, and the role of open-source
+software in the Geosciences.</p>
+<p>There is so much going on at AGU that it can be daunting just to browse the
+scientific program.
+I haven't even started and my calendar is already packed.
+For now, I'll just share the sessions and events in which I'm taking part.</p>
+<h2 id="earth-arxiv-meetup">Earth ArXiv meetup</h2>
+<p><em>Thursday evening - TBD</em></p>
+<p><img alt="The Earth ArXiv logo" src="/images/eartharxiv-banner.png" /></p>
+<p>The <a href="https://eartharxiv.org/">Earth ArXiv</a> is a brand new community developed
+preprint server for the Earth and Planetary Sciences.
+Me and some other folks who are involved will get together for dinner/drinks on
+Thursday to nerd-out offline for a change.</p>
+<p>If you are interested in getting involved in Earth ArXiv,
+<a href="https://www.loomio.org/g/lpIH8bFU/eartharxiv">join the Loomio group</a>
+and the
+<a href="https://esip-slack-invite.herokuapp.com">ESIP Slack channel</a>
+and say "Hi".
+The community is very welcoming and it needs all the help it can get to grow.</p>
+<p>We don't know where we'll meet yet but keep posted on Slack and Loomio if
+you're interested in joining us.</p>
+<h2 id="panel-session-in-the-agu-data-fair">Panel session in the AGU Data Fair</h2>
+<p><em>Wednesday 12:30pm - Room 203</em></p>
+<p>I was invited to be a panelist on the
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30157">Data Capacity Building</a>
+session of the
+<a href="https://fallmeeting.agu.org/2017/agu-data-fair/">AGU Data Fair</a>.
+The fair has other very interesting panels happing throughout the week.
+They all center around "data": where to get it, what to do with it, how to
+preserve it, and how to give and receive credit for it.</p>
+<p>We'll be discussing what to do with the data once you acquire. From the
+panel description:</p>
+<blockquote>
+<p>The panel will discuss the challenges the researcher faces and how methods
+ for managing data are currently available or are expected in the future that
+ will help the researcher build value and capacity in the research data
+ lifecycle.</p>
+</blockquote>
+<p>The discussion will be in an
+<a href="https://en.wikipedia.org/wiki/Reddit#IAmA_and_AMA">Ask-Me-Anything style (AMA)</a>
+with moderated questions from the audience (on and offline).
+If you have any questions that you want us to tackle, tweet them using the
+hashtag <a href="https://twitter.com/search?f=tweets&amp;q=%23AGUDataCapacity&amp;src=typd">#AGUDataCapacity</a>.
+They'll be added to a list for the moderators.</p>
+<p>I'm really looking forward to this panel and getting to meet some new people in
+the process.</p>
+<h2 id="pauls-talk-about-gmt6">Paul's talk about GMT6</h2>
+<p><em>Thursday 4:15pm - Room 228</em></p>
+<p>Paul is giving the talk
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Paper/233558">The Generic Mapping Tools 6: Classic versus Modern Mode</a>
+at the
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/33628">Challenges and Benefits of Open-Source Software and Open Data</a>
+session.
+He'll be showcasing the new changes that are coming to GMT6, including "modern
+mode" and a new <code>gmt subplot</code> command.
+These are awesome new features of GMT aimed at making it more accessible to new
+users.
+For all the GMT gurus out there: Don't worry, they're also a huge time saver by
+eliminating many repeated command online options and boilerplate code.</p>
+<h2 id="panel-session-about-open-source-software">Panel session about open-source software</h2>
+<p><em>Thursday 4-6pm - Room 238</em></p>
+<p>I'll also be a panelist on the session
+<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30500">Open-Source Software in the Geosciences</a>.
+The lineup of panelists is amazing and I'm honored to be included among them.
+It'll be hard to contain the fan-boy in me.
+I wonder if geophysicists are used to getting asked for autographs.</p>
+<p>The discussion will center around the role of open-source software in our
+science, how it's affected the careers of those who make it, and what we can do
+to make it a viable career path for new geoscientists.</p>
+<p>My contribution is the abstract
+"<a href="/talks/agu2017-oss.html" title="Nurturing reliable and robust open-source scientific software">Nurturing reliable and robust open-source scientific software</a>".</p>
+<p>Many thanks to the chairs and conveners for putting it together.
+I'll surely have a lot more to say after the panel.</p>
+<h2 id="poster-about-gmtpython">Poster about GMT/Python</h2>
+<p><em>Friday morning - Poster Hall D-F</em></p>
+<p>Last but not least,
+I'll be presenting the poster
+"<a href="/posters/agu2017.html" title="A modern Python interface for the Generic Mapping Tools">A modern Python interface for the Generic Mapping Tools</a>"
+about my work on <a href="https://www.gmtpython.xyz">GMT/Python</a>.
+Come see the poster and chat with me and Paul!
+I'd love to hear what you want to see in this software.
+I'll also have a laptop and tablets for you to play around with a demo.</p>
+<p><img alt="My AGU 2017 poster" src="/images/poster-agu2017.png" /></p>
+<p>You can download a PDF of the poster from <a href="http://figshare.com">figshare</a> at
+doi:<a href="https://doi.org/10.6084/m9.figshare.5662411">10.6084/m9.figshare.5662411</a>.</p>
+<p>A lot has happened since
+<a href="/blog/gmt-after-scipy2017.html" title="GMT/Python update and feedback from Scipy 2017">my last update after Scipy2017</a>.
+Much of the infrastructure work to interface with the C API is done but there
+is still a lot do.
+Luckily, we just got our
+<a href="https://github.com/GenericMappingTools/gmt-python/pull/72">first code contributor</a>
+last week so it looks like I'll have some help!</p>
+<p>You can try out the latest features in an <strong>online demo</strong> Jupyter notebook by
+visiting
+<a href="http://agu2017demo.gmtpython.xyz">agu2017demo.gmtpython.xyz</a></p>
+<p>The notebook is running on the newly re-released
+<a href="https://mybinder.org/">mybinder.org</a> service.
+The Jupyter team did an amazing job!</p>
+<h2 id="come-say-hi">Come say "Hi"</h2>
+<p>If you'll be at AGU next week, <strong>stop by the poster on Friday or join the panel
+sessions if you want to chat or have any questions/suggestions</strong>.
+If you won't, there is always
+<a href="https://twitter.com/leouieda">Twitter</a>
+and the <a href="http://softwareunderground.org/">Software Underground</a> Slack group.</p>
+<p>See you in New Orleans!</p>
+<hr />
+<p><em>The photo of Bourbon Street in the thumbnail is copyright Chris Litherland
+and licensed
+<a href="https://commons.wikimedia.org/wiki/File:ChrisLitherlandBourbonSt.jpg">CC-BY-SA</a>.</em></p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/gmt-at-agu2017.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/gmt-at-agu2017.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2019.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2019.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                PyGMT: Accessing the Generic Mapping Tools from Python
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/gmt6.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt6.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The Generic Mapping Tools Version 6
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/scipy2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Building an object-oriented Python interface for the Generic Mapping Tools
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/aogs2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/aogs2018-gmtpython.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Integrating the Generic Mapping Tools with the Scientific Python Ecosystem
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/fast-tesseroid-inversion-moon.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons">
+            <meta name="twitter:description" content="About This new collaboration that came about in an unexpected way. I reviewed an initial version of this paper and it ended up being rejecte...">
+
+    <meta property="og:title" content="Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/papers/fast-tesseroid-inversion-moon.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/fast-tesseroid-inversion-moon.png">
+            <meta property="og:description" content="About This new collaboration that came about in an unexpected way. I reviewed an initial version of this paper and it ended up being rejecte...">
+
+    <title>    Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/papers/">Papers</a></li></ol>
+
+
+    <h1>Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons</h1>
+
+        <p class="pub-date-author">
+            Guangdong Zhao, Bo Chen, <strong>Leonardo Uieda</strong>, Jianxin Liu, Mikhail K. Kaban, Longwei Chen, Rongwen Guo
+                <span class="post-date">(2019)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Journal of Geophysical Research: Solid Earth</em>
+            </li><li>
+                <i class="fa-li fa fa-paperclip fa-fw" title="Supplementary material"></i>
+                Data/Supplement: <a href="https://doi.org/10.6084/m9.figshare.7300523">10.6084/m9.figshare.7300523</a>
+            </li><li>
+                <i class="fa-li fa fa-file-pdf-o fa-fw" title="Preprint PDF"></i>
+                PDF (preprint): <a href="https://doi.org/10.31223/osf.io/dzf9j">10.31223/osf.io/dzf9j</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a href="https://doi.org/10.1029/2019JB017691">10.1029/2019JB017691</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/inversion">inversion</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/forward-modeling">forward-modeling</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/gravity">gravity</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/tesseroids">tesseroids</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This new collaboration that came about in an unexpected way.
+I reviewed an initial version of this
+paper and it ended up being rejected by the journal.
+Originally, the paper focused
+solely on the forward modeling aspects and had no field data application (which was not
+possible without the inversion step).
+After the rejection, the authors reached out to me
+(<a href="https://github.com/leouieda/peer-review">I sign all of my reviews</a>)
+and kindly asked if I wanted to help improve the paper further.
+We worked on this for the better part of a year, adding the inversion and lunar mascon
+application. I'm very happy the final result!</p>
+<p>The paper introduces a method for accelerating 3D gravity inversion using
+<a href="/papers/paper-tesseroids-2016.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">tesseroids</a>.
+It's fast due to the clever use of symmetry relations when computing the
+sensitivity/Jacobian matrix. This requires data laid out on a regular grid and a regular
+tesseroid mesh that aligns with the data grid. So there is a sacrifice of flexibility
+for performance. Nonetheless, the results are impressive.</p>
+<h2 id="abstract">Abstract</h2>
+<p>An efficient forward modeling algorithm for calculation of gravitational fields in
+spherical coordinates is developed for 3D large‐scale gravity inversion problems. 3D
+Gauss‐Legendre quadrature (GLQ) is used to calculate the gravitational fields of mass
+distributions discretized into tesseroids. Equivalence relations in the kernel matrix of
+the forward‐modeling are exploited to decrease storage and computation time. The
+numerical tests demonstrate that the computation time of the proposed algorithm is
+reduced by approximately two orders of magnitude, and the memory requirement is reduced
+by N'λ times compared with the traditional GLQ method, where N'λ is the number of the
+model elements in the longitudinal direction. These significant improvements in
+computational efficiency and storage make it possible to calculate and store the dense
+Jacobian matrix in 3D large‐scale gravity inversions. The equivalence relations can be
+applied to the Taylor series method or combined with the adaptive discretization to
+ensure high accuracy. To further illustrate the capability of the algorithm, we present
+a regional synthetic example. The inverted results show density distributions consistent
+with the actual model. The computation took about 6.3 hours and 0.88 GB of memory
+compared with about a dozen days and 245.86 GB for the traditional 3D GLQ method.
+Finally, the proposed algorithm is applied to the gravity field derived from the latest
+lunar gravity model GL1500E. 3D density distributions of the Imbrium and Serenitatis
+basins are obtained, and high‐density bodies are found at the depths 10‐60 km, likely
+indicating a significant uplift of the high‐density mantle beneath the two mascon
+basins.</p>
+
+        <h2>Citation</h2>
+        <p>Zhao, G., Chen, B., Uieda, L., Liu, J., Kaban, M. K., Chen, L., & Guo, R. (2019). Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons. Journal of Geophysical Research: Solid Earth. doi:10.1029/2019JB017691.</p>
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.1029/2019JB017691"
+        >
+        </div>
+                        </div></div>
+                </div><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <span class="__dimensions_badge_embed__" data-doi="10.1029/2019JB017691" data-legend="always"></span>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/papers/fast-tesseroid-inversion-moon.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/papers/fast-tesseroid-inversion-moon.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/tesseroid-variable-density.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tesseroid-variable-density.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Gravitational field calculation in spherical coordinates using variable densities in depth
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/use-the-disturbance.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/use-the-disturbance.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Should geophysicists use the gravity disturbance or the anomaly?
+            </span><br>
+                <span class="card-date">(2018)</span><br><span class="label label-warning">IN REVIEW</span></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/tgif-2017.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/tgif-2017.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Inverting gravity to map the Moho: A new method and the open source software that made it possible
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/paper-moho-inversion-tesseroids-2016.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/paper-moho-inversion-2016.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</body>
+</html>

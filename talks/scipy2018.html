@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/scipy2018.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Building an object-oriented Python interface for the Generic Mapping Tools">
+            <meta name="twitter:description" content="About This was the second talk I gave at Scipy about GMT/Python, a wrapper that I'm building for the Generic Mapping Tools. It showed the pr...">
+
+    <meta property="og:title" content="Building an object-oriented Python interface for the Generic Mapping Tools">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/scipy2018.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/scipy2018.png">
+            <meta property="og:description" content="About This was the second talk I gave at Scipy about GMT/Python, a wrapper that I'm building for the Generic Mapping Tools. It showed the pr...">
+
+    <title>    Building an object-oriented Python interface for the Generic Mapping Tools | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Building an object-oriented Python interface for the Generic Mapping Tools</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Paul Wessel
+                <span class="post-date">(2018)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                Python in Science Conference
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                CC-BY License
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.6814052">10.6084/m9.figshare.6814052</a>
+            </li><li>
+                <i class="fa-li fa fa-youtube-play fa-fw" title="Video on Youtube"></i>
+                YouTube video: <a href="https://www.youtube.com/watch?v=6wMtfZXfTRM">6wMtfZXfTRM</a>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/scipy2018">leouieda/scipy2018</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/pygmt">pygmt</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>This was the second talk I gave at Scipy about <a href="https://www.gmtpython.xyz">GMT/Python</a>,
+a wrapper that <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">I'm building for the Generic Mapping Tools</a>.
+It showed the progress that we made in the past year, what our struggles and successes
+were, and our plans for the future.</p>
+<p>I gave a live demo using the notebook from <a href="http://try.gmtpython.xyz">try.gmtpython.xyz</a></p>
+<h2 id="video-recording">Video recording</h2>
+<p>Scipy records all of the presentations and <a href="https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR">makes them available on
+YouTube</a>.
+Here is the video of mine:</p>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe
+     width="560" height="315"
+     src="https://www.youtube-nocookie.com/embed/6wMtfZXfTRM"
+     frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+
+<h2 id="slides">Slides</h2>
+<p>I made the slides in Google Drive. You can see them below:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ2ULpSNf0_tHJYIrRvSdFC0e7diKm5vUiX0_eaWtBPKKBr7T_UJLB-5hKJRHGWlDW3wpe8x4EhhZVD/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h3 id="short-summary">Short summary</h3>
+<p>We are building a Python wrapper for the Generic Mapping Tools (GMT), a set of
+command-line programs used across the Earth, Atmospheric, and Ocean Sciences to
+process and visualize geographic data. At Scipy 2017, we presented the project
+goals and an initial prototype. The feedback received led to improvements in
+the design of the library, mainly the creation of an object-oriented API. We
+will present the newest developments including support for numpy arrays and
+pandas Dataframes, interactive visualization in the Jupyter notebook using NASA
+WorldWind, and more. Once again, we seek feedback from the community to guide
+us moving forward.</p>
+<h3 id="abstract">Abstract</h3>
+<p>The <a href="http://www.gmtpython.xyz">GMT/Python library</a> has been in development for
+approximately 1 year. Much of the current design of the library was inspired by
+the <a href="http://www.leouieda.com/blog/gmt-after-scipy2017.html">feedback that we received following our presentation at Scipy
+2017</a>. Since then, we
+have been implementing this design, establishing a solid low-level API on which
+to build the rest of the library, and exploring new ways to interface with the
+Jupyter notebook. In this talk, we will present the current state of the
+project, including: the design of the low-level wrapper for the GMT C API (the
+<code>gmt.clib.LibGMT</code> class); the new object-oriented plotting API (the
+<code>gmt.Figure</code> class); the support for numpy arrays and pandas Dataframes; using
+GMT's built-in topography grids and sample datasets; interactive visualization
+in the Jupyter notebook using the <a href="https://worldwind.arc.nasa.gov">NASA WorldWind Web Javascript
+library</a>; and more. An online demo of these
+features is available through the Binder service at http://try.gmtpython.xyz.
+We will also share the lessons learned from using ctypes to build the wrapper
+and the changes that were required in the C API to make the wrapping process as
+smooth as possible when porting to other languages. Finally, we will layout our
+development plans and solicit feedback and contributions to help guide the
+future of the project.</p>
+<p>GMT has an extensive feature set that goes well beyond data visualization. It
+has sophisticated algorithms for processing and interpolating data in Cartesian
+and spherical coordinates that is still unmatched in the Scipy ecosystem. GMT
+is also the basis for specialized software like
+<a href="https://www.mbari.org/products/research-software/mb-system">MB-System</a> for
+processing and visualizing bathymetry and backscatter imagery data derived from
+multibeam, interferometry, and sidescan sonars and
+<a href="http://topex.ucsd.edu/gmtsar">GMTSAR</a> for processing Interferometric
+Synthetic-Aperture Radar (InSAR) data. A well designed wrapper for the GMT C
+API is the first step to bring these powerful tools to the Scipy community. The
+data visualization landscape in Python has grown immensely in the past few
+years with the advent of Boheh, Altair, Cartopy, Holoviews, etc. GMT/Python can
+help diversify this ecosystem and bring important lessons learned during the
+28+ years of continuous development of GMT.</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.6084/m9.figshare.6814052"
+        >
+        </div>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/scipy2018.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/scipy2018.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2019.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2019.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                PyGMT: Accessing the Generic Mapping Tools from Python
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</body>
+</html>

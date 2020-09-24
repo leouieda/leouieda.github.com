@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/gmt-python-design.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Design ideas and goals for the GMT Python interface">
+            <meta name="twitter:description" content="As you may already know, I'm away on a postdoct writing a Python interface for the Generic Mapping Tools. Recently, I started laying out our...">
+
+    <meta property="og:title" content="Design ideas and goals for the GMT Python interface">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/blog/gmt-python-design.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/gmt-python-design.png">
+            <meta property="og:description" content="As you may already know, I'm away on a postdoct writing a Python interface for the Generic Mapping Tools. Recently, I started laying out our...">
+
+    <title>    Design ideas and goals for the GMT Python interface | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li></ol>
+
+
+    <h1>Design ideas and goals for the GMT Python interface</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+             29 March 2017
+        </li>
+            <li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/pygmt">pygmt</a></span></li></ul>
+    </div>
+            </li>
+    </ul>
+
+    <p>As you may already know, I'm away on a <a href="/blog/hawaii-gmt-postdoc.html" title="A year in Hawaii hacking on the Generic Mapping Tools">postdoct writing a Python interface
+for the Generic Mapping Tools</a>.
+Recently, I started laying out our goals for the project and some of my design
+ideas.
+This all lives on the
+<a href="https://github.com/GenericMappingTools/gmt-python">GenericMappingTools/gmt-python</a>
+Github repository, which is where the code will eventually be as well.
+I thought it would be good to post it here as well to have a snapshot of this
+phase of the project for future reference.</p>
+<p>I have also submitted a <a href="/blog/scipy2017-proposal-gmt.html" title="Talk proposal for Scipy 2017: Bringing the Generic Mapping Tools to Python">talk proposal for Scipy 2017 about the
+project</a>.</p>
+<hr />
+<h2 id="goals">Goals</h2>
+<ul>
+<li>Provide access to GMT modules from Python using the GMT C API (no system
+  calls).</li>
+<li>Input and output using Python native containers: numpy <code>ndarray</code> or pandas
+  <code>DataFrame</code> for data tables and <a href="http://xarray.pydata.org">xarray</a> <code>Dataset</code>
+  for netCDF grids.</li>
+<li>Integration with the <a href="http://jupyter.org/">Jupyter notebook</a> to display plots
+  and maps inline.</li>
+<li>API design familiar for veteran GMT users (arguments <code>R</code>, <code>J</code>, etc) with more
+  newbie-friendly alternatives/aliases (<code>region=[10, 20, -30, -10]</code>,
+  <code>projection='M'</code>, etc).</li>
+</ul>
+<h2 id="previous-work">Previous work</h2>
+<p>To my knowledge, there have been 3 attempts at a GMT Python interface:</p>
+<ul>
+<li><a href="https://github.com/emolch/gmtpy">gmtpy</a> by <a href="https://github.com/emolch">Sebastian
+    Heimann</a></li>
+<li><a href="https://github.com/ian-r-rose/pygmt">pygmt</a> by <a href="https://github.com/ian-r-rose">Ian
+    Rose</a></li>
+<li><a href="https://github.com/glimmer-cism/PyGMT">PyGMT</a> by <a href="https://github.com/mhagdorn">Magnus
+    Hagdorn</a></li>
+</ul>
+<p>Only <code>gmtpy</code> has received commits since 2014 and is the more mature
+alternative. However, the project <a href="https://github.com/emolch/gmtpy/graphs/contributors">doesn't seem to be very
+active</a>. Both
+<code>gmtpy</code> and <code>PyGMT</code> use system class (through <code>subprocess.Popen</code>) and
+pass input and output through <code>subprocess.PIPE</code>. <code>pygmt</code> seems to call
+the GMT C API directly through a hand-coded Python C extension. This
+might compromise the portability of the package across operating systems
+and makes distribution very painful.</p>
+<h2 id="design">Design</h2>
+<p><code>gmt-python</code> is made for the future. We will support <strong>only Python 3.5
+or later</strong> and require the <a href="http://gmt.soest.hawaii.edu/projects/gmt/wiki/Modernization">new "modern" mode of
+GMT</a>
+(currently only in the <code>trunk</code> of the SVN repository). The <code>modern</code> mode
+removes the need for <code>-O -K</code> and explicitly redirecting to a <code>.ps</code> file. This
+all happens in the background. A final call to <code>gmt psconvert</code> brings the plot
+out of hiding and finalizes the Postscript. This mode is perfect for the Python
+interface, which would have to handle generation of the Postscript file in the
+background anyway.</p>
+<p>We will wrap the GMT C API using the
+<a href="https://docs.python.org/3/library/ctypes.html">ctypes</a> module of the
+Python standard library. <code>ctypes</code> grants access to C data types and
+foreign functions in DDLs and shared libraries, making it possible to
+wrap these libraries with pure Python code. Not having compiled modules
+makes packaging and distribution of Python software a lot easier.</p>
+<p>Wrappers for GMT data types and C functions will be implemented in a
+lower level wrapper library. These will be direct <code>ctypes</code> wrappers of
+the GMT module functions and any other function that is needed on the
+Python side. The low-level functions will not handle any data type
+conversion or setting up of argument list.</p>
+<p>We'll also provide higher level functions that mirror all GMT modules.
+These functions will be built on top of the low-level library and will
+handle all data conversions and parsing of arguments. This is the part
+of the library with which the user will interact (the GMT Python API).</p>
+<h3 id="the-gmt-python-api">The GMT Python API</h3>
+<p>Each GMT module has a function in the <code>gmt</code> package. Command-line
+arguments are passes as function keyword arguments. Data can be passed
+as file names or in-memory data.</p>
+<p>The simplest usage would be with data in a file and generating a PDF
+output figure, just as a normal GMT script:</p>
+<div class="codehilite"><pre><span></span>import gmt
+
+cpt = gmt.makecpt(C=&#39;cubhelix&#39;, T=[-4500, 4500])
+gmt.grdimage(input=&#39;grid.nc&#39;, J=&#39;M6i&#39;, B=&#39;af&#39;, P=True, C=cpt)
+gmt.psscale(C=cpt, D=&#39;jTC+w6i/0.2i+h+e+o0/1i&#39;, B=&#39;af&#39;)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>Arguments can also be passed as in the GMT command-line by using a
+single string:</p>
+<div class="codehilite"><pre><span></span>import gmt
+
+gmt.makecpt(&#39;-Ccubhelix -T-4500/4500&#39;, output=&#39;my.cpt&#39;)
+gmt.grdimage(&#39;grid.nc -JM6i -Baf -P -Cmy.cpt&#39;)
+gmt.psscale(&#39;-Cmy.cpt -DjTC+w6i/0.2i+h+e+o0/1i -Baf&#39;)
+gmt.psconvert(&#39;-Tf -Fmy-figure&#39;)
+</pre></div>
+
+
+<p>Notice that output that would be redirected to a file is specified using
+the <code>output</code> keyword argument.</p>
+<p>You can also pass in data from Python. Grids in netCDF format are passed
+as xarray <code>Datasets</code> that can come from a netCDF file or generated in
+memory:</p>
+<div class="codehilite"><pre><span></span>import gmt
+import xarray as xr
+
+data = xr.open_dataset(&#39;grid.nc&#39;)
+
+cpt = gmt.makecpt(C=&#39;cubhelix&#39;, T=&#39;-4500/4500&#39;)
+gmt.grdimage(input=data, J=&#39;M6i&#39;, B=&#39;af&#39;, P=True, C=cpt)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>Tabular data can be passed as numpy arrays:</p>
+<div class="codehilite"><pre><span></span>import numpy as np
+import gmt
+
+data = np.loadtxt(&#39;data_file.csv&#39;)
+
+cpt = gmt.makecpt(C=&quot;red,green,blue&quot;, T=&quot;0,70,300,10000&quot;)
+gmt.pscoast(R=&#39;g&#39;, J=&#39;N180/10i&#39;, G=&#39;bisque&#39;, S=&#39;azure1&#39;, B=&#39;af&#39;, X=&#39;c&#39;)
+gmt.psxy(input=data, S=&#39;ci&#39;, C=cpt, h=&#39;i1&#39;, i=&#39;2,1,3,4+s0.02&#39;)
+gmt.psconvert(T=&#39;f&#39;, F=&#39;my-figure&#39;)
+</pre></div>
+
+
+<p>In the Jupyter notebook, we can preview the plot by calling
+<code>gmt.show()</code>, which embeds the image in the notebook:</p>
+<div class="codehilite"><pre><span></span>import numpy as np
+import gmt
+
+data = np.loadtxt(&#39;data_file.csv&#39;)
+
+cpt = gmt.makecpt(C=&quot;red,green,blue&quot;, T=&quot;0,70,300,10000&quot;)
+gmt.pscoast(R=&#39;g&#39;, J=&#39;N180/10i&#39;, G=&#39;bisque&#39;, S=&#39;azure1&#39;, B=&#39;af&#39;, X=&#39;c&#39;)
+gmt.psxy(input=data, S=&#39;ci&#39;, C=cpt, h=&#39;i1&#39;, i=&#39;2,1,3,4+s0.02&#39;)
+gmt.show()
+</pre></div>
+
+
+<p><code>gmt.show</code> will call <code>psconvert</code> in the background to get a PNG image
+back and use <code>IPython.display.Image</code> to insert it into the notebook.</p>
+<p><strong>TODO</strong>: We're still thinking of the best way to call <code>gmt.psconvert</code>
+first to generate a high-quality PDF and right after call <code>gmt.show()</code>
+for an inline preview. The issue is that <code>psconvert</code> deletes the
+temporary Postscript file that was being constructed on the background,
+this calling it a second time through <code>gmt.show()</code> would not work. Any
+suggestions are welcome!</p>
+<h3 id="package-organization">Package organization</h3>
+<p>The general layout of the Python package will probably look something
+like this:</p>
+<div class="codehilite"><pre><span></span>gmt/
+    c_api/     # Package with low-level wrappers for the C API
+        ...
+    modules/  # Defines the functions corresponding to GMT modules
+        ...
+</pre></div>
+
+
+<h3 id="the-module-functions">The module functions</h3>
+<p>The functions corresponding to GMT modules (<code>pscoast</code>, <code>psconvert</code>, etc)
+are how the user interacts with the Python API. They will be organized
+in different files in the <code>gmt.modules</code> package but will all be
+accessible from the <code>gmt</code> package namespace. For example, <code>pscoast</code> can
+live in <code>gmt/modules/ps_generating.py</code> but can be called as
+<code>gmt.pscoast</code>.</p>
+<p>Here is what a module function will look like:</p>
+<div class="codehilite"><pre><span></span>def module_function(**kwargs):
+    &quot;&quot;&quot;
+    Docstring explaining what each option is and all the aliases.
+
+    Likely derived from the GMT documentation.
+    &quot;&quot;&quot;
+    # Convert any inputs into things the C API can digest
+    ...
+    # Parse the keyword arguments and make an &quot;args&quot; list
+    ...
+    # Call the module function from the C API with the inputs
+    ...
+    # Process any outputs from the C API into Python data types
+    ...
+    return output
+</pre></div>
+
+
+<p>We will automate this process as much as possible:</p>
+<ul>
+<li>Common options in the docstrings can be reused from an <code>OPTIONS</code> dictionary.</li>
+<li>Parsing of common arguments (R, J, etc) can be done by a function.</li>
+<li>Creating the GMT session and calling the module can be automated.</li>
+<li>Conversion of inputs and outputs will most likely be: tables to numpy arrays,
+  grids to xarray <code>Datasets</code>, text to Python text.</li>
+</ul>
+<p>Most of the work in this part will be wrapping all of the many GMT
+modules, parsing non-standard options, and making sure the docstrings
+are accurate. It might even be possible to automatically generate the
+docstrings or parts of them from the command-line help messages by
+passing a Python callback as the <code>print_func</code> when creating a GMT
+session.</p>
+<h3 id="the-low-level-wrappers">The low-level wrappers</h3>
+<p>The low-level wrapper functions will be bare-bones <code>ctypes</code> foreign
+functions from the <code>libgmt.so</code> shared library. The functions can be
+accessed from Python like so:</p>
+<div class="codehilite"><pre><span></span>import ctypes as ct
+
+libgmt = ct.cdll.LoadLibrary(&quot;libgmt.so&quot;)
+
+# Functions are accessed as members of the &#39;libgmt&#39; object
+GMT_Call_Module = libgmt.GMT_Call_Module
+
+# Call them like normal Python functions
+GMT_Call_Module(... inputs ...)
+</pre></div>
+
+
+<p>The tricky part is making sure the functions get the input types they
+need. <code>ctypes</code> provides access to C data types and a way to specify the
+data type conversions that the function requires:</p>
+<div class="codehilite"><pre><span></span>GMT_Call_Module.argstypes = [ct.c_void_p, ct.c_char_p, ct.c_int, ct.c_void_p]
+</pre></div>
+
+
+<p>This is fine for standard data types like <code>int</code>, <code>char</code>, etc, but will
+need extra work for custom GMT <code>struct</code>. These data types will need to
+be wrapped by Python classes that inherit from <code>ctypes.Structure</code>.</p>
+<p>The <code>gmt.c_api</code> module will expose these foreign functions (with output
+and input types specified) and GMT data types for the modules to use.</p>
+<p>The main entry point into GMT will be through the <code>GMT_Call_Module</code>
+function. This is what the <code>gmt</code> command-line application uses to run a
+given module, like <code>GMT_pscoast</code> for example. We will use it to run the
+modules from the Python side as well. It has the following signature:</p>
+<div class="codehilite"><pre><span></span>int GMT_Call_Module (void *V_API, const char *module, int mode, void *args)
+</pre></div>
+
+
+<p>The arguments <code>module</code>, <code>mode</code>, and <code>args</code> (the command-line argument
+list) are plain C types and can be generated easily using <code>ctypes</code>. The
+Python module code will need to generate the <code>args</code> array from the given
+function arguments. The <code>V_API</code> argument is a "GMT Session" and is
+created through the <code>GMT_Create_Session</code> function, which will have to be
+wrapped as well.</p>
+<p>The input and output of Python data will be handled through the GMT
+virtual file machinery. This allows us to write data to a memory
+location instead of a file without GMT knowing the difference. For
+input, we can use <code>GMT_Open_VirtualFile</code> and point it to the location in
+memory of the Python data, for example using
+<a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ctypes.html">numpy.ndarray.ctypes</a>.
+We can also translate the Python data into <code>ctypes</code> compatible types.
+The virtual file pointer can also be passed as the output option for the
+module, for example as <code>-G</code> or through redirection (<code>-&gt;</code>). We can read
+the contents of the virtual file using <code>GMT_Read_VirtualFile</code>.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>There are gonna be some rough edges on the C API that will have to get sorted
+before all of this is usable.
+The API is new (from 2013) and hasn't been much used by third-party libraries.
+Some of the details aren't documented and require diving into the GMT source
+code or having access to a <a href="http://www.soest.hawaii.edu/wessel/">GMT guru</a>,
+like I have.
+Hopefully this work will make it more robust and new GMT wrappers can be made
+for other languages without so much effort.</p>
+<p>All of this work in its very early stages and I'd love to get some feedback and
+ideas!
+You can leave a comment below or
+<a href="https://github.com/GenericMappingTools/gmt-python/issues">create an issue on the Github repository</a>.</p>
+
+        <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/blog/gmt-python-design.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/blog/gmt-python-design.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+    <h2>More from the blog</h2>
+        <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(23 Jan 2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/liverpool-phd-2020.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/liverpool-phd-2020.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Two PhD studentships at the University of Liverpool
+            </span><br>
+                <span class="card-date">(08 Dec 2019)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/conda-envs.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/conda-envs.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Manage project dependencies with conda environments
+            </span><br>
+                <span class="card-date">(26 Dec 2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/introducing-verde.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/introducing-verde.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Introducing Verde
+            </span><br>
+                <span class="card-date">(14 Sep 2018)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2019.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2019.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                PyGMT: Accessing the Generic Mapping Tools from Python
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/scipy2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/scipy2018.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Building an object-oriented Python interface for the Generic Mapping Tools
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/aogs2018.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/aogs2018-gmtpython.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Integrating the Generic Mapping Tools with the Scientific Python Ecosystem
+            </span><br>
+                <span class="card-date">(2018)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/posters/agu2017.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/agu2017.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                A modern Python interface for the Generic Mapping Tools
+            </span><br>
+                <span class="card-date">(2017)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

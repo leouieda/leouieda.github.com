@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/agu2017-oss.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Nurturing reliable and robust open-source scientific software">
+            <meta name="twitter:description" content="About I was invited to this panel session on "Open-Source Software in the Geosciences" along with Kerry Key, Brian Savage, Gary D Egbert, Co...">
+
+    <meta property="og:title" content="Nurturing reliable and robust open-source scientific software">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/agu2017-oss.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/agu2017-oss.png">
+            <meta property="og:description" content="About I was invited to this panel session on "Open-Source Software in the Geosciences" along with Kerry Key, Brian Savage, Gary D Egbert, Co...">
+
+    <title>    Nurturing reliable and robust open-source scientific software | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>Nurturing reliable and robust open-source scientific software</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Paul Wessel
+                <span class="post-date">(2017)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                AGU Fall Meeting 2017
+            </li><li>
+                <i class="fa-li fa fa-gavel fa-fw" title="Open-source license"></i>
+                Creative Commons Attribution License
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/agu2017-oss">leouieda/agu2017-oss</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/invited">invited</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<p>I was invited to this panel session on
+"<a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Session/30500">Open-Source Software in the Geosciences</a>"
+along with Kerry Key, Brian Savage, Gary
+D Egbert, Colin Andrew Zelt, and Lion Krischer.
+Many thanks to the chairs Lindsey Heagy, Anna Kelbert and Louise Pellerin for
+putting this together.</p>
+<h2 id="video-recording">Video recording</h2>
+<p>A video recording of the panel is available <a href="https://www.youtube.com/watch?v=0GO4ZZ5Ry6M">on
+YouTube</a>:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/0GO4ZZ5Ry6M" frameborder="0"
+allowfullscreen></iframe>
+</div>
+
+<p>Sadly, the video only shows the slides with the discussion topics,
+so think of this more as a podcast.
+We got some very good feedback and participation from the audience.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Scientific results are increasingly the product of software. The
+reproducibility and validity of published results cannot be ensured without
+access to the source code of the software used to produce them. Therefore, the
+code itself is a fundamental part of the methodology and must be published
+along with the results. With such a reliance on software, it is troubling that
+most scientists do not receive formal training in software development. Tools
+such as version control, continuous integration, and automated testing are
+routinely used in industry to ensure the correctness and robustness of
+software. However, many scientist do not even know of their existence (although
+efforts like <a href="https://software-carpentry.org/">Software Carpentry</a> are having
+an impact on this issue). Publishing the source code is only the first step in
+creating an open-source project. For a project to grow it must provide
+documentation, participation guidelines, and a welcoming environment for new
+contributors. Expanding the project community is often more challenging than
+the technical aspects of software development. Maintainers must invest time to
+enforce the rules of the project and to onboard new members, which can be
+difficult to justify in the context of the “publish or perish” mentality. This
+problem will continue as long as software contributions are not recognized as
+valid scholarship by hiring and tenure committees. Furthermore, there are still
+unsolved problems in providing attribution for software contributions. Many
+journals and metrics of academic productivity do not recognize citations to
+sources other than traditional publications. Thus, some authors choose to
+publish an article about the software and use it as a citation marker. One
+issue with this approach is that updating the reference to include new
+contributors involves writing and publishing a new article. A better approach
+would be to cite a permanent archive of individual versions of the source code
+in services such as <a href="https://zenodo.org/">Zenodo</a>. However, citations to these
+sources are not always recognized when computing citation metrics. In summary,
+the widespread development of reliable and robust open-source software relies
+on the creation of formal training programs in software development best
+practices and the recognition of software as a valid form of scholarship.</p>
+<hr />
+<p><em>The thumbnail image is based on the Open Source Initiative logo (<a href="https://commons.wikimedia.org/wiki/File:Opensource.svg">licensed
+CC-BY</a>).</em></p>
+
+    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/agu2017-oss.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/agu2017-oss.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/geophysics-oss.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/geophysics-oss.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Geophysical research powered by open-source
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/blog/ssi-fellowship.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/ssi-fellowship.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Advancing research software in the UK through an SSI fellowship
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/pooch.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/pooch.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Pooch: A friend to fetch your data files
+            </span><br>
+                <span class="card-date">(2020)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/gmt6.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/gmt6.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                The Generic Mapping Tools Version 6
+            </span><br>
+                <span class="card-date">(2019)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

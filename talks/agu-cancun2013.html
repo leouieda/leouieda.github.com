@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@leouieda">
+        <meta name="twitter:image" content="https://www.leouieda.com/images/thumb/agu-cancun2013.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="3D magnetic inversion by planting anomalous densities">
+            <meta name="twitter:description" content="About This talk presents an adaptation of the gravity-gradient inversion method I developed for my Masters degree dissertation "Robust 3D gr...">
+
+    <meta property="og:title" content="3D magnetic inversion by planting anomalous densities">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leouieda.com/talks/agu-cancun2013.html">
+    <meta property="og:site_name" content="Leonardo Uieda">
+        <meta property="og:image" content="https://www.leouieda.com/images/thumb/agu-cancun2013.png">
+            <meta property="og:description" content="About This talk presents an adaptation of the gravity-gradient inversion method I developed for my Masters degree dissertation "Robust 3D gr...">
+
+    <title>    3D magnetic inversion by planting anomalous densities | Leonardo Uieda
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/academicons.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.leouieda.com/rss.xml" title="Leonardo Uieda">
+</head>
+
+<body>
+
+
+                <div class="menu-opaque container-fluid menu text-center">
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/presentations">Presentations</a></li>
+                    <li><a href="/teaching">Teaching</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/leouieda"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                    <li><a href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uieda"><i class="fa fa-linkedin fa-lg" title="LinkedIn"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for blog posts"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <ol class="breadcrumb">
+        <li><a href="/">Home</a></li><li><a href="/talks/">Talks</a></li></ol>
+
+
+    <h1>3D magnetic inversion by planting anomalous densities</h1>
+
+        <p class="pub-date-author">
+            <strong>Leonardo Uieda</strong>, Valéria C. F. Barbosa
+                <span class="post-date">(2013)</span>
+        </p>
+
+    
+
+    <h2>Info</h2>
+
+    <div class="info">
+        <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-users fa-fw" title="Event name"></i>
+                AGU Meeting of the Americas
+            </li><li>
+                <i class="fa-li fa fa-desktop fa-fw" title="Download slides"></i>
+                Slides: <a href="https://doi.org/10.6084/m9.figshare.703651">10.6084/m9.figshare.703651</a>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a href="https://github.com/leouieda/agu-cancun2013">leouieda/agu-cancun2013</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/planting-inversion">planting-inversion</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/magnetic">magnetic</a></span></li></ul>
+    </div>
+            </li></ul>
+    </div>
+
+    <h2 id="about">About</h2>
+<script async class="speakerdeck-embed"
+data-id="47e71fe41d9d4f1fa7859454577a6d3f" data-ratio="1.33159947984395"
+src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>This talk presents an adaptation of the gravity-gradient inversion method I
+developed for my Masters degree dissertation
+"<a href="/papers/paper-planting-anomalous-densities-2012.html" title="Robust 3D gravity gradient inversion by planting anomalous densities">Robust 3D gravity gradient inversion by planting anomalous densities</a>" to invert magnetic data.</p>
+<p>As you may have noticed, there is an <strong>error in the title</strong>. We do not, in
+fact, invert magnetic data using <strong>density</strong> anomalies. This illustrates the
+perils of copy-pasting combined with a looming deadline.</p>
+<p>I have added an <strong>open-source</strong> implementation of the gravity-gradient
+inversion method to the Python library <a href="http://www.fatiando.org">Fatiando a
+Terra</a>. In version <code>0.1</code> to <code>0.4</code>, the code is in
+module <code>fatiando.gravmag.harvester</code>.</p>
+<h2 id="abstract">Abstract</h2>
+<p><strong>AGU abstract ID</strong>: GP22A-01</p>
+<p>We present a new 3D magnetic inversion algorithm based on the computationally
+efficient method of planting anomalous densities. The algorithm consists of an
+iterative growth of the anomalous bodies around prismatic elements called
+"seeds". These seeds are user-specified and have known magnetizations. Thus,
+the seeds provide a way for the interpreter to specify the desired skeleton of
+the anomalous bodies. The inversion algorithm is computationally efficient due
+to various optimizations made possible by the iterative nature of the growth
+process. The control provided by the use of seeds allows one to test different
+hypothesis about the geometry and magnetization of targeted anomalous bodies.
+To demonstrate this capability, we applied our inversion method to the Morro do
+Engenho (ME) and A2 magnetic anomalies, central Brazil (Figure 1a). ME is an
+outcropping alkaline intrusion formed by dunites, peridotites and pyroxenites
+with known magnetization. A2 is a magnetic anomaly to the Northeast of ME and
+is thought to be a similar intrusion that is not outcropping. Therefore, a
+plausible hypothesis is that A2 has the same magnetization as ME. We tested
+this hypothesis by performing an inversion using a single seed for each body.
+Both seeds had the same magnetization. Figure 1b shows that the inversion
+produced residuals up to 2000 nT over A2 (i.e., a poor fit) and less than 400
+nT over ME (i.e., an acceptable fit). Figure 1c shows that ME is a compact
+outcropping body with bottom at approximately 5 km, which is in agreement with
+previous interpretations. However, the estimate produced by the inversion for
+A2 is outcropping and is not compact. In summary, the estimate for A2 provides
+a poor fit to the observations and is not in accordance with the geologic
+information. This leads to the conclusion that A2 does not have the same
+magnetization as ME. These results indicate the usefulness and capabilities of
+the inversion method here proposed.</p>
+
+
+<h2>Article Level Metrics</h2>
+
+<div class="row"><div class="col-md-6 altmetric-badge-group">
+                    <div class="row"><div class="col-xs-12">
+                            <div class="altmetric-embed"
+             data-badge-details="right"
+             data-condensed="true"
+             data-badge-type="medium-donut"
+             data-doi="10.6084/m9.figshare.703651"
+        >
+        </div>
+                        </div></div>
+                </div></div>    <hr><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-comments fa-fw" title=""></i><strong>Comments?</strong>
+            Let me know on Twitter
+            (<a href="https://twitter.com/intent/tweet?text=@leouieda&url=https://www.leouieda.com/talks/agu-cancun2013.html">tweet @leouieda</a>).</div>
+    </div><div class="panel panel-default feedback">
+        <div class="panel-body">
+                <i class="fa fa-bug fa-fw" title=""></i><strong>Found a typo/mistake?</strong>
+            Send a <a href="https://github.com/leouieda/website/edit/master/talks/agu-cancun2013.md">fix through Github</a>.
+            All you need is an account and 5 minutes!</div>
+    </div>
+
+            <h2>Related pages</h2>
+            <div class="card-index"><div class="row"><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/paper-quadrilatero2-2016.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/paper-quadrilatero2-2016.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                How two gravity-gradient inversion methods can be used to reveal different geologic features of ore deposit — A case study from the Quadrilátero Ferrífero (Brazil)
+            </span><br>
+                <span class="card-date">(2016)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/paper-mag-dir-2015.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/paper-mag-dir-2015.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Estimation of the total magnetization direction of approximately spherical bodies
+            </span><br>
+                <span class="card-date">(2015)</span><br></div>
+    </div></a>
+                    </div></div></div><div class="col-md-6"><div class="row"><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/papers/paper-quadrilatero-2014.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/paper-quadrilatero-2014.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Imaging iron ore from the Quadrilátero Ferrífero (Brazil) using geophysical inversion and drill hole data
+            </span><br>
+                <span class="card-date">(2014)</span><br></div>
+    </div></a>
+                    </div><div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/talks/egu2014.html">
+    <div class="row card">
+        <div class="col-md-12 card-thumbnail">
+            <img class="" alt="Thumbnail image for publication."
+         src="/images/thumb/egu2014.png">
+        </div>
+        <div class="col-md-12 card-caption"><span class="card-title">
+                Gravity inversion in spherical coordinates using tesseroids
+            </span><br>
+                <span class="card-date">(2014)</span><br></div>
+    </div></a>
+                    </div></div></div></div></div>
+
+
+    </div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        © 2020 Leonardo Uieda •
+        Except were noted, all content is licensed
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        <br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        <br>
+        The source code used to build this website is available at
+        <a href="https://github.com/leouieda/website">leouieda/website</a>.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+            <!-- Bootstrap core JavaScript -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+<!-- For the altmetric badge in articles -->
+        <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</body>
+</html>
